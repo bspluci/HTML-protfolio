@@ -105,11 +105,23 @@
             
             
             $(".sectionicon>div").click(function(){
-                
-                $(".sectionicon>div").css({"background":"#fff"});
-                $(this).css({"background":"#1e325c"});
-//                $(this).addClass("bgon");
-                $(this).find("p").css({"backgroun":""});
-                $(this).find("p").css({"backgroun":"url(../img/sub/icon10.png)"});
+                $(".sectionicon>div").css({"background":"#fff", "color":"#000"});
+                $(this).css({"background":"#1e325c", "color":"#fff"});
+            });
+            
+            $(".iconimg1").click(function(){
+                $(".iconimg2>p").css({"background-image":"url(img/sub/icon2.png)"});   $(".iconimg3>p").css({"background-image":"url(img/sub/icon3.png)"});   $(".iconimg1>p").css({"background-image":"url(img/sub/icon10.png)"});
+                $(".imgimg1").css({"display":"block"});
+                $(".imgimg2, .imgimg3").css({"display":"none"});
+            });
+            $(".iconimg2").click(function(){
+                $(".iconimg2>p").css({"background-image":"url(img/sub/icon20.png)"});   $(".iconimg3>p").css({"background-image":"url(img/sub/icon3.png)"});   $(".iconimg1>p").css({"background-image":"url(img/sub/icon1.png)"});
+                $(".imgimg2").css({"display":"block"});
+                $(".imgimg1, .imgimg3").css({"display":"none"});
+            });
+            $(".iconimg3").click(function(){
+                $(".iconimg2>p").css({"background-image":"url(img/sub/icon2.png)"});   $(".iconimg3>p").css({"background-image":"url(img/sub/icon30.png)"});   $(".iconimg1>p").css({"background-image":"url(img/sub/icon1.png)"});
+                $(".imgimg3").css({"display":"block"});
+                $(".imgimg1, .imgimg2").css({"display":"none"});
             });
 }) 

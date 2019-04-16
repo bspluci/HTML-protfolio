@@ -313,6 +313,7 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
     padding-left: 20px;
 }
 .bannerslideb{
+    margin-left: 1px;
     background: #414141;
 }
 .bannerslideb>div>a{
@@ -350,9 +351,12 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
     height: 234px;
     display: inline-block;
     cursor: pointer;
+    position: relative;
+    z-index: 0
 }
 .sectionicon>div:nth-child(1){
     background: #1e325c;
+    color: #fff;
 }
 .sectionicon>div:nth-child(2){
     background: #fff;
@@ -366,15 +370,23 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
     height: 100%;
     padding-top: 182px;
     font-size: 18px;
+    position: relative;
+    z-index: 999;
 }
-.sectionicon>div:nth-child(1) p{
-    background: url(../img/sub/icon1.png)no-repeat 50% 60px;    
+.iconimg1>p{
+    background-image: url(../img/sub/icon10.png);
+    background-repeat: no-repeat;
+    background-position: 50% 60px;
 }
-.sectionicon>div:nth-child(2) p{
-    background: url(../img/sub/icon2.png)no-repeat 50% 60px;
+.iconimg2>p{
+    background-image: url(../img/sub/icon2.png);
+    background-repeat: no-repeat;
+    background-position: 50% 60px;
 }
-.sectionicon>div:nth-child(3) p{
-    background: url(../img/sub/icon3.png)no-repeat 50% 60px;
+.iconimg3>p{
+    background-image: url(../img/sub/icon3.png);
+    background-repeat: no-repeat;
+    background-position: 50% 60px;
 }
 .sectiontext{
     position: relative;
@@ -393,10 +405,13 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
 }
 .sectionimg>div{
     position: absolute;
+}
+.imgimg2, .imgimg3{
     display: none;
 }
 .bgon{
     background: #1e325c;
+    color: #fff;
 }
 .imgon{
     display: block;
