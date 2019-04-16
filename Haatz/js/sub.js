@@ -8,7 +8,7 @@
                 console.log("aa"+windowtop);
                 topbtn.hide();
                 if(windowtop > 0) {topbtn.show(1)};
-                if(windowtop > 2650) {topbtn.addClass("topbtnstop")}
+                if(windowtop > 655) {topbtn.addClass("topbtnstop")}
                     else{topbtn.removeClass("topbtnstop")};
             });
             var topbtn = $(".topbtn");
@@ -101,5 +101,15 @@
             });
             $("#sliderclose").click(function(){
                 $("#sbar").stop().slideUp(500)
-            });          
+            });
+            
+            
+            $(".sectionicon>div").click(function(){
+                
+                $(".sectionicon>div").css({"background":"#fff"});
+                $(this).css({"background":"#1e325c"});
+//                $(this).addClass("bgon");
+                $(this).find("p").css({"backgroun":""});
+                $(this).find("p").css({"backgroun":"url(../img/sub/icon10.png)"});
+            });
 }) 
