@@ -51,6 +51,7 @@ ul.sec .menu:hover:after{width: 70%;}
 #historygallery {
     position: relative; 
     width: 100%;
+    height: auto;
     top: 100px;
     z-index: 1;
     left: 0;
@@ -67,7 +68,7 @@ ul.sec .menu:hover:after{width: 70%;}
     clear: both;
 }
 #historygallery>ul>li {
-    width: 20%;
+    width: 18.5%;
     float: left;
     display: block;
 }
@@ -342,7 +343,9 @@ ul.sec .menu:hover:after{width: 0%;}
 .jsg-nav .jsg-next{
     top: 40%;        
 }
-.redcolor {color: #d22029 !important;}    
+.redcolor {
+    color: #d22029 !important;
+    }    
 }
  
 

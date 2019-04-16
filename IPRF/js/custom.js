@@ -5,11 +5,11 @@
 					'afterLoad':function(anchorsLink,index){
                         if(index==1){new WOW().init();}
 						if(index==2){
-							wow = new WOW({offset: -1200,}); wow.init();}
+							wow = new WOW({offset: -1000,}); wow.init();}
                         if(index==3){
-							wow = new WOW({offset: -2400,}); wow.init();}
+							wow = new WOW({offset: -2000,}); wow.init();}
                         if(index==4){
-							wow = new WOW({offset: -4000,}); wow.init();}
+							wow = new WOW({offset: -3000,}); wow.init();}
 					}
 			});
 });

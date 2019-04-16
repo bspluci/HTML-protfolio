@@ -51,7 +51,7 @@ $(document).ready(function(){
                 var windowtop = $(window).scrollTop();
                 console.log("aa"+windowtop);
                 topbtn.hide();
-                if(windowtop > 0) {topbtn.show(1)};
+                if(windowtop > 0) {topbtn.show()};
                 if(windowtop > 2650) {topbtn.addClass("topbtnstop")}
                     else{topbtn.removeClass("topbtnstop")};
                     
@@ -109,8 +109,8 @@ $(document).ready(function(){
             });
     
 //            메뉴슬라이드
-            $(".menubox>ul>li, .menuwrap2").mouseover(function(){
-                $(".headerbg").stop().animate({"top":"0"},100)
+            $(".menubox, .menuwrap2").mouseover(function(){
+                $(".headerbg").stop().animate({"top":"0"},250)
                 $(".menuwrap2").stop().animate({"top":"0"},250);
                 $(".menubox>ul>li>a, .shopingbtn>p").css({"color":"#000"});
                 $(".shopingbtn>a>img").attr('src','img/cartb.png');
@@ -118,7 +118,7 @@ $(document).ready(function(){
                 $(".sitemap>a>img").attr('src','img/sitemapb.png');
                 $(".menulogo>a>img").attr('src','img/logog.png');
             });
-            $(".menubox>ul>li, .menuwrap2").mouseleave(function(){
+            $(".menubox, .menuwrap2").mouseleave(function(){
                 $(".headerbg").stop().animate({"top":"-70px"},400)
                 $(".menuwrap2").stop().animate({"top":"-440px"},250,function(){
                     $(".menubox>ul>li>a, .shopingbtn>p").css({"color":"#fff"});
