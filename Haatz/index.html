@@ -1,0 +1,878 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> HAATZ </title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-letterfx.css" />
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+	<style>
+/*    css reset*/
+        body, html{
+            width: 100%;
+            height: 100%;
+        }
+        *{padding: 0;margin: 0;}
+        li{list-style: none}
+        a:link,a:visited{text-decoration: none; color:#000;}
+         .bx-wrapper {
+        box-shadow: none;
+        border: none;
+        background: #fff;}
+            
+        .bx-wrapper .bx-pager{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;}
+        
+        .bx-wrapper {margin-bottom: 0;}
+    </style>
+
+</head>
+<body>
+   <div id="sbar"><nav id="sbarline"></nav>
+     <div>
+         <div>
+             <div id="sliderclose"><img src="img/close.png" alt=""></div>
+             <ul>
+                 <div id="sbarA"><p>주방가전</p></div>
+                 <div id="sbarB"><p>공기청정가전</p></div>
+                 <div id="sbarC"><p>기타</p></div>
+                 <li id="sbara">  
+                     <ul>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon01.png" alt=""><br>
+                                <p>후드</p>
+                            </div>
+                            
+                             <ul>
+                                 <li>· 엘리카</li>
+                                 <li>· 플래티늄</li>
+                                 <li>· 데코</li>
+                                 <li>· 시스템</li>
+                                 <li>· DIY후드</li>
+                             </ul>
+                         </li>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon02.png" alt=""><br>
+                                <p>쿠킹존</p>
+                            </div>
+                             <ul>
+                                 <li>· 후드</li>
+                                 <li>· 쿡탑</li>
+                             </ul>
+                         </li>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon03.png" alt=""><br>
+                                <p>쿡탑</p>
+                            </div>
+                             <ul>
+                                 <li>· 전기쿡탑</li>
+                                 <li>· 가스쿡탑</li>
+                             </ul>
+                         </li>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon04.png" alt=""><br>
+                                <p>빌트인기기</p>
+                            </div>
+                             <ul>
+                                 <li>· 살균,건조기류</li>
+                                 <li>· 싱크볼,수전</li>
+                                 <li>· 기타기기</li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </li>
+                 <li id="sbarb">
+                     <ul>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon05.png" alt=""><br>
+                                <p>환기청정기/주방 공기청정기</p>
+                            </div>
+                             <ul>
+                                 <li>· 환기청정기</li>
+                                 <li>· 주방 공기청정기</li>
+                             </ul>
+                         </li>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon06.png" alt=""><br>
+                                <p>환기시스템</p>
+                            </div>
+                             <ul>
+                                 <li>· 공기청정겸용 전열교환기</li>
+                                 <li>· 바이패스형 전열교환기</li>
+                                 <li>· 일반형 전열교환기</li>
+                                 <li>· 상치형 환기청정기</li>
+                                 <li>· 천정형 환기청정기</li>
+                                 <li>· 급배기유니트</li>
+                                 <li>· 욕실휀</li>
+                                 <li>· 주택용 환기 장치</li>
+                                 <li>· 스탠드형 환기청정기</li>
+                             </ul>
+                         </li>
+                         <li id="sbarbb"><img src="img/icon/icon07.png" alt="">청정시스템
+                             <ul>
+                                 <li>· 식물벽</li>
+                                 <li>· 흡연부스,제연기</li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </li>
+                 <li id="sbarc">
+                     <ul>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon08.png" alt=""><br>
+                                <p>인테리어 소품</p>
+                            </div>
+                             <ul>
+                                 <li>· 아로마디퓨저</li>
+                             </ul>
+                         </li>
+                         <li id="sbaraa">
+                            <div>
+                                <img src="img/icon/icon09.png" alt=""><br>
+                                <p>소모품/액세서리</p>
+                            </div>
+                             <ul>
+                                 <li>· 주방가전</li>
+                                 <li>· 공기청전가전</li>
+                                 <li>· 인테리어 소품</li>
+                             </ul>
+                         </li>
+                         <li id="sbarcc"><img src="img/icon/icon10.png" alt="">공기질관리 솔루션
+                             <ul>
+                                 <li>· 공동주택 공기질 관리</li>
+                                 <li>· 학교 공기질 관리</li>
+                                 <li>· 다중이용시설 공기질 관리</li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </div>
+<div id="info">
+    <div id="infoa">
+        <div id="infoaa">
+            <div>
+                <ul>
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">홍보센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="close">
+            <img src="img/closeb.png" alt="">
+        </div>
+        <div id="infoab">
+            <div>
+                <div><a href="#" id="blue">하츠소개</a></div>
+                <div><a href="#" id="black">연혁</a></div>
+                <div><a href="#" id="black">CI소개</a></div>
+                <div><a href="#" id="blue">사업소개</a></div>
+                <div><a href="#" id="blue">투자정보</a></div>
+                <div><a href="#" id="black">주주/이사회/감사</a></div>
+                <div><a href="#" id="black">내부정보관리규정</a></div>
+                <div><a href="#" id="black">주가정보</a></div>
+                <div><a href="#" id="black">요약 재무정보</a></div>
+                <div><a href="#" id="black">RI자료실</a></div>
+                <div><a href="#" id="black">공시정보</a></div>
+                <div><a href="#" id="black">공고</a></div>
+                <div><a href="#" id="blue">윤리경영</a></div>
+                <div><a href="#" id="black">사이버신고센터</a></div>
+                <div><a href="#" id="blue">인재채용</a></div>
+                <div><a href="#" id="black">인재상</a></div>
+                <div><a href="#" id="black">직무소개</a></div>
+                <div><a href="#" id="black">채용 프로세스</a></div>
+                <div><a href="#" id="black">채용공고</a></div>
+                <div><a href="#" id="black">About Haatz</a></div>
+                <div><a href="#" id="normal">복지제도</a></div>
+                <div><a href="#" id="normal">하츠의 모든 것</a></div>
+                <div><a href="#" id="blue">오시는길</a></div>
+            </div>
+            <div>
+                <div><a href="#" id="blue">우리집에 맞는 하츠제품</a></div>
+                <div><a href="#" id="blue">주방가전</a></div>
+                <div><a href="#" id="black">후드</a></div>
+                <div><a href="#" id="normal">하츠 제품 바로알기</a></div>
+                <div><a href="#" id="normal">제품보기</a></div>
+                <div><a href="#" id="black">쿠킹존</a></div>
+                <div><a href="#" id="normal">하츠 제품 바로알기</a></div>
+                <div><a href="#" id="normal">제품보기</a></div>
+                <div><a href="#" id="black">쿡탑</a></div>
+                <div><a href="#" id="normal">하츠 제품 바로알기</a></div>
+                <div><a href="#" id="normal">제품보기</a></div>
+                <div><a href="#" id="black">빌트인기기</a></div>
+                <div><a href="#" id="blue">공기청정가전</a></div>
+                <div><a href="#" id="black">환기시스템</a></div>
+                <div><a href="#" id="normal">하츠 제품 바로알기</a></div>
+                <div><a href="#" id="normal">제품보기</a></div>
+                <div><a href="#" id="black">청정시스템</a></div>
+                <div><a href="#" id="normal">식물벽</a></div>
+                <div><a href="#" id="normal">흡연부스,제연기</a></div>
+                <div><a href="#" id="black">주방 공기청정기</a></div>
+                <div><a href="#" id="normal">하츠 제품 바로알기</a></div>
+                <div><a href="#" id="normal">주방 공기청정기</a></div>
+                <div><a href="#" id="blue">인테리어 소품</a></div>
+                <div><a href="#" id="black">아로마디퓨저</a></div>
+                <div><a href="#" id="blue">소모품/액세서리</a></div>
+                <div><a href="#" id="black">주방가전</a></div>
+                <div><a href="#" id="black">공기청정가전</a></div>
+                <div><a href="#" id="black">인테리어 소품</a></div>
+                <div><a href="#" id="blue">공기질관리 솔루션</a></div>
+                <div><a href="#" id="black">공동주택 공기질 관리</a></div>
+                <div><a href="#" id="black">학교 공기질 관리</a></div>
+                <div><a href="#" id="black">다중이용시설 공기질 관리</a></div>
+            </div>
+            <div>
+                <div><a href="#" id="blue">자주 묻는 질문</a></div>
+                <div><a href="#" id="blue">유지관리 가이드</a></div>
+                <div><a href="#" id="black">후드</a></div>
+                <div><a href="#" id="normal">후드 외관청소</a></div>
+                <div><a href="#" id="normal">필터관리/교체</a></div>
+                <div><a href="#" id="black">쿡탑</a></div>
+                <div><a href="#" id="normal">가스쿡탑</a></div>
+                <div><a href="#" id="normal">전기쿡탑</a></div>
+                <div><a href="#" id="black">환기시스템</a></div>
+                <div><a href="#" id="black">공기청정가전</a></div>
+                <div><a href="#" id="black">하츠앱</a></div>
+                <div><a href="#" id="black">기타</a></div>
+                <div><a href="#" id="normal">식기건조기</a></div>
+                <div><a href="#" id="normal">음실물탈수기</a></div>
+                <div><a href="#" id="blue">A/S신청 및 조회</a></div>
+                <div><a href="#" id="blue">사용설명서</a></div>
+                <div><a href="#" id="blue">서비스정책</a></div>
+                <div><a href="#" id="blue">구매처 안내</a></div>
+                <div><a href="#" id="blue">고객의 소리</a></div>
+            </div>
+            <div>
+                <div><a href="#" id="blue">공기질 연구소</a></div>
+                <div><a href="#" id="black">공기 이야기</a></div>
+                <div><a href="#" id="blue">하츠 NEWS</a></div>
+                <div><a href="#" id="blue">하츠 서포터즈</a></div>
+                <div><a href="#" id="blue">홍보영상</a></div>
+                <div><a href="#" id="blue">하츠 공식 SNS 채널</a></div>
+                <div><a href="#" id="blue">사회공헌</a></div>
+                <div><a href="#" id="black">주요사회공헌활동</a></div>
+                <div><a href="#" id="blue">공지사항</a></div>
+            </div>
+        </div>
+    </div>    
+</div>
+<div id="slidera">
+    <div id="sliderb">
+        <ul id="sliderc">
+            <li>
+                <img src="img/cooktopa.jpg" alt="">
+                <div class="slidertext">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">주방을 더욱 특별하게<br>하츠 전기쿡탑</h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.5s">스마트한 기능과 실용성을 모두 잡은 하츠 전기쿡탑<br>격이 다른 주방을 완성합니다</p>
+                    <button class="wow fadeInUp" data-wow-delay="0.8s">전기쿡탑 제품보기</button>
+                </div>
+            </li>
+            <li>
+                <img src="img/foresta.jpg" alt="">
+                <div class="slidertext">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">하츠로 숨쉬는<br>우리집</h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.5s">공기청정에서 환기까지<br>하츠가 공기를 바꿉니다</p>
+                    <button class="wow fadeInUp" data-wow-delay="0.8s">공기질관리 솔루션 보기</button>
+                </div>
+            </li>
+            <li>
+                <img src="img/livinga.jpg" alt="">
+                <div class="slidertext">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">우리집 공기질 안심케어<br>하츠 환기청정기</h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.5s">하츠 환기청정기로<br>집안 공기를 숨쉬게 하세요</p>
+                    <button class="wow fadeInUp" data-wow-delay="0.8s">환기청정기 제품보기</button>
+                </div>
+            </li>
+            <li>
+                <img src="img/kitchenhooda.jpg" alt="">
+                <div class="slidertext">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">하츠가 만드는<br>건강한 주방</h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.5s">국내 1위 후드전문 브랜드 하츠가 건강한 주방공기를<br>연구하고, 청정 주방의 기준이 됩니다</p>
+                    <button class="wow fadeInUp" data-wow-delay="0.8s">후드 제품보기</button>
+                </div>
+            </li>
+        </ul>
+        <div class="prevBtn"><i class="fas fa-chevron-left fa-4x"></i></div>
+        <div class="nextBtn"><i class="fas fa-chevron-right fa-4x"></i></div>
+        <div class="moreBtn"><i class="fas fa-angle-double-down fa-3x"></i></div>
+    </div>
+</div>
+<header>
+   <div class="headerbg"></div>
+    <div>
+        <div id="mainmenu">
+            <div class="menulogo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menub">
+                <ul>
+                    <li class="sbarbtn"><a href="#"><img src="img/squares.png" alt=""></a><p>제품소개</p></li>
+                    <li class="shopingbtn"><a href="#"><img src="img/cart.png" alt=""></a><p>쇼핑몰</p></li>
+                    <li class="searchbtn"><a href="#"><img src="img/search.png" alt=""></a></li>
+                    <li class="sitemap"><a href="#"><img src="img/sitemap.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menuwrap1">
+            <div class="menubox">
+                <ul>
+                    <li class="msection01"><a href="#">기업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">홍보센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menuwrap2">
+            <div>
+                <div class="msection1">
+                    <ul>
+                        <li><a href="#">하츠소개</a></li>
+                        <li><a href="#">사업소개</a></li>
+                        <li><a href="#">투자정보</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </div>
+                <div class="msection2">
+                    <ul>
+                        <li><a href="#">우리집에 맞는 하츠제품</a></li>
+                        <li><a href="#">청공조기 +</a></li>
+                        <li><a href="#">주방가전 +</a></li>
+                        <li><a href="#">공기청정가전 +</a></li>
+                        <li><a href="#">소모품/액세서리 +</a></li>
+                        <li><a href="#">공지길관리 솔루션 +</a></li>
+                    </ul>
+                </div>
+                <div class="msection3">
+                    <ul>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">유지관리 가이드</a></li>
+                        <li><a href="#">A/S 신청 및 조회</a></li>
+                        <li><a href="#">사용설명서</a></li>
+                        <li><a href="#">서비스정책</a></li>
+                        <li><a href="#">구매처 안내</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                    </ul>
+                </div>
+                <div class="msection4">
+                    <ul>
+                        <li><a href="#">공기질 연구소</a></li>
+                        <li><a href="#">하츠 NEWS</a></li>
+                        <li><a href="#">하츠 서포터즈</a></li>
+                        <li><a href="#">홍보영상</a></li>
+                        <li><a href="#">하츠 공식 SNS 채널</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="search" class="input-group">
+            <input id="searcha" class="form-control" placeholder="   제품명을 입력해 주세요." />
+            <span id="searchb" class="input-group-addon"><img src="img/search.png" width="20px"; height="20px" alt=""></span>
+        </div>
+    </div>
+</header>
+<section>
+<div>
+    <div id="bighood">
+        <a class="bighoodclose">
+            <img src="img/close.png" alt="">
+        </a>
+        <div id="boxboa" class="wow fadeInRight" data-wow-delay="0.1s">
+            <nav id="bighooda">   
+                <div id="iconicon"><img src="img/icon/icon101.png" alt=""></div>
+                <span>KITCHEN<br><span>ELECTRIC</span><br><p>주방가전</p></span>
+                <div id="iconlinea"><img src="img/icon/icon104.png" alt=""></div>
+                <div id="hoverboxa">
+                    <ul>
+                        <li><a href="#">후드<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">쿠킹존<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">쿡탑<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">빌트인기기<br><img src="img/icon/plus.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="boxbob" class="wow fadeInRight" data-wow-delay="0.3s">
+            <nav id="bighoodb">
+                <div id="iconicon"><img src="img/icon/icon102.png" alt=""></div>
+                <span>AIR CLEANER<br><span>ELECTRIC</span><br><p>공기청정가전</p></span>
+                <div id="iconlineb"><img src="img/icon/icon104.png" alt=""></div>
+                <div id="hoverboxb">
+                    <ul>
+                        <li><a href="#">환기시스템<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">청정시스템<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">환기청정기<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">주방 공기청정기<br><img src="img/icon/plus.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="boxboc" class="wow fadeInRight" data-wow-delay="0.5s">    
+            <nav id="bighoodc">
+                <div id="iconicon"><img src="img/icon/icon103.png" alt=""></div>
+                <span>AQM<br><span>SOLUTION</span><br><p>공기질 관리 솔루션</p></span>
+                <div id="iconlinec"><img src="img/icon/icon104.png" alt=""></div>
+                <div id="hoverboxc">
+                    <ul>
+                        <li><a href="#">공동주택 공기질<br>관리<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">학교 공기질<br>관리<br><img src="img/icon/plus.png" alt=""></a></li>
+                        <li><a href="#">다중이용시설<br>공기질 관리<br><img src="img/icon/plus.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="haatzknow">
+        <div class="haatzknowbox">
+        <div class="haatzknowboxa">
+            <div class="hksection1 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                <p>하츠제품<br><span>바로알기</span></p>
+            </div>
+            <div class="hksection wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                <div class="hkbg">
+                    <img src="img/aa/product_bg1.jpg" alt="">
+                </div>
+                <div class="hkbox">
+                    <div class="hkicon">
+                        <img src="img/aa/product_icon1.png" alt="">
+                    </div>
+                    <div class="hktext">
+                        <p>후드편</p>
+                        <p>주거환경에 예술적<br>감각을 더하다.</p>
+                    </div>
+                    <div class="hkplus">
+                        <img src="img/aa/product_link_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hksection wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <div class="hkbg">
+                    <img src="img/aa/product_bg2.jpg" alt="">
+                </div>
+                <div class="hkbox">
+                    <div class="hkicon">
+                        <img src="img/aa/product_icon2.png" alt="">
+                    </div>
+                    <div class="hktext">
+                        <p>가스쿡탑편</p>
+                        <p>어떤 주방에도 잘 어울리는<br>특별함이 있다</p>
+                    </div>
+                    <div class="hkplus">
+                        <img src="img/aa/product_link_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hksection wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                <div class="hkbg">
+                    <img src="img/aa/product_bg3.jpg" alt="">
+                </div>
+                <div class="hkbox">
+                    <div class="hkicon">
+                        <img src="img/aa/product_icon3.png" alt="">
+                    </div>
+                    <div class="hktext">
+                        <p>전기쿡탑편</p>
+                        <p>쾌적한 공간에서 요리하는<br>즐거움이 더해지다.</p>
+                    </div>
+                    <div class="hkplus">
+                        <img src="img/aa/product_link_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="haatzknowboxa">
+            <div class="hksection wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                <div class="hkbg">
+                    <img src="img/aa/product_bg4.jpg" alt="">
+                </div>
+                <div class="hkbox">
+                    <div class="hkicon">
+                        <img src="img/aa/product_icon4.png" alt="">
+                    </div>
+                    <div class="hktext">
+                        <p>쿠킹존편</p>
+                        <p>더 스마트 하게 더 편리하게<br>업그레이드 되다.</p>
+                    </div>
+                    <div class="hkplus">
+                        <img src="img/aa/product_link_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hksection wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                <div class="hkbg">
+                    <img src="img/aa/product_bg5.jpg" alt="">
+                </div>
+                <div class="hkbox">
+                    <div class="hkicon">
+                        <img src="img/aa/product_icon5.png" alt="">
+                    </div>
+                    <div class="hktext">
+                        <p>환기편</p>
+                        <p>인공지능으로 알아서<br>쾌적한 환경을 만들다</p>
+                    </div>
+                    <div class="hkplus">
+                        <img src="img/aa/product_link_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hksection wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.9s">
+                <div class="hkbg">
+                    <img src="img/aa/product_bg6.jpg" alt="">
+                </div>
+                <div class="hkbox">
+                    <div class="hkicon">
+                        <img src="img/aa/product_icon6.png" alt="">
+                    </div>
+                    <div class="hktext">
+                        <p>환기청정기편</p>
+                        <p>신개념 공기질관리 시스템으로<br>청정한 공기를 만나다.</p>
+                    </div>
+                    <div class="hkplus">
+                        <img src="img/aa/product_link_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hksection wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="1s">
+                <div class="hkbg">
+                    <img src="img/aa/product_bg7.jpg" alt="">
+                </div>
+                <div class="hkbox">
+                    <div class="hkicon">
+                        <img src="img/aa/product_icon7.png" alt="">
+                    </div>
+                    <div class="hktext">
+                        <p>주방 공기청정기편</p>
+                        <p>첨단 기술이 주방을<br>더욱 쾌적하게 변화시키다.</p>
+                    </div>
+                    <div class="hkplus">
+                        <img src="img/aa/product_link_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>
+        <div class="haatzknowclose">
+            <img src="img/close.png" alt="">
+        </div>
+    </div>
+        <div id="hovera">
+            <div id="sectiona">
+                <a id="hoverimga">
+                    <img src="img/haatz01L.png" alt="">
+                </a>
+                <div class="boxx">
+                    <div id="sectionc">
+                        <p>하츠의 다양한<br><span>제품 라인업</span></p>
+                        <img src="img/leftarrow.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+            <div id="sectionaa">
+                <a href="#" id="hoverimgb" class="delete">
+                    <img src="img/haatz02.png" alt="">
+                </a>
+                <div class="boxx delete">
+                    <div id="sectiond">
+                        <p>하츠제품<br><span>바로알기</span></p>
+                        <img src="img/rightarrow.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+            <div id="sectionaaa">
+                <a href="#" id="hoverimgc">
+                    <img src="img/haatz03.png" alt="">
+                </a>
+                <div class="boxx">
+                    <div id="sectione">
+                        <p>우리집에 맞는<br><span>하츠제품</span></p>
+                        <img src="img/leftarroww.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+<div id="mdbox">
+     <div id="mdboxa">
+         <img src="img/support.jpg" alt="" class="wow bounceInRight">
+         <div id="mdboxb">
+             <div class="support">
+                 <h6 class="wow bounceInUp">SUPPORT</h6>
+                 <p class="wow bounceInUp" data-wow-delay="0.1s"><span>무엇을</span> 도와드릴까요?</p>
+             </div>
+             <ul id="mdrowbox">
+                 <li class="wow bounceInUp">
+                     <a href="#">
+                         <h2>A/S신청 및 조회</h2>
+                         <p>불편하신 부분을 빠르게<br>처리해 드리겠습니다.</p>
+                         <div>
+                             <img src="img/tools.png" alt="">
+                         </div>
+                     </a>
+                 </li>
+                 <li class="wow bounceInUp" data-wow-delay="0.1s">
+                     <a href="#">
+                         <h2>자주묻는 질문</h2>
+                         <p>궁금하신 내용을 빠르게<br>찾아 보실 수 있습니다.</p>
+                         <div>
+                             <img src="img/screen.png" alt="">
+                         </div>
+                     </a>
+                 </li>
+                 <li class="wow bounceInUp" data-wow-delay="0.2s">
+                     <a href="#">
+                         <h2>유지관리 가이드</h2>
+                         <p>유지관리를 쉽고 편리하게<br>도와드립니다.</p>
+                         <div>
+                             <img src="img/dvd.png" alt="">
+                         </div>
+                     </a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+</div>
+<div id="agagag">
+     <div>
+         <div class="news wow fadeInUpBig">
+             <h6>NEWS</h6>
+             <p><span>하츠의 새소식</span>을 전해드립니다.</p>
+         </div>
+         <div id="newsmm">
+             <div id="newsss">
+                 <div id="newsa">
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsa.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(주)하츠,봄철 황사 미세먼지 완벽 대비책 소개</h2>
+                                 <h4>"의 . 식 . 주 이것만 지키면 봄철 황사와 미세먼지 걱정에서 해방!" (주)하츠,봄철 황사.</h4>
+                                 <h4>2019.02.28<span><i class="fas fa-eye"></i> 237</span></h4>                     
+                             </div>
+                         </a>
+                     </div>
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsb.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(주)하츠, 실내 공기오염물질 해결 통한 공기질 관리 노하우 소개</h2>
+                                 <h4>"이산화탄소 . 이산화질소 . 미세먼지 없이 쾌적한 우리 집 실내 공기!" (주)하츠, 실내 공</h4>
+                                 <h4>2019.02.26<span><i class="fas fa-eye"></i> 97</span></h4>                     
+                             </div>
+                         </a>
+                     </div>
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsc.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(주)하츠, 가정 학교서 실천하는'새학기 증후군 대처법'소개</h2>
+                                 <h4>"아이들뿐만 아니라 학부모도 괴롭다! 새 학기 증후군 대처법?" (주)하츠,가정 . 학교서</h4>
+                                 <h4>2019.02.14<span><i class="fas fa-eye"></i> 165</span></h4>                    
+                             </div>
+                         </a>
+                     </div>
+                 </div>
+                 <div id="newsa">
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsd.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(주)하츠, 산소 부족 걱정 없는 겨울철 실내 공기질 관리 수칙 공개</h2>
+                                 <h4>"흔히 겪는 ;산소 부족'...우리의 신체 . 정신 건강을 위협한다!" (주)하츠,산소 부족 걱정</h4>
+                                 <h4>2019.02.08<span><i class="fas fa-eye"></i> 166</span></h4>                     
+                             </div>
+                         </a>
+                     </div>
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newse.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(주)하츠, 즐거운 설 명절 위한 '건강 관리 팁' 공개</h2>
+                                 <h4>"산소부족 . 공기오염 걱정 없이 쾌적한 실내에서 건강하게 명절 보내려면?" (주)하츠</h4>
+                                 <h4>2019.01.31<span><i class="fas fa-eye"></i> 119</span></h4>                     
+                             </div>
+                         </a>
+                     </div>
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsf.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(하츠),실내 공기질 관리 아이템 '할인 프로모션' 실시</h2>
+                                 <h4>"하츠몰과 함께라면 새해에도 우리 집 실내 공기질 걱정은 끝!" (주)하츠, 실내 공기질 관</h4>
+                                 <h4>2019.01.22<span><i class="fas fa-eye"></i> 264</span></h4>                    
+                             </div>
+                         </a>
+                     </div>
+                 </div>
+                 <div id="newsa">
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsg.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(하츠), 주방 음식 냄새 말끔히 없애는 생활 노하우 공개</h2>
+                                 <h4>"스멀스멀 올라오는 음식 냄새... 악취 없는 산뜻한 주방 만드는 팁은?" (주)하츠, 주방 음</h4>
+                                 <h4>2019.01.17<span><i class="fas fa-eye"></i> 218</span></h4>                     
+                             </div>
+                         </a>
+                     </div>
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsh.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(주)하츠, '밀레니얼 가족' 위한 혁신 가전제품 주목</h2>
+                                 <h4>"우리 가족은 자기계발을 할 테니 너는 가사 일을 해다오!" (주)하츠, '밀레니얼 가족' 위한</h4>
+                                 <h4>2019.01.11<span><i class="fas fa-eye"></i> 152</span></h4>                     
+                             </div>
+                         </a>
+                     </div>
+                     <div id="newsi" class="aga wow fadeInUpBig" data-wow-delay="0.1s">
+                         <a href="#">
+                             <div class="imgbox">
+                                 <img src="img/newsi.jpg" alt="">
+                             </div>
+                             <div class="newsin">
+                                 <h3><i class="fas fa-square"></i><span>보도기사</span></h3>
+                                 <h2>(하츠), 나심비 충족시키는 DIY 아이템 제안</h2>
+                                 <h4>"가심비 넘어 나심비...나를 위해 만들고 내 손으로 만들면 만족도 UP 지난해 가성비와</h4>
+                                 <h4>2019.01.07<span><i class="fas fa-eye"></i> 192</span></h4>                    
+                             </div>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="pager wow fadeInUp">
+                <span class="bts" style="color:#2099d4">●</span>
+                <span class="bts">●</span>
+                <span class="bts">●</span>
+         </div>
+     </div>
+</div>
+<footer>
+     <a href="#none" class="topbtn"></a>
+     <div>
+        <div>
+            <div id="reserved">
+                <ul id="menual">
+                    <li><a href="#">개인정보처리방침<span>|</span></a></li>
+                    <li><a href="#">이용약관<span>|</span></a></li>
+                    <li><a href="#">사용설명서 다운로드<span>|</span></a></li>
+                    <li><a href="#">찾아오시는길<span>|</span></a></li>
+                    <li><a href="#"><img src="img/cart.png" alt="">하츠몰</a></li>
+                </ul>
+                <ul id="address">
+                    <li>본사 경기도 평택시 진위면 동부대로 202<span>|</span></li>
+                    <li>사업장주소 서울특별시 강남구 강남대로 456 한석타워 11/12층</li>
+                    <li>대표이사 김성식<span>|</span></li>
+                    <li>사업자등록번호 128-81-06145<span>|</span></li>
+                    <li>통신판매번호 2015-경기송탄133</li><br>
+                    <li>고객센터 1644-0806<br></li>
+                    <li>COPYRIGHT 2017 HAATZ INC.ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+            <div id="fsmenu">
+                <span id="fsmenua">Family site</span><i class="fas fa-angle-up fa-1x" id="upup"></i><i class="fas fa-angle-down fa-1x" id="dodo"></i>
+                <ul id="fsmenus">
+                    <li><a href="#">하츠몰</a></li>
+                    <li><a href="#">벽산</a></li>
+                    <li><a href="#">벽산페인트</a></li>
+                </ul>
+            </div>
+            <div id="sns">
+                <ul>
+                    <li><a href="#"><img src="img/foot_sns1.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/foot_sns2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/foot_sns3.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div id="reward">
+                <ul>
+                    <li><img src="img/ico_footerPrize1.png" alt=""></li>
+                    <li><img src="img/ico_footerPrize2.png" alt=""></li>
+                    <li><img src="img/ico_footerPrize3.png" alt=""></li>
+                    <li><img src="img/ico_footerPrize4.png" alt=""></li>
+                </ul>
+            </div>
+         </div>
+     </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

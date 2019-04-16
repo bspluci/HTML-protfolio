@@ -1,0 +1,143 @@
+.pagemenu{
+    width: 100%;
+    height: 80px;
+    background: #000;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 999;
+}
+
+.logo{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    background: url(../img/logo.png)no-repeat 50%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+.menubtn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/work_icon.png)no-repeat 50%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.subbox{
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+.subboxa{
+    width: 25%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.subboxa>img{
+    width: 100%;
+    display: block;
+}
+.redbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    background: rgba(228, 47, 47, 0.95);
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.textbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.textbox>p{
+    position: absolute;
+    left: 20px;
+    bottom: -60px;
+    color: #fff;
+    z-index: 999;
+    transition: all 0.4s;
+}
+.textbox>p>span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.textbox>p>em{
+    font-size: 16px;
+}
+
+.headermenu{
+    width: 40%;
+    position: relative;
+    color: #fff;
+    margin: 0 auto;
+}
+.headermenu:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.headermenu>li{
+    width: 20%;
+    float: left;
+    line-height: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+.headermenu>li>div{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    display: inline;
+}
+.headermenu>li>div.on, .headermenu>li>div:hover{
+    color: #d71921;
+}
+.headermenu>li>div.on:after, .headermenu>li>div:hover:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #d71921;
+    display: block;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 1024px){
+    .headermenu{
+        width: 60%;
+    }
+    .subboxa{
+        width: 33.3%;
+    }
+}
+@media (max-width: 768px){
+    .subboxa{
+        width: 50%;
+    }   
+}
+@media (max-width: 640px){
+    .subbox{
+        margin-top: 140px;
+    }
+    .subboxa{
+        width: 100%;
+    }
+    .headermenu{
+        width: 100%;
+        margin-top: 60px;
+        background: #000;
+    }
+}

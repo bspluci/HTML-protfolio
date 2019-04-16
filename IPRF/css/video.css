@@ -1,0 +1,317 @@
+#wrap {background: url(../img/video.jpg); background-size: cover; position: absolute; height: 100%; width: 100%; z-index: 0;}
+#menumo {position: fixed; width: 100%; z-index: 2; line-height: 70px; border-bottom: 2px solid #cdcdcd;}
+#mainmenu {width: 60%; height: 100%; margin: 0 auto;}
+#mainmenu:after {content: ""; display: block; clear: both;}
+#mainmenu>div {height: 70px; float: left;}
+#logo {position: absolute; width: 10%;}
+#logo>a>img {position: absolute; width:100%; top: 50%; transform: translateY(-50%)}
+#menua {width: 80%; margin-left: 17%}
+#menua>ul {width: 100%;}
+#menua>ul>li {width:20%; float: left; text-align: center;}
+#menua>ul>li>a {width: 100%; line-height: 70px; color: #cdcdcd; font-size: 15px;}
+
+ul.sec >li{float: left;position: relative;}
+ul.sec >li>a{display: block; text-align: center;}
+ul.sec .menu:after{
+			content: "";
+			position: absolute;
+		    border-bottom: 2px solid #d22029;
+		    width: 0;
+		    left:50%;		    
+		    transform:translateX(-50%);
+		    transition-duration: 0.4s;
+		    margin-top: -15px;
+		}
+ul.sec .menu:hover:after{width: 70%;}
+
+#mtxt{
+    position: absolute;
+    width: 80%;
+    top: 25%;
+    left: 5%;
+    z-index: 1;
+}
+#mtxt:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#logoo {
+    position: absolute;
+    width: 8%;
+    float: left;
+    top: -10px;
+}
+#maintext {
+    width: 80%;
+    margin-left: 9%;
+}
+#maintext>p {font-size: 2vw; line-height: 150%; color: #fff;}
+
+
+#video{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+#gallery{
+    position: absolute !important;
+    width: 50% !important;
+    margin-top: 12% !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+}
+
+/*타이머*/
+.container {
+    position: absolute;
+    max-width: 25%;
+    z-index: 1;
+    right: 0.5%;
+    top: 5px;
+}
+.container>h1{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.countdown-container .countdown-heading{
+    opacity: 1;
+}
+.countdown-container .countdown-value{
+    background: gray !important;
+    font-size: 1vw !important;
+
+}
+.semi{
+    color: #fff;
+    font-size: 1vw;
+    line-height: 60px;
+}
+#bars{
+    display: none;
+}
+#mmenu{
+    display: none;
+}
+.mmtxt{
+        display: none;
+    }
+/*js갤러리*/
+.jsg-title .jsg-zoom{
+    display: none !important;
+}
+.jsg-title .jsg-btns{
+    font-size: 2.7rem !important;
+}
+.jsg-title .jsg-albums{
+    font-size: 1rem !important;
+}
+.jsg-title .jsg-name{
+    font-size: 1.5rem !important;
+}
+.jsg-images>img{
+    width: 60% !important;
+    top: 45% !important;
+}
+.jsg-nav{
+    font-size: 4rem !important;
+}
+.jsg-topbar {
+    height: 100px;
+}
+.jsg-title {
+    height: 100px;
+}
+.jsg-albums {
+    position: absolute;
+    top: 50px;
+}
+.js-gallery {
+    font-family: none !important;
+}
+.ug-button-play.ug-skin-default{
+    display: none;
+}
+#mtxt{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*미디어쿼리*/
+@media screen and (max-width:779px){
+    
+#logo{
+    display: none;
+}
+/*카운트다운    */
+.container {
+    position: absolute;
+    max-width: 60%;
+    z-index: 1;
+    left: 0.5%;
+    top: 80px;
+}
+.container>h1{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.countdown-container .countdown-heading{
+    opacity: 1;
+}
+.countdown-container .countdown-value{
+    background: gray !important;
+    font-size: 16px !important;
+
+}
+.semi{
+    color: #fff;
+    font-size: 3vw;
+    line-height: 60px;
+}
+/*사이드메뉴*/
+#bars
+    {display: block;
+        color: #fff; 
+        position: relative;
+        top: 10px;
+        left: 5px;
+        width: 30px;
+}
+ul.sec .menu:hover:after{
+    width: 0%;
+}
+.sec{
+    display: none;
+}
+/*모바일사이드메뉴    */
+    html,body {
+        height: 100%;
+    }
+    #mmenu{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.85);
+        left: -100%;
+    }
+    .fas{
+        position: absolute;
+        color: #fff;
+        left: 10px;
+        top: 8px;
+        cursor: pointer;
+    }
+    #mmenua{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 5%;
+    }
+    #mmenub{
+        position: absolute;
+        width: 100%; 
+        top: 20%
+    }
+    #mmenub>li{}
+    #mmenub>li>a{
+        color: #fff;
+        line-height: 60px;
+        font-size: 20px;
+    }
+    #mmenuc{
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+    }
+    #mmenuc:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    #mmenuc>li{
+        width: 100px;
+        float: left;
+        text-align: center;
+    }
+    #mmenuc>li>a{
+        color: #fff;
+        font-size: 15px;
+    }
+    #close{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        left: 90%;
+        top: 15px;        
+    }
+/*1페이지 텍스트    */
+.main_cmt:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#mtxt{
+    display: block;
+    position: absolute;
+    left: 57px;
+    width: 320px;
+    top: 11px;
+    z-index: 1;
+}
+#logoo {
+    position: absolute;
+    width: 12%;
+    top: 3.5px;    
+}
+#maintext {
+    margin-left: 42px;
+    width: 280px;
+}
+#maintext>p {
+    font-size: 16px;
+    color: #fff;
+    }
+#video{
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 200px;
+}
+.jsg-images>img{
+    width: 100% !important;
+    top: 40% !important;
+}
+.jsg-nav>div{
+    font-size: 25px;   
+}
+.jsg-nav .jsg-prev{
+    top: 40%;    
+}
+.jsg-nav .jsg-next{
+    top: 40%;        
+}
+.redcolor {color: #d22029 !important;}    
+}
+
+
+
+
+
+
+
+
+
+
+

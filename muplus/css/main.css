@@ -1,0 +1,948 @@
+.fullpage{
+    height: 100%;
+    position: relative;
+}
+.logo{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    background: url(../img/logo.png)no-repeat 50%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+.menubtn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/work_icon.png)no-repeat 50%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+}
+#section1{
+    position: relative;
+
+}
+#section1:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/section01_bg.png)no-repeat right 10% bottom 0;
+}
+.tablecell{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.inner{
+    width: 1120px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    overflow: hidden;
+}
+.inner>p{
+    font-size: 90px;
+    text-align: center;
+    line-height: 85px;
+}
+.inner>p>span:last-child{
+    font-weight: bold;
+}
+.mainvideo{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+
+
+
+
+#section2{
+    background: url(../img/section02_bg.jpg)no-repeat 50%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.pagebg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(120, 120, 120, 0);
+    transition: all 0.5s;
+}
+.openbg{
+    background: rgba(120, 120, 120, 0.35);
+}
+#section2 inner:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.infoarea{
+    width: 50%;
+    height: 325px;
+    float: left;
+}
+.infobox{
+    position: absolute;
+}
+.infobox>h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+}
+.infobox>p{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.infobox>p>span{
+    display: block;
+    line-height: 50px;
+}
+.infobox>p>span:last-child{
+    color: #d71921;
+}
+.infobox>span{
+    display: block;
+    font-size: 15px;
+    color: #666;
+    margin-top: 40px;
+}
+.logoarea{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.logobox{
+    width: 477px;
+    height: 215px;
+    display: inline-block;
+    background: url(../img/section02_logo.png)no-repeat 50%;
+    position: relative;
+}
+.logobox>a{
+    width: 34px;
+    height: 34px;
+    border: 1px solid #fff;
+    border-radius: 34px;
+    position: absolute;
+    animation: point 1s linear infinite;
+}
+.logobox>a:hover {
+    background: #fff;
+}
+.logobox>a:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -5px;
+}
+.logobox>a:hover:after{
+    background: #d71921;
+}
+.logopoint1{
+    top: 118px;
+    left: -18px;
+}
+.logopoint2{
+    top: 5px;
+    left: 228px;
+}
+.logopoint3{
+    bottom: 0;
+    right: 12px;
+}
+@keyframes point{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.2)}
+    100%{transform: scale(1)}
+}
+.st01, .st02, .st03{
+    opacity: 0;
+}
+
+
+
+
+#section03{
+    width: 100%;
+    height: 100%;
+}
+.innera{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.videosection{
+    width: 100%;
+    height: 100%;
+    display: table;
+    overflow: hidden;
+}
+.box01{
+    background: url(../img/bgsample01.png)no-repeat 50%;
+    background-size: cover;
+}
+.box02{
+    background: url(../img/bgsample02.png)no-repeat 50%;
+    background-size: cover;
+}
+.box03{
+    background: url(../img/bgsample03.png)no-repeat 50%;
+    background-size: cover;
+}
+.box04{
+    background: url(../img/bgsample04.png)no-repeat 50%;
+    background-size: cover;
+}
+.videosection>li{
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.videosection>li:hover .videobg{
+    display: block;
+}
+.videosection>li:hover .boxin>p{
+    display: block;
+}
+.videosection>li:hover .boxin>a{
+    font-size: 14px;
+    color: #fff;
+    width: auto;
+    padding: 0 40px 0 20px;
+    background: url(../img/link_icons.png)no-repeat right 10px top 50%;
+    transition: all 0.4s;
+}
+.videosection>li:hover .boxin>a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.videosection>li:hover .bgmask{
+    display: block;
+}
+.boxin{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.boxin>h3{
+    font-size: 37px;
+    color: #fff;
+    font-weight: 300;
+}
+.boxin>h4{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+.boxin>p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 30px;
+    line-height: 22px;
+    height: 140px;
+    position: relative;
+    display: none;
+}
+.boxin>p:after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+}
+.boxin>a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    margin-top: 50px;
+    font-size: 0;
+    background: url(../img/link_icons.png)no-repeat 50%;
+    color: #fff;
+}
+.videoarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.videobox{
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    z-index: 0;
+    display: block;
+}
+.videobg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -99;
+    display: none;
+}
+.bgmask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;    
+}
+#section4{
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+.innerb{
+    width: 1120px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1
+}
+.innerb01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.innerb01>span{
+    display: block;
+}
+.innerb img{
+    width: 100%;
+}
+.innerb>div>img:first-child{
+    display: block;
+}
+.innerb>div>img:last-child{
+    display: none;
+}
+.innerb02{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 32px;
+    color: #fff;
+}
+.innerb02>span{
+    display: block;
+}
+.innerb02>span>em{
+    color: #d71921;
+}
+.sec04video{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+#section4:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+#section5{
+    background: url(../img/section05_bg.png)no-repeat left 0 bottom 50%;
+}
+.clients{
+    width: 100%;
+    display: table;
+}
+.clientstext{
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.clientstext>span{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.clientstext>p{
+    font-size: 70px;
+    line-height: 70px;
+    margin-top: 30px;
+}
+.clientstext>p>span{
+    display: block;
+}
+.clientstext>p>span:last-child{
+    color: #d71921;
+}
+.clientslogo{
+    width: 50%;
+    display: table-cell;
+}
+.clientslogo:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clientslogo>div{
+    width: 33.1%;
+    height: 80px;
+    float: left;
+    border-right: 1px solid #efefef;
+    text-align: center;
+}
+.clientslogo>div>img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.clientslogo>div:nth-child(3), .clientslogo>div:nth-child(6), .clientslogo>div:nth-child(9), .clientslogo>div:nth-child(12), .clientslogo>div:nth-child(15){
+    border-right: none;
+}
+#section6{
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    z-index: 0;
+}
+.contactbox{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.contacttext{
+    width: 50%;
+    position: relative;
+    left: 0%;
+}
+.contacttexta{
+    color: #fff;
+    line-height: 60px;
+    font-size: 50px;    
+}
+.contacttexta>span{
+    display: block;
+}
+.contacttexta>span:first-child{
+    color: #d71921;
+}
+.contacttextb{
+    color: #fff;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.contacttextb>li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contacttextb>li>span{
+    width: 50px;
+    display: block;
+    float: left;
+}
+.contactsns{
+    position: relative;
+    color: #fff;
+    margin-top: 80px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.contactsns:after{
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: #5d5d5d;
+    top: 0;
+    left: 0;
+}
+.contactsns>li{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.contactsns>li>i{
+    color: #5d5d5d;
+}
+.reserved{
+    clear: both;
+    color: #5d5d5d;
+    padding-top: 20px;
+}
+.contactinput{
+    position: absolute;
+    top: 0;
+    left: -44%;
+    width: 40%;
+}
+.contactinput>h4{
+    color: #fff;
+    font-size: 22px;
+    width: 100%;
+}
+.inputbox{
+    margin-top: 40px;
+    width: 100%;
+}
+.inputbox:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.inputbox>li{
+    float: left;
+    width: 48.8%;
+}
+.inputbox>li:first-child{
+    padding-right: 10px;
+}
+.inputbox>li>input{
+    width: 100%;
+    height: 30px;
+    background: #000;
+    border: none;
+    border-bottom: 2px solid #5d5d5d;
+    color: #fff;
+}
+.messagebox{
+    margin-top: 60px;
+}
+.contactmessage{
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+    height: 120px;
+    background: #000;
+    border: none;
+    border-bottom: 2px solid #5d5d5d;
+    color: #fff;
+}
+.sendbtn{
+    margin-top: 50px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    width: 80px;
+    color: #d71921;
+    border: 1px solid #d71921;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.sendbtn:hover{
+    background: #2d2d2d;
+}
+.googlemaps{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+}
+.mapbtn{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: url(../img/contact_btn.png)no-repeat;
+    top: 50%;
+    left: 50%;  
+    margin: -60px 0 0 -60px;
+    cursor: pointer;
+    z-index: 99;
+    display: block;
+}
+.closbtn{
+    width: 0;
+    height: 120px;
+    position: absolute;
+    background: url(../img/map_btn.png)no-repeat;
+    top: 50%;
+    right: 0px; 
+    margin-top: -60px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+
+
+
+
+.sidebtn{
+    width: 60px;
+    height: 180px;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.sidebtn>ul{
+    width: 60px;
+    height: 150px;
+}
+.sidebtn>ul>li{
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+}
+.sidebtn>ul>li>a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    margin-top: -1px;
+}
+.sidebtn>ul>li>a>span{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #999;
+    left: 0;
+    transition: all 0.1s;
+}
+.sidebtn>ul>li:hover a>span{
+    width: 60px;
+    background: #d71921;
+}
+.btnenter>a>span{
+    width: 60px !important;
+    background: #d71921 !important;
+}
+
+
+
+@media screen and (max-width:1120px){
+    .inner{
+        width: 100%;
+    }
+    .innerb{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:784px){
+    .sidebtn{
+        display: none;
+    }    
+}
+
+
+
+@media screen and (max-width:768px){
+    .section{
+        height: auto;
+    }
+    .infoarea{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .infobox{
+        position: relative;
+        margin: 0 auto;
+    }
+    .logoarea{
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    .st01, .st02, .st03{
+        display: none;
+    }
+    .logopoint1, .logopoint2, .logopoint3{
+        display: none;
+    }
+
+    .videosection{
+        background: #000;
+    }
+    .videosection:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .videosection>li{
+        width: 50%;
+        height: auto;
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        padding: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width:640px){
+    .mapbtn{
+        display: none;
+    }
+    .closbtn{
+        opacity: 0;
+        display: none;
+    }
+    .mainvideo{
+        display: none;
+    }
+    #section1:after{
+        display: none;
+    }
+    #section1{
+        background: url(../img/section01_mobile_bg.jpg)no-repeat 50%;
+        background-size: cover;
+    }
+    #section1 .inner{
+        padding: 240px 0;
+    }
+    .inner>p{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    
+    
+    
+    
+    #section2 .inner{
+        padding: 50px 0;
+    }
+    .infobox>p{
+        font-size: 26px;
+        font-weight: normal;
+    }
+    .infobox>span{
+        font-size: 14px;
+        margin-top: 30px
+    }
+    .infobox>p:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .infobox>p>span{
+        display: inline;
+        line-height: 0px;
+    }
+    .logoarea{
+        float: none;
+        width: 100%;
+    }
+    .logobox{
+        width: 100%;
+        height: 200px;
+        background-size: 50%;
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+    .videosection>li{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .boxin>p{
+        display: block;
+    }
+    .videosection videoarea{
+        display: none;
+    }
+    
+    
+    
+    #section4{
+        background: url(../img/section04_mobile_bg.jpg)no-repeat 50%;
+    }
+    .innerb{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .videosection>li:hover .videobg{
+        display: none;
+    }
+    .innerb>div>img:first-child{
+        display: none;
+    }
+    .innerb>div>img:last-child{
+        display: block;
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+    }
+    .innerb01{
+        position: relative;
+        border-bottom: 0px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .innerb01>span{
+        display: inline;
+    }
+    .innerb02{
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .innerb02>span{
+        display: inline;
+    }
+    
+    
+    
+    #section5 .inner{
+        padding: 50px 0;
+    }
+    .clientstext{
+        width: 100%;
+        display: block;
+    }
+    .clientstext>span{
+        text-align: center;
+    }
+    .clientstext>p{
+        font-size: 30px;
+        line-height: 20px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .clientstext>p>span{
+        display: inline;
+    }
+    .clientslogo{
+        width: 100%;
+        display: block;
+        padding-top: 30px;
+    }
+    .clientslogo>div{
+        width: 50%;
+        border: none;
+    }
+    
+    
+    
+    
+    #section6{
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    #section6 .tablecell{
+        height: auto;
+    }
+    #section6 .inner{
+        padding: 50px 0;
+    }
+    .contactbox{
+        width: auto;
+        height: auto;
+        padding: 0 20px;
+    }
+    .contacttext{
+        position: inherit;
+        width: 100%;
+    }
+    .contacttexta{
+        font-size: 30px
+    }
+    .contacttexta>span{
+        display: inline;
+    }
+    .contacttextb{
+        margin-top: 30px;
+    }
+    .contactinput{
+        position: inherit;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        margin-top: 50px;
+    }
+    .map{
+        left: 0;
+        width: 100%;
+    }
+    .googlemaps{
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+
+

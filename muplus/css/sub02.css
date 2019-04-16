@@ -1,0 +1,161 @@
+#menu{
+    position: relative;
+}
+.pagemenu{
+    width: 100%;
+    height: 80px;
+    background: #000;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 999;
+}
+
+.logo{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    background: url(../img/logo.png)no-repeat 50%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+.menubtn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/work_icon.png)no-repeat 50%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.pagebutton{
+    width: 210px;
+    margin: 0 auto;
+}
+.pagebutton:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.pagebutton>li{
+    float: left;
+    width: 70px;
+    height: 80px;
+    text-align: center;
+}
+.left{
+    background: url(../img/sub00/project_left.png)no-repeat 50%;
+    display: block;
+    height: 80px;
+}
+.list{
+    background: url(../img/sub00/project_list.png)no-repeat 50%;
+    display: block;
+    height: 80px;
+}
+.right{
+    background: url(../img/sub00/project_right.png)no-repeat 50%;
+    display: block;
+    height: 80px;
+}
+#section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 80px;
+}
+.sectionbox{
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.header{
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-bottom: 150px;
+}
+.title{
+    font-size: 40px;
+    color: #444444;
+}
+.days{
+    font-size: 18px;
+    color: #666666;
+    margin-top: 15px;
+}
+.contents{
+    font-size: 18px;
+    color: #666666;
+}
+.moniter{
+    text-align: center;
+}
+.moniter>img{
+    max-width: 100%;
+    display: inline-block;
+}
+.mtext{
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 30px 0;
+}
+.secimg1{
+    text-align: center;
+}
+.secimg1>img{
+    margin-bottom: 50px;
+    max-width: 100%;
+    display: inline-block;
+}
+.secimg2{
+    text-align: center;
+}
+.secimg2>img{
+    margin-bottom: 50px;
+    max-width: 100%;
+    display: inline-block;
+}
+.secimgbox{
+    text-align: center;
+    margin-bottom: 50px;    
+}
+.secimg3{
+    max-width: 100%;
+    display: inline-block;
+    padding-right: 50px;
+}
+.secimg4{
+    max-width: 100%;
+    display: inline-block;  
+}
+
+
+
+
+@media (max-width: 1000px){
+    .sectionbox{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .secimg3{
+        padding: 0;
+    }
+}
+@media (max-width: 640px){
+    .pagemenu{
+        height: 130px;
+    }
+    .pagebutton{
+        margin-top: 50px;
+        background: #000;
+    }
+}
+
