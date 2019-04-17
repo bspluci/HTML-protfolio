@@ -34,19 +34,19 @@ $(document).ready(function(){
     $(".allbtn").click(function(){
         $(".subboxa").show();
     });
-    $(".websitebtn").click(function(){
+    $(".websitebtn>div").click(function(){
         $(".subboxa").hide();
         $(".websit").show();    
     });
-    $(".mobilebtn").click(function(){
+    $(".mobilebtn>div").click(function(){
         $(".subboxa").hide();
         $(".mobile").show();    
     });
-    $(".promotionbtn").click(function(){
+    $(".promotionbtn>div").click(function(){
         $(".subboxa").hide();
         $(".promotion").show();    
     });
-    $(".etcbtn").click(function(){
+    $(".etcbtn>div").click(function(){
         $(".subboxa").hide();
         $(".etc").show();    
     });

@@ -345,7 +345,13 @@ ul.sec .menu:hover:after{width: 0%;}
 }
 .redcolor {
     color: #d22029 !important;
-    }    
+    }
+    #wrap{
+        height: 750px;
+    }
+    #menumo{
+        position: relative;
+    }
 }
  
 
