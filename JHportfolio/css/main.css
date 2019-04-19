@@ -1,187 +1,159 @@
 #header{
     width: 100%;
-    height: 89%;
+    height: 60%;
     position: relative;
 }
-#menu{
+.menu{
     width: 100%;
     height: 60px;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
+    background: #4f4f4f;
 }
-#menu:after{
+.menu:after{
     content: "";
     display: block;
     clear: both;
 }
-#menu>div{
+.menu>div{
     float: left;
     line-height: 60px;
     font-size: 1.2rem;
     font-weight: bold;
 }
-#logo{
+.logo{
     position: absolute;
     left: 1%;
     cursor: pointer;
     color: #fff;
 }
-#menuright{
+.menuright{
     position: absolute;
     float: right;
     right: 1%;
     color: #fff;
 }
-#menuright>div{
+.menuright>div{
     float: left;
     margin-right: 20px;
     cursor: pointer;
 }
-#slide{
+.bannerimg{
+    background: url(../img/mainmoon.jpg)no-repeat 50%;
+    background-size: cover;
     width: 100%;
+    height: 1000px;
+}
+.bannerimg>p{
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    left: 30%;
+    top: 30%;
+    line-height: 100px;
+    display: block;
+}
+.fullbody{
+    
+}
+.fullbodybox{
+    padding: 300px 0 140px;
+}
+.fullbodyboxtext{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.profileimg{
+    background: url(../img/profilebannera.jpg)no-repeat 50%;
+    background-size: auto;
+    width: 100%;
+    height: 500px;
+}
+.introbox{
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+.centerline{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 2px;
     height: 100%;
+    background: #ccc;
     overflow: hidden;
 }
-#slider{
-    width: 100%;
-    height: 100%;
+.centerline>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 2px;
+    background: #4ea4f4;
+}
+.introsection{
     position: relative;
-}
-#sliderimg{
     width: 100%;
-    height: 100%;
+    overflow: hidden;
 }
-#sliderimg>div{
-    width: 100%;
-    position: absolute;
-}
-#sliderimg>div>img{
-    width: 100%;
-    display: block;
-    vertical-align: middle;
-}
-#slidertext{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-#slidertext>h1{
-    font-size: 3rem;
-}
-#slidertext>h2{
-    font-size: 2rem;
-}
-#sliderbutton{
-    width: 100%;
-    position: absolute;
-    font-size: 3rem;
-    top: 47%;
-}
-#sliderbutton>div{
-    position: absolute;
-    color: #fff;
-    cursor: pointer;
-}
-#left{
-    left: 1%;
-}
-#right{
-    right: 1%
-}
-#sliderpage{
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#sliderpage>div{
-    float: left;
-    font-size: 3rem;
-    margin-right: 20px;
-    color: #fff;
-    cursor: pointer;
-}
-#profile{
-    width: 100%;
-}
-#profilea{
-    width: 70%;
+.introimg{
     position: relative;
-    margin: 0 auto;
-    padding-bottom: 5%;
-    padding-bottom: 5%;
-    padding-bottom: 5%;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 980px;
 }
-#profilea>h1{
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 50px;
+.img01box>.dot, .img03box>.dot, .img05box>.dot{
+    background: url(../img/year_icon.png)no-repeat 50%;
+    position: absolute;
+    width: 66px;
+    height: 15px;
+    right: 483px;
+    top: 70px;
+    transform-origin: 50% 50%;
+    transform: rotateY(180deg);
 }
-#profilea:after{
+.img02box>.dot, .img04box>.dot, .img06box>.dot{
+    position: absolute;
+    width: 66px;
+    height: 15px;
+    background: url(../img/year_icon.png)no-repeat 50%;
+    transform-origin: 50% 50%;
+    _transform: rotateY(180deg);
+    right: 432px;
+    top: 70px
+}
+.img00:after{
     content: "";
+    display: block;
     clear: both;
-    display: block;
 }
-#profileimg{
-    width: 20%;
+.img01>img, .img03>img, .img05>img{
+    width: 30%;
     float: left;
-    margin-top: 5%;
-    margin-left: 30% 
+    vertical-align: top;
+    transition: all 0.3s
 }
-#profileimg>div>img{
+.box{
     width: 100%;
-    display: block;
+    height: 800px;
 }
-#profiletext{
-    width: 10%;
-    float: left;
-    line-height: 50px;
-    margin-top: 8%;
-    margin-left: 12%;
-    font-size: 1rem;
-    font-weight: bold;
-}
-#skill{
-    width: 100%;
-    height: 70%;
-    background-color: #cacaca;
-}
-#skilla{
-    width: 70%;
-    height: 100%;
+.introimg02{
     position: relative;
-    margin: 0 auto;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 980px;
 }
-#skilla>h1{
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 50px;
+.img02>img, .img04>img, .img06>img{
+    width: 30%;
+    float: right;
+    vertical-align: top;
+    transition: all 0.3s
 }
-#skillabox{
-    width: 100%;
-    height: 43%;
-    background-color: #cacaca;
-}
-#skillabox:after{
-    content: "";
-    clear: both;
-    display: block;
-}
-#skillabox>div{
-    width: 20%;
-    height: 70%;
-    float: left;
-    margin-top: 3.5%;
-    margin-left: 10%;
-    background-color: #000;
-}
-#skillabox>div>h1{
-    text-align: center;
-    padding-top: 20px;
-    color: #fff;
+.on{
+    background: url(../img/year_icon_on.png)no-repeat 50%;
 }
 
 
