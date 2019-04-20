@@ -1,79 +1,367 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 #header{
     width: 100%;
-    height: 60%;
+    min-width: 1180px;
     position: relative;
+    overflow: hidden;
+}
+.menuon{
+    border-bottom: 2px solid #159adb;
 }
 .menu{
     width: 100%;
-    height: 60px;
     position: fixed;
     z-index: 9999;
-    background: #4f4f4f;
-}
-.menu:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-.menu>div{
-    float: left;
-    line-height: 60px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    text-align: center;
 }
 .logo{
-    position: absolute;
-    left: 1%;
-    cursor: pointer;
-    color: #fff;
+    padding-top: 30px;
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: bold;
+}
+.menubg{
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .menuright{
-    position: absolute;
-    float: right;
-    right: 1%;
+    padding: 20px 0;
     color: #fff;
 }
 .menuright>div{
-    float: left;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
+}
+.menuright>div:last-child{
+    margin-right: 0;
+    color: #
 }
 .bannerimg{
     background: url(../img/mainmoon.jpg)no-repeat 50%;
     background-size: cover;
+    height: 900px;
     width: 100%;
-    height: 1000px;
+    _min-width: 1180px;
+    overflow: hidden;
 }
-.bannerimg>p{
-    font-size: 40px;
-    color: #fff;
+.dropstar01{
+    position: absolute;
+    left: 600px;
+    top: 100px;
+}
+.dropstar01>img{
+    opacity: 0;
+    width: 40%;
+    animation: dropstar01 10s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes dropstar01{
+    0%{
+        transform: translateX(0px) translateY(0px);
+        opacity: 0
+    }
+    10%{
+        transform: translateX(-1100px) translateY(1200px);
+        opacity: 1
+    }
+    100%{
+        transform: translateX(-2200px) translateY(2400px);
+        opacity: 1
+    }
+}
+.dropstar02{
+    position: absolute;
+    left: 1400px;
+    top: 300px;
+}
+.dropstar02>img{
+    opacity: 0;
+    width: 10%;
+    animation: dropstar02 15s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes dropstar02{
+    0%{
+        transform: translateX(0px) translateY(0px);
+        opacity: 1
+    }
+    10%{
+        transform: translateX(-1400px) translateY(1400px);
+        opacity: 1
+    }
+    100%{
+        transform: translateX(-2800px) translateY(2800px);
+        opacity: 1
+    }
+}
+.dropstar03{
+    position: absolute;
+    left: 900px;
+    top: 0;
+}
+.dropstar03>img{
+    opacity: 0;
+    width: 10%;
+    animation: dropstar03 10s linear infinite;
+    animation-delay: 7s;
+}
+@keyframes dropstar03{
+    0%{
+        transform: translateX(0px) translateY(0px);
+        opacity: 1
+    }
+    10%{
+        transform: translateX(-1200px) translateY(1400px);
+        opacity: 1
+    }
+    100%{
+        transform: translateX(-2400px) translateY(2800px);
+        opacity: 1
+    }
+}
+.starbox{
     position: relative;
-    left: 30%;
-    top: 30%;
+}
+.star01{
+    left: 500px;
+    top: -100px;
+}
+.star02{
+    left: 1700px;
+    top: 0px;
+}
+.star03{
+    left: 200px;
+    top: 500px;
+}
+.star04{
+    left: 1500px;
+    top: 400px;
+}
+.star05{
+    left: 200px;
+    top: -50px;
+}
+.star06{
+    left: 800px;
+    top: 400px;
+}
+.star07{
+    left: 1300px;
+    top: 0px;
+}
+.star01 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star01 4s linear infinite;
+}
+.star01 .light{
+    position: absolute;
+    animation: star01 4s linear infinite;
+}
+@keyframes star01{
+    0%{
+        transform: scale(0.2);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(0.2);
+        opacity: 0.5;
+    }
+}
+.star02 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star02 7s linear infinite;
+}
+.star02 .light{
+    position: absolute;
+    animation: star02 7s linear infinite;
+}
+@keyframes star02{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.4;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0.4;
+    }
+}
+.star03 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star03 1s linear infinite;
+}
+.star03 .light{
+    position: absolute;
+    animation: star03 1s linear infinite;
+}
+@keyframes star03{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+}
+.star04 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star04 4s linear infinite;
+}
+.star04 .light{
+    position: absolute;
+    animation: star04 4s linear infinite;
+}
+@keyframes star04{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.2;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0.2;
+    }
+}
+.star05 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star05 3s linear infinite;
+}
+.star05 .light{
+    position: absolute;
+    animation: star05 3s linear infinite;
+}
+@keyframes star05{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.2;
+    }
+    50%{
+        transform: scale(0.5);
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0.2;
+    }
+}
+.star06 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star06 7s linear infinite;
+}
+.star06 .light{
+    position: absolute;
+    animation: star06 7s linear infinite;
+}
+@keyframes star06{
+    0%{
+        transform: scale(0.6);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.6);
+        opacity: 0.5;
+    }
+}
+.star07 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star07 5s linear infinite;
+}
+.star07 .light{
+    position: absolute;
+    animation: star07 5s linear infinite;
+}
+@keyframes star07{
+    0%{
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+    50%{
+        transform: scale(0.5);
+        opacity: 7;
+    }
+    100%{
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+}
+.bannerimgtext{
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bannerimgtext>p{
+    font-size: 40px;
+    color: #929292;
     line-height: 100px;
     display: block;
+    opacity: 0.5;
 }
 .fullbody{
-    
+    position: relative;
+    width: 100%;
+    min-width: 1180px;
 }
 .fullbodybox{
-    padding: 300px 0 140px;
+    background: #f7f7f7;
+    overflow: hidden;
 }
 .fullbodyboxtext{
+    padding-top: 50px;
     text-align: center;
     font-size: 40px;
-    padding-bottom: 50px;
 }
 .profileimg{
-    background: url(../img/profilebannera.jpg)no-repeat 50%;
+    background: url(../img/profilebanner.jpg)no-repeat 50%;
     background-size: auto;
-    width: 100%;
-    height: 500px;
+    height: 400px;
+    min-width: 1180px;
 }
 .introbox{
     position: relative;
     width: 980px;
     margin: 0 auto;
+    min-width: 980px;
 }
 .centerline{
     position: absolute;
@@ -83,6 +371,7 @@
     height: 100%;
     background: #ccc;
     overflow: hidden;
+    text-align: center;
 }
 .centerline>span{
     position: absolute;
@@ -90,19 +379,28 @@
     left: 0;
     display: inline-block;
     width: 2px;
-    background: #4ea4f4;
+    background: #159adb;
 }
 .introsection{
-    position: relative;
-    width: 100%;
     overflow: hidden;
 }
 .introimg{
     position: relative;
     top: 0;
     left: 0;
-    z-index: 90;
+    z-index: 99;
     width: 980px;
+}
+.introimg>div{
+    position: relative;
+    width: 980px;
+}
+
+.img01box>.dot.on, .img02box>.dot.on, .img03box>.dot.on, .img04box>.dot.on,.img05box>.dot.on{
+    background: url(../img/year_icon_on.png)no-repeat 50%;
+}
+.img06box>.dot.on {
+    background: url(../img/dotonlast.png)no-repeat 50%;
 }
 .img01box>.dot, .img03box>.dot, .img05box>.dot{
     background: url(../img/year_icon.png)no-repeat 50%;
@@ -110,52 +408,328 @@
     width: 66px;
     height: 15px;
     right: 483px;
-    top: 70px;
-    transform-origin: 50% 50%;
+    top: 100px;
     transform: rotateY(180deg);
 }
-.img02box>.dot, .img04box>.dot, .img06box>.dot{
+.img02box>.dot, .img04box>.dot{
     position: absolute;
     width: 66px;
     height: 15px;
     background: url(../img/year_icon.png)no-repeat 50%;
-    transform-origin: 50% 50%;
-    _transform: rotateY(180deg);
     right: 432px;
     top: 70px
 }
-.img00:after{
-    content: "";
-    display: block;
-    clear: both;
+.img06box>.dot{
+    position: absolute;
+    width: 66px;
+    height: 15px;
+    background: url(../img/dotlast.png)no-repeat 50%;
+    right: 458px;
+    top: 70px
+}
+.img01, .img03, .img05{
+    position: absolute;
+    top: 50px;
+    right: 550px;
+    width: 300px;
+    z-index: 9999;
+}
+.img02, .img04, .img06{
+    position: absolute;
+    top: 50px;
+    left: 550px;
+    width: 300px;
+    z-index: 999;
 }
 .img01>img, .img03>img, .img05>img{
-    width: 30%;
-    float: left;
-    vertical-align: top;
-    transition: all 0.3s
+    width: 300px;
+    box-shadow: 010px 10px 30px 0px #979797;
+    vertical-align: middle;
+}
+.img02>img, .img04>img, .img06>img{
+    width: 300px;
+    box-shadow: 010px 10px 30px 0px #979797;
+    vertical-align: middle;
+}
+.img04 p{
+    margin-left: -50px;
+}
+.imgimg>p{
+    opacity: 0;
+    color: #000;
+}
+.imgonon{
+    position: fixed;
+    top: 330px;
+    right: 53%;
+    animation: ani 0.3s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.texton{
+    position: fixed;
+    top: 610px;
+    right: 80%;
+    color: #000;
+    width: 445px;
+    font-size: 18px;
+    padding-top: 20px;
+    animation: texton 0.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes texton{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(490px);
+    }
+}
+.textonon{
+    position: fixed;
+    top: 610px;
+    left: 80%;
+    color: #000;
+    width: 445px;
+    font-size: 18px;
+    padding-top: 20px;
+    animation: textonon 0.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes textonon{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-300px);
+    }
+}
+.imgnono{
+    position: fixed;
+    top: 330px;
+    left: 53%;
+    animation: ani 0.3s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes ani{
+    0%{
+        width: 10%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+.imgon{
+    position: fixed;
+    top: 400px;
+    left: 600px
 }
 .box{
     width: 100%;
-    height: 800px;
+    height: 600px;
 }
-.introimg02{
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    width: 980px;
-}
-.img02>img, .img04>img, .img06>img{
-    width: 30%;
-    float: right;
-    vertical-align: top;
-    transition: all 0.3s
-}
-.on{
-    background: url(../img/year_icon_on.png)no-repeat 50%;
+.lastbox{
+    height: 502px;
 }
 
+.footerline{
+    width: 100%;
+    height: 482px;
+    background-color: #f7f7f7;
+    margin-top: -420px;
+    position: relative;
+    z-index: 99;
+    ;
+}
+.footerlineright{
+    position: absolute;
+    bottom: 482px;
+    left: 50.3%;
+    width: 49.7%;
+    height: 3px;
+    _background: #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+.footerlineright>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 3px;
+    width: 0px;
+    background: #159adb;
+    z-index: 999;
+}
+.footerlineright01{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 482px;
+    _background: #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+.footerlineright01>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 3px;
+    height: 0;
+    background: #159adb;
+}
+.footerlineright02{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    height: 3px;
+    _background: #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+.footerlineright02>span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 0;
+    height: 3px;
+    background: #159adb;
+}
+
+.footerlineleft{
+    position: absolute;
+    bottom: 482px;
+    right: 50.3%;
+    width: 49.7%;
+    height: 3px;
+    _background: #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+.footerlineleft>span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 3px;
+    width: 0;
+    background: #159adb;
+}
+.footerlineleft01{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 482px;
+    _background: #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+.footerlineleft01>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 3px;
+    height: 0px;
+    background: #159adb;
+}
+.footerlineleft02{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 50%;
+    height: 3px;
+    _background: #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+.footerlineleft02>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    height: 3px;
+    background: #159adb;
+}
+.skill{
+    position: absolute;
+    width: 100%;
+    height: 482px;
+    overflow: hidden;
+}
+.skillvideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+}
+.bgbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -99;
+}
+.skillbox{
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.skillhtml{
+    color: #fff;
+    width: 16.3%;
+    padding: 0 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.skillhtml>p:first-child{
+    font-size: 25px;
+}
+.skillhtml>h1{
+    padding: 30px 0;
+    line-height: 25px
+}
+.skillhtml>p:last-child{
+    font-size: 14px;
+    text-align: justify;
+}
+.footer{
+    background: #3f3f3f;
+    text-align: right;
+}
+.footer>p>span{
+    padding: 0 150px;
+    line-height: 50px;
+    color: #b4b4b4;
+}
+
+.topbtn{
+    position: fixed;
+    background: url(../img/top_btn.gif)no-repeat right;
+    width: 56px;
+    height: 56px;
+    bottom: 20px;
+    right: 20px;
+}
+.topbtnstop{
+    position: absolute;
+    top: -80px;
+}
 
 
 
