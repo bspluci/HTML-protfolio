@@ -388,7 +388,7 @@ body{
     position: relative;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 999;
     width: 980px;
 }
 .introimg>div{
@@ -432,7 +432,7 @@ body{
     top: 50px;
     right: 550px;
     width: 300px;
-    z-index: 9999;
+    z-index: 999;
 }
 .img02, .img04, .img06{
     position: absolute;
