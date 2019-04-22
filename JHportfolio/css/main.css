@@ -367,7 +367,7 @@ body{
     width: 980px;
     margin: 0 auto;
     min-width: 980px;
-    background: #f2f2f2;
+    background: url(../img/aa.jpg);
 }
 .centerline{
     position: absolute;
