@@ -41,9 +41,9 @@ body{
     color: #
 }
 .bannerimg{
-    background: url(../img/mainmoona.jpg)no-repeat 50%;
+    background: url(../img/bbb.jpg)no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 1000px;
     width: 100%;
     _min-width: 1180px;
     overflow: hidden;
@@ -75,7 +75,7 @@ body{
 }
 .dropstar02{
     position: absolute;
-    left: 1400px;
+    right: 200px;
     top: 300px;
 }
 .dropstar02>img{
@@ -90,8 +90,8 @@ body{
         opacity: 1
     }
     10%{
-        transform: translateX(-1400px) translateY(1400px);
-        opacity: 1
+        transform: translateX(-700px) translateY(700px);
+        opacity: 0
     }
     100%{
         transform: translateX(-2800px) translateY(2800px);
@@ -166,15 +166,15 @@ body{
 }
 @keyframes star01{
     0%{
-        transform: scale(0.2);
+        transform: scale(0.5);
         opacity: 0.5;
     }
     50%{
-        transform: scale(0.8);
-        opacity: 0.7;
+        transform: scale(1.5);
+        opacity: 1;
     }
     100%{
-        transform: scale(0.2);
+        transform: scale(0.5);
         opacity: 0.5;
     }
 }
@@ -195,7 +195,7 @@ body{
     }
     50%{
         transform: scale(1);
-        opacity: 0.8;
+        opacity: 1;
     }
     100%{
         transform: scale(0.5);
@@ -214,16 +214,16 @@ body{
 }
 @keyframes star03{
     0%{
-        transform: scale(0.5);
-        opacity: 0.3;
-    }
-    50%{
         transform: scale(0.7);
         opacity: 0.5;
     }
+    50%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
     100%{
-        transform: scale(0.5);
-        opacity: 0.3;
+        transform: scale(0.7);
+        opacity: 0.5;
     }
 }
 .star04 .star{
@@ -243,7 +243,7 @@ body{
     }
     50%{
         transform: scale(1);
-        opacity: 0.6;
+        opacity: 1;
     }
     100%{
         transform: scale(0.5);
@@ -262,15 +262,15 @@ body{
 }
 @keyframes star05{
     0%{
-        transform: scale(0.5);
+        transform: scale(1);
         opacity: 0.2;
     }
     50%{
-        transform: scale(0.5);
-        opacity: 0.6;
+        transform: scale(1.5);
+        opacity: 1;
     }
     100%{
-        transform: scale(0.5);
+        transform: scale(1);
         opacity: 0.2;
     }
 }
@@ -290,7 +290,7 @@ body{
         opacity: 0.5;
     }
     50%{
-        transform: scale(0.8);
+        transform: scale(1.3);
         opacity: 1;
     }
     100%{
@@ -310,16 +310,16 @@ body{
 }
 @keyframes star07{
     0%{
-        transform: scale(0.2);
-        opacity: 0.2;
+        transform: scale(1);
+        opacity: 0.8;
     }
     50%{
-        transform: scale(0.5);
-        opacity: 7;
+        transform: scale(1.2);
+        opacity: 1;
     }
     100%{
-        transform: scale(0.2);
-        opacity: 0.2;
+        transform: scale(1);
+        opacity: 0.8;
     }
 }
 .bannerimgtext{
@@ -357,11 +357,17 @@ body{
     height: 400px;
     min-width: 1180px;
 }
+.portfoliotext{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
 .introbox{
     position: relative;
     width: 980px;
     margin: 0 auto;
     min-width: 980px;
+    background: #f2f2f2;
 }
 .centerline{
     position: absolute;
@@ -443,12 +449,12 @@ body{
 }
 .img01>img, .img03>img, .img05>img{
     width: 300px;
-    box-shadow: 10px 10px 20px 0px #979797;
+/*    box-shadow: 10px 10px 20px 0px #000;*/
     vertical-align: middle;
 }
 .img02>img, .img04>img, .img06>img{
     width: 300px;
-    box-shadow: 10px 10px 20px 0px #979797;
+/*    box-shadow: 10px 10px 20px 0px #000;*/
     vertical-align: middle;
 }
 .img04 p{
@@ -468,9 +474,8 @@ body{
 }
 .texton{
     position: fixed;
-    top: 610px;
-    right: 64%;
-    color: #000;
+    top: 280px ;
+    left: 13.5%;
     width: 445px;
     font-size: 18px;
     padding-top: 20px;
@@ -489,12 +494,12 @@ body{
 }
 .textonon{
     position: fixed;
-    top: 610px;
-    left: 74%;
+    top: 280px;
+    right: 13.5%;
     color: #000;
-    width: 445px;
+    _width: 445px;
     font-size: 18px;
-    padding-top: 20px;
+    _padding-top: 20px;
     animation: textonon 0.5s linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -540,7 +545,7 @@ body{
     position: fixed;
     width: 100%;
     top: 350px;
-    left: -50px;
+    left: 18%;  
     z-index: 9999;
 }
 .imghoverbox01{
@@ -550,7 +555,6 @@ body{
     height: 45px;
     text-align: center;
     border-radius: 50%;
-    left: 400px
 }
 .imghovericon01{
     position: absolute;
@@ -600,10 +604,10 @@ body{
 }
 .imghoverbg01{
     position: fixed;
-    width: 570px;
-    height: 291px;
+    width: 30%;
+    height: 29.1%;
     top: 330px;
-    left: 324px;
+    left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -622,18 +626,11 @@ body{
 .img01:hover .imghoverbg01{
     opacity: 1;
 }
-
-
-
-
-
-
-
 .imghover02{
     position: fixed;
     width: 100%;
     top: 350px;
-    left: 630px;
+    left: 54%;
     z-index: 9999;
 }
 .imghoverbox02{
@@ -643,7 +640,6 @@ body{
     height: 45px;
     text-align: center;
     border-radius: 50%;
-    left: 400px
 }
 .imghovericon02{
     position: absolute;
@@ -693,10 +689,10 @@ body{
 }
 .imghoverbg02{
     position: fixed;
-    width: 570px;
-    height: 291px;
+    width: 30%;
+    height: 29.1%;
     top: 330px;
-    left: 1009px;
+    left: 53%;
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -719,7 +715,7 @@ body{
     position: fixed;
     width: 100%;
     top: 350px;
-    left: -50px;
+    left: 18%;
     z-index: 9999;
 }
 .imghoverbox03{
@@ -729,7 +725,6 @@ body{
     height: 45px;
     text-align: center;
     border-radius: 50%;
-    left: 400px
 }
 .imghovericon03{
     position: absolute;
@@ -779,10 +774,10 @@ body{
 }
 .imghoverbg03{
     position: fixed;
-    width: 570px;
-    height: 291px;
+    width: 30%;
+    height: 29.1%;
     top: 330px;
-    left: 324px;
+    left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -805,7 +800,7 @@ body{
     position: fixed;
     width: 100%;
     top: 350px;
-    left: 630px;
+    left: 54%;
     z-index: 9999;
 }
 .imghoverbox04{
@@ -815,7 +810,6 @@ body{
     height: 45px;
     text-align: center;
     border-radius: 50%;
-    left: 400px
 }
 .imghovericon04{
     position: absolute;
@@ -865,10 +859,10 @@ body{
 }
 .imghoverbg04{
     position: fixed;
-    width: 570px;
-    height: 291px;
-    top: 330px;
-    left: 1009px;
+    width: 30%;
+    height: 29.1%;
+    top: 329px;
+    left: 53%;
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -891,7 +885,7 @@ body{
     position: fixed;
     width: 100%;
     top: 350px;
-    left: -50px;
+    left: 18%;
     z-index: 9999;
 }
 .imghoverbox05{
@@ -901,7 +895,6 @@ body{
     height: 45px;
     text-align: center;
     border-radius: 50%;
-    left: 400px
 }
 .imghovericon05{
     position: absolute;
@@ -951,10 +944,10 @@ body{
 }
 .imghoverbg05{
     position: fixed;
-    width: 570px;
-    height: 291px;
+    width: 30%;
+    height: 29.1%;
     top: 330px;
-    left: 324px;
+    left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -975,28 +968,12 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .box{
     width: 100%;
     height: 600px;
 }
 .lastbox{
-    height: 502px;
+    height: 630px;
 }
 
 .footerline{
@@ -1127,7 +1104,7 @@ body{
 .skill{
     position: absolute;
     width: 100%;
-    height: 482px;
+    height: 50;
     overflow: hidden;
 }
 .skillvideo{
@@ -1193,5 +1170,12 @@ body{
     top: -80px;
 }
 
-
+/*
+.introboxbg{
+    width: 100%;
+    background: url(../img/wall.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*/
 
