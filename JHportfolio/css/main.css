@@ -1,6 +1,11 @@
 body{
     font-family: 'PT Sans', sans-serif;
 }
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
 #header{
     width: 100%;
     min-width: 1180px;
@@ -41,11 +46,11 @@ body{
     color: #
 }
 .bannerimg{
-    background: url(../img/bbb.jpg)no-repeat;
+    background: url(../img/night-690041_1920.jpg)no-repeat;
     background-size: cover;
     height: 1000px;
     width: 100%;
-    _min-width: 1180px;
+    min-width: 1180px;
     overflow: hidden;
 }
 .dropstar01{
@@ -153,6 +158,18 @@ body{
 .star07{
     left: 1300px;
     top: 0px;
+}
+.star08{
+    left: 80%;
+    top: 50%;
+}
+.star09{
+    left: 50%;
+    top: 300px;
+}
+.star10{
+    left: 90%;
+    top: 200px;
 }
 .star01 .star{
     position: absolute;
@@ -322,6 +339,78 @@ body{
         opacity: 0.8;
     }
 }
+.star08 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star08 3s linear infinite;
+}
+.star08 .light{
+    position: absolute;
+    animation: star08 3s linear infinite;
+}
+@keyframes star08{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+.star09 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star09 2s linear infinite;
+}
+.star09 .light{
+    position: absolute;
+    animation: star09 2s linear infinite;
+}
+@keyframes star09{
+    0%{
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+.star10 .star{
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    animation: star10 5s linear infinite;
+}
+.star10 .light{
+    position: absolute;
+    animation: star10 5s linear infinite;
+}
+@keyframes star10{
+    0%{
+        transform: scale(0.2);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.2);
+        opacity: 0.5;
+    }
+}
 .bannerimgtext{
     position: relative;
     width: 1180px;
@@ -332,10 +421,80 @@ body{
 }
 .bannerimgtext>p{
     font-size: 40px;
-    color: #929292;
+    color: #cdcdcd;
     line-height: 100px;
-    display: block;
-    opacity: 0.5;
+    padding: 0 50px
+}
+.bannerimgtext>p:first-child{
+    animation-iteration-count: 1;
+    animation: textslide 0.8s ease-in-out;
+    transition-delay: 0.5s;
+}
+.bannerimgtext>p:last-child{
+    animation-iteration-count: 1;
+    animation: textslide 0.8s ease-in-out;
+}
+@keyframes textslide{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.bannerimgtext:before{
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    background: #159adb;
+    top: -20px;
+    animation: textslide 0.8s ease-in-out;
+}
+.profilesection{
+    position: relative;
+    width: 100%;
+    min-width: 1180px;
+    background: #f7f7f7;
+    margin: 0 auto;
+    }
+.profileboxtext{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+.profileimg{
+    background: url(../img/3d.jpg)no-repeat 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.profilephoto{
+    position: absolute;
+    background: url(../img/people.png)no-repeat 50% 50%;
+    right: 400px;
+    width: 100%;
+    height: 100%;
+}
+.profiletext{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 60px;
+    left: 50%;
+    padding-left: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.portfoliotext{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
 }
 .fullbody{
     position: relative;
@@ -346,28 +505,13 @@ body{
     background: #f7f7f7;
     overflow: hidden;
 }
-.fullbodyboxtext{
-    padding-top: 50px;
-    text-align: center;
-    font-size: 40px;
-}
-.profileimg{
-    background: url(../img/profilebanner.jpg)no-repeat 50%;
-    background-size: auto;
-    height: 400px;
-    min-width: 1180px;
-}
-.portfoliotext{
-    padding-top: 50px;
-    text-align: center;
-    font-size: 40px;
-}
 .introbox{
     position: relative;
     width: 980px;
     margin: 0 auto;
     min-width: 980px;
     background: url(../img/aa.jpg);
+    background-attachment: fixed;
 }
 .centerline{
     position: absolute;
@@ -449,12 +593,12 @@ body{
 }
 .img01>img, .img03>img, .img05>img{
     width: 300px;
-/*    box-shadow: 10px 10px 20px 0px #000;*/
+    box-shadow: 10px 10px 20px 0px #4e4e4e;
     vertical-align: middle;
 }
 .img02>img, .img04>img, .img06>img{
     width: 300px;
-/*    box-shadow: 10px 10px 20px 0px #000;*/
+    box-shadow: 10px 10px 20px 0px #4e4e4e;
     vertical-align: middle;
 }
 .img04 p{
@@ -494,7 +638,7 @@ body{
 }
 .textonon{
     position: fixed;
-    top: 280px;
+    top: 295px;
     right: 13.5%;
     color: #000;
     _width: 445px;
@@ -564,8 +708,7 @@ body{
     height: 20px;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    transition-delay: 0.5s;
 }
 .imghoverbox01:before,
 .imghoverbox01:after{
@@ -605,7 +748,7 @@ body{
 .imghoverbg01{
     position: fixed;
     width: 30%;
-    height: 29.1%;
+    height: 29.7%;
     top: 330px;
     left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -622,6 +765,7 @@ body{
 }
 .img01:hover .imghovericon01{
     opacity: 0;
+    transition-delay: 0s;
 }
 .img01:hover .imghoverbg01{
     opacity: 1;
@@ -649,8 +793,7 @@ body{
     height: 20px;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    transition-delay: 0.5s;
 }
 .imghoverbox02:before,
 .imghoverbox02:after{
@@ -690,7 +833,7 @@ body{
 .imghoverbg02{
     position: fixed;
     width: 30%;
-    height: 29.1%;
+    height: 29.7%;
     top: 330px;
     left: 53%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -707,6 +850,7 @@ body{
 }
 .img02:hover .imghovericon02{
     opacity: 0;
+    transition-delay: 0s;
 }
 .img02:hover .imghoverbg02{
     opacity: 1;
@@ -734,8 +878,7 @@ body{
     height: 20px;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    transition-delay: 0.5s;
 }
 .imghoverbox03:before,
 .imghoverbox03:after{
@@ -775,7 +918,7 @@ body{
 .imghoverbg03{
     position: fixed;
     width: 30%;
-    height: 29.1%;
+    height: 29.7%;
     top: 330px;
     left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -792,6 +935,7 @@ body{
 }
 .img03:hover .imghovericon03{
     opacity: 0;
+    transition-delay: 0s;
 }
 .img03:hover .imghoverbg03{
     opacity: 1;
@@ -819,8 +963,7 @@ body{
     height: 20px;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    transition-delay: 0.5s;
 }
 .imghoverbox04:before,
 .imghoverbox04:after{
@@ -860,7 +1003,7 @@ body{
 .imghoverbg04{
     position: fixed;
     width: 30%;
-    height: 29.1%;
+    height: 29.7%;
     top: 329px;
     left: 53%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -877,6 +1020,7 @@ body{
 }
 .img04:hover .imghovericon04{
     opacity: 0;
+    transition-delay: 0s;
 }
 .img04:hover .imghoverbg04{
     opacity: 1;
@@ -904,8 +1048,7 @@ body{
     height: 20px;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    transition-delay: 0.5s;
 }
 .imghoverbox05:before,
 .imghoverbox05:after{
@@ -945,7 +1088,7 @@ body{
 .imghoverbg05{
     position: fixed;
     width: 30%;
-    height: 29.1%;
+    height: 29.7%;
     top: 330px;
     left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -962,6 +1105,7 @@ body{
 }
 .img05:hover .imghovericon05{
     opacity: 0;
+    transition-delay: 0s;
 }
 .img05:hover .imghoverbg05{
     opacity: 1;
@@ -973,12 +1117,12 @@ body{
     height: 600px;
 }
 .lastbox{
-    height: 630px;
+    height: 500px;
 }
 
 .footerline{
     width: 100%;
-    height: 482px;
+    height: 600px;
     background-color: #f7f7f7;
     margin-top: -420px;
     position: relative;
@@ -987,7 +1131,7 @@ body{
 }
 .footerlineright{
     position: absolute;
-    bottom: 482px;
+    bottom: 600px;
     left: 50.3%;
     width: 49.7%;
     height: 3px;
@@ -1010,7 +1154,7 @@ body{
     bottom: 0;
     right: 0;
     width: 3px;
-    height: 482px;
+    height: 600px;
     _background: #ccc;
     overflow: hidden;
     text-align: center;
@@ -1046,7 +1190,7 @@ body{
 
 .footerlineleft{
     position: absolute;
-    bottom: 482px;
+    bottom: 600px;
     right: 50.3%;
     width: 49.7%;
     height: 3px;
@@ -1068,7 +1212,7 @@ body{
     bottom: 0;
     left: 0;
     width: 3px;
-    height: 482px;
+    height: 600px;
     _background: #ccc;
     overflow: hidden;
     text-align: center;
@@ -1104,7 +1248,7 @@ body{
 .skill{
     position: absolute;
     width: 100%;
-    height: 50;
+    height: 100%;
     overflow: hidden;
 }
 .skillvideo{
@@ -1126,7 +1270,7 @@ body{
     position: relative;
     width: 1180px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 118px 0;
 }
 .skillhtml{
     color: #fff;
@@ -1140,16 +1284,18 @@ body{
     font-size: 25px;
 }
 .skillhtml>h1{
-    padding: 30px 0;
-    line-height: 25px
+    padding: 50px 0;
+    line-height: 25px;
+    height: 40px;
 }
 .skillhtml>p:last-child{
-    font-size: 14px;
+    font-size: 15px;
     text-align: justify;
 }
 .footer{
     background: #3f3f3f;
     text-align: right;
+    min-width: 1180px;
 }
 .footer>p>span{
     padding: 0 150px;
@@ -1170,12 +1316,4 @@ body{
     top: -80px;
 }
 
-/*
-.introboxbg{
-    width: 100%;
-    background: url(../img/wall.jpg)no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-*/
 

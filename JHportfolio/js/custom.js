@@ -181,10 +181,10 @@
             $("html, body").stop().animate({scrollTop:0}, 1000);    
         });
         $(".profilebtn").click(function(){
-            $("html, body").stop().animate({scrollTop:$(".fullbody").offset().top -70}, 1000);    
+            $("html, body").stop().animate({scrollTop:$(".profilesection").offset().top}, 1000);    
         });
         $(".portfoliobtn").click(function(){
-            $("html, body").stop().animate({scrollTop:$(".introbox").offset().top -67}, 1000);    
+            $("html, body").stop().animate({scrollTop:$(".fullbody").offset().top}, 1000);    
         });
         $(".skillbtn").click(function(){
             $("html, body").stop().animate({scrollTop:$(".footerline").offset().top}, 1000);    
@@ -199,22 +199,22 @@
         
         $(document).scroll(function(){
         var windowtop = $(window).scrollTop();
-        if(windowtop < $(".fullbody").offset().top){
+        if(windowtop < $(".profilesection").offset().top){
             $(".mainbtn").addClass("menuon");
         }    
-        if(windowtop >= $(".fullbody").offset().top -70){
+        if(windowtop >= $(".profilesection").offset().top -70){
             $(".menuright>div").removeClass("menuon");
             $(".profilebtn").addClass("menuon");
             }else{
                 $(".profilebtn").removeClass("menuon")            
         }
-        if(windowtop >= $(".introbox").offset().top -70){
+        if(windowtop >= $(".fullbody").offset().top -70){
             $(".menuright>div").removeClass("menuon");
             $(".portfoliobtn").addClass("menuon");
             }else{
                 $(".portfoliobtn").removeClass("menuon")            
         }
-        if(windowtop >= $(".footerline").offset().top -600){
+        if(windowtop >= $(".footerline").offset().top -800){
             $(".menuright>div").removeClass("menuon");
             $(".skillbtn").addClass("menuon");
             }else{
