@@ -260,7 +260,7 @@ body, html{
 .sectionctext>h1>span{
     display:inline-block;
 }
-div.sectionc:hover span{
+div.sectionctext:hover span{
     animation:ani09 0.6s;
 }
 @keyframes ani09{
@@ -369,6 +369,12 @@ span:nth-child(4n-3){
         opacity: 1;
     }
 }
+.sectioncimg01{
+    padding-bottom: 20px;
+}
+.sectioncimg02{
+    padding: 20px 0;
+}
 .sectioncimg01>img,
 .sectioncimg02>img{
     width: 100%;
@@ -410,6 +416,10 @@ span:nth-child(4n-3){
     display: inline-block;
     width: 23%;
     overflow: hidden;
+    margin-right: 20px
+}
+.sectioncshopimg01>a:last-child{
+    margin: 0;
 }
 .sectioncshopimg01>a>img,
 .sectioncshopimg02>a>img{
