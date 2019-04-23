@@ -138,9 +138,10 @@
             $(".footerlineleft02>span").stop().animate({"width":"100%"},400);
         }else {$(".footerlineleft02>span").stop().animate({"width":"0"},400)}
 //        스킬창 보이기    
-        $(".skill").hide();    
+            
         if(linetop + line.height() >= $(".dot06").offset().top){
-            $(".skill").fadeIn();}
+            $(".skill").animate({opacity:"1"},500);
+        }
             
 //        }else if(linetop + line.height() < $(".dot06").offset().top){
 //            $(".skill").show();

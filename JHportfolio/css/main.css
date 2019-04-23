@@ -56,7 +56,7 @@ body, html{
     position: absolute;
     opacity: 0.1;
     left: 20%;
-    animation: aurora01 200s linear infinite;
+    animation: aurora01 150s linear infinite;
 }
 @keyframes aurora01{
     0%{
@@ -71,7 +71,7 @@ body, html{
     opacity: 0.1;
     left: -50%;
     top: 10%;
-    animation: aurora02 400s linear infinite;
+    animation: aurora02 300s linear infinite;
 }
 @keyframes aurora02{
     0%{
@@ -706,13 +706,6 @@ body, html{
     top: 400px;
     left: 600px
 }
-
-
-
-
-
-
-
 .imghover01{
     position: fixed;
     width: 100%;
@@ -1138,32 +1131,27 @@ body, html{
 .img05:hover .imghoverbg05{
     opacity: 1;
 }
-
-
 .box{
     width: 100%;
     height: 600px;
 }
 .lastbox{
-    height: 500px;
+    width: 100%;
+    height: 82px;
 }
-
 .footerline{
     width: 100%;
-    height: 600px;
+    height: 48%;
     background-color: #f7f7f7;
-    margin-top: -420px;
     position: relative;
     z-index: 99;
-    ;
 }
 .footerlineright{
     position: absolute;
-    bottom: 600px;
-    left: 50.3%;
-    width: 49.7%;
+    top: 0;
+    left: 50.2%;
+    width: 49.8%;
     height: 3px;
-    _background: #ccc;
     overflow: hidden;
     text-align: center;
 }
@@ -1182,8 +1170,7 @@ body, html{
     bottom: 0;
     right: 0;
     width: 3px;
-    height: 600px;
-    _background: #ccc;
+    height: 100%;
     overflow: hidden;
     text-align: center;
 }
@@ -1202,7 +1189,6 @@ body, html{
     left: 50%;
     width: 50%;
     height: 3px;
-    _background: #ccc;
     overflow: hidden;
     text-align: center;
 }
@@ -1215,14 +1201,12 @@ body, html{
     height: 3px;
     background: #159adb;
 }
-
 .footerlineleft{
     position: absolute;
-    bottom: 600px;
-    right: 50.3%;
-    width: 49.7%;
+    top: 0;
+    right: 50.2%;
+    width: 49.8%;
     height: 3px;
-    _background: #ccc;
     overflow: hidden;
     text-align: center;
 }
@@ -1240,8 +1224,7 @@ body, html{
     bottom: 0;
     left: 0;
     width: 3px;
-    height: 600px;
-    _background: #ccc;
+    height: 100%;
     overflow: hidden;
     text-align: center;
 }
@@ -1260,7 +1243,6 @@ body, html{
     right: 50%;
     width: 50%;
     height: 3px;
-    _background: #ccc;
     overflow: hidden;
     text-align: center;
 }
@@ -1278,6 +1260,8 @@ body, html{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    min-width: 1180px;
+    opacity: 0;
 }
 .skillvideo{
     position: absolute;
@@ -1298,7 +1282,8 @@ body, html{
     position: relative;
     width: 1180px;
     margin: 0 auto;
-    padding: 118px 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .skillhtml{
     color: #fff;
@@ -1324,13 +1309,13 @@ body, html{
     background: #3f3f3f;
     text-align: right;
     min-width: 1180px;
+    font-size: 14px;
 }
 .footer>p>span{
     padding: 0 150px;
-    line-height: 50px;
+    line-height: 70px;
     color: #b4b4b4;
 }
-
 .topbtn{
     position: fixed;
     background: url(../img/topblacks.png)no-repeat right;
@@ -1343,5 +1328,3 @@ body, html{
     position: absolute;
     top: -80px;
 }
-
-
