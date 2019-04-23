@@ -1,0 +1,156 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>kakao friends</title>
+	
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script> new WOW().init(); </script>
+   
+    <style>
+    html, body {
+        position: relative;
+        width: 100%;        
+        height: 100%;
+    }
+    body {
+        background: #fff;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        background-color: #cdcdcd;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+        .swiper-pagination-bullet{
+            width: 15px;
+            height: 15px;
+        }        
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="menubox">
+        <div class="logobox">
+            <div class="logo"></div>
+        </div>
+        <div class="menulist">
+            <ul>
+                <li>캐릭터소개</li>
+                <li>스토리</li>
+                <li>카카오샵</li>
+                <li>매장안내</li>
+                <li>고객센터</li>
+            </ul>    
+        </div>           
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video class="skillvideo" preload="auto" autoplay="true" loop="loop" muted="muted" style="width:100%">
+                   <source src="img/slider01.mp4" type="video/mp4">
+                   <source src="img/slider01.webm" type="video/webm">
+               </video>
+            </div>
+            <div class="swiper-slide"><img src="img/slider02.jpg" alt="" style="width:100%"></div>
+            <div class="swiper-slide"><img src="img/slider03.jpg" alt="" style="width:100%"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div> 
+<div class="section">
+    <div class="sectiona">
+        <div class="sectionatext">
+            <p>매달 혜택이 업데이트<br>코나카드</p>
+            <p>365일 내내 즐기는 혜택부터 트렌드에 맞춘 이달의 혜택까지!<br>나에게 맞춘 예산과 디자인으로 즐겨보세요.</p>
+        </div>
+        <img src="img/01.png" alt="" class="sectionaimg01">
+        <img src="img/02.png" alt="" class="sectionaimg02">
+        <img src="img/03.png" alt="" class="sectionaimg03">
+        <img src="img/04.png" alt="" class="sectionaimg04">    
+    </div>
+    <div class="sectionb">
+        <div class="sectionbbox">
+            <div class="sectionbtext">
+                <p>하나, 코나카드만의<br>업데이트 혜택을 즐겨보세요</p>
+                <p>365일 내내 즐기는 혜택부터<br>트렌드에 따라 매달 업데이트되는 이달의 혜택까지!<br>연회비 없이 한 장의 코나카드로 모든 혜택을 즐겨보세요</p>    
+            </div>
+            <div class="sectionbimg01">
+                <img src="img/05.png" alt="">
+                <img src="img/07.gif" alt="">   
+            </div>
+            <div class="sectionbimg02">
+                <img src="img/06.png" alt="">
+            </div>
+        </div>            
+    </div>        
+</div> 
+ 
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
