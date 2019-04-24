@@ -49,7 +49,6 @@ $(document).ready(function(){
                 var topbtn = $(".topbtn");
 //                var topbtntop = topbtn.scrollTop();
                 var windowtop = $(window).scrollTop();
-                console.log("aa"+windowtop);
                 topbtn.hide();
                 if(windowtop > 0) {topbtn.show()};
                 if(windowtop > 2650) {topbtn.addClass("topbtnstop")}
