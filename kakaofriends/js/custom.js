@@ -1,6 +1,11 @@
 ﻿$(document).ready(function(){
     $(document).scroll(function(){
         var scrolltop = $(window).scrollTop();
+        if(scrolltop > 0){
+            $(".menubox").addClass("menushadow");
+        }else{
+            $(".menubox").removeClass("menushadow");
+        }
         if(scrolltop >= $(".sectiona").offset().top -800){
             $(".sectionaimg01").addClass("ani01");
             $(".sectionaimg02").addClass("ani02");
@@ -17,7 +22,7 @@
         }
         if(scrolltop >= $(".sectiond").offset().top -800){
             $(".sectiondcard>img").addClass("ani10");
-            $(".cardfriends").addClass("ani11");
+            $(".cardfriends01, .cardfriends02, .cardfriends03, .cardfriends04").addClass("ani11");
         }
     });
 //    $(".thumbimgbox>img").click(function(){

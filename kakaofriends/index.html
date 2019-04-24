@@ -8,96 +8,38 @@
 	
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Noto+Sans+KR|Sunflower:300" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
-<!--	<script> new WOW().init(); </script>-->
-   
-<style>
-    html, body {
-        position: relative;
-        width: 100%;        
-        height: 100%;
-    }
-    body {
-        background: #fff;
-        font-size: 14px;
-        color:#000;
-        margin: 0;
-        padding: 0;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        position: absolute;
-        background-color: #cdcdcd;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    .swiper-pagination-bullet{
-        width: 15px;
-        height: 15px;
-    }        
-</style>
+ 
+
 </head>
 <body>
 <div class="header">
     <div class="menubox">
         <div class="logobox">
-            <div class="logo"></div>
+            <a href="index.html" class="logo"></a>
         </div>
         <div class="menulist">
-            <ul>
-                <li>캐릭터소개</li>
-                <li>스토리</li>
-                <li>카카오샵</li>
-                <li>매장안내</li>
-                <li>고객센터</li>
-            </ul>    
+            <a href="character.html">캐릭터소개</a>
+            <a href="">스토리</a>
+            <a href="">카카오샵</a>
+            <a href="">매장안내</a>
+            <a href="">고객센터</a>   
         </div>           
     </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <video class="skillvideo" preload="auto" autoplay="true" loop="loop" muted="muted" style="width:100%">
-                   <source src="img/slider01.mp4" type="video/mp4">
-                   <source src="img/slider01.webm" type="video/webm">
-               </video>
-            </div>
-            <div class="swiper-slide"><img src="img/slider02.jpg" alt="" style="width:100%"></div>
-            <div class="swiper-slide"><img src="img/slider03.jpg" alt="" style="width:100%"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</div> 
+    <video class="skillvideo" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="img/slider01.mp4" type="video/mp4">
+        <source src="img/slider01.webm" type="video/webm">
+    </video>
+</div>
 <div class="section">
     <div class="sectiona">
         <div class="sectionatext">
-            <p>대한민국에서 가장 사랑받는 국민 이모티콘,<br>카카오프렌즈!</p>
-            <p>공감 포인트를 콕 찌르는 깨알같은 이모티콘으로, 매일 매일의 소통이 더욱 더 즐거워집니다..</p>
+            <p>대한민국에서 가장 사랑받는<br>국민 이모티콘 카카오프렌즈!</p>
+            <p>공감 포인트를 콕 찌르는 깨알같은 이모티콘으로, 매일 매일의 소통이 더욱 더 즐거워집니다.</p>
         </div>
         <img src="img/01.png" alt="" class="sectionaimg01">
         <img src="img/02.png" alt="" class="sectionaimg02">
@@ -229,37 +171,42 @@
             </div>
             <div class="cardbox">
                 <div class="sectiondcard ad01">
+                    <p class="name name01">RYAN</p>
                     <img src="img/10_03.gif" alt="" class="gifimg01">
                     <div class="cardimg01">
                         <img src="img/10_01.png" alt="">
-                        <img src="img/10_02.png" alt="" class="cardfriends">    
+                        <img src="img/10_02.png" alt="" class="cardfriends01">    
                     </div>
                 </div>
                 <div class="sectiondcard ad02">
+                    <p class="name name02">APEACH</p>
                     <img src="img/11_03.gif" alt="" class="gifimg02">
                     <div class="cardimg01">
                         <img src="img/11_01.png" alt="">
-                        <img src="img/11_02.png" alt="" class="cardfriends">    
+                        <img src="img/11_02.png" alt="" class="cardfriends02">    
                     </div>
                 </div>
                 <div class="sectiondcard ad03">
+                    <p class="name name03">MUZI</p>
                     <img src="img/12_03.gif" alt="" class="gifimg03">
                     <div class="cardimg01">
                         <img src="img/12_01.png" alt="">
-                        <img src="img/12_02.png" alt="" class="cardfriends">    
+                        <img src="img/12_02.png" alt="" class="cardfriends03">    
                     </div>
                 </div>
                 <div class="sectiondcard ad04">
+                    <p class="name name04">CON</p>
                     <img src="img/13_03.gif" alt="" class="gifimg04">
                     <div class="cardimg01">
                         <img src="img/13_01.png" alt="">
-                        <img src="img/13_02.png" alt="" class="cardfriends">    
+                        <img src="img/13_02.png" alt="" class="cardfriends04">    
                     </div>
                 </div>
+                <div class="thumbclick">
+                    <p>click</p>    
+                    <img src="img/14.gif" alt="">
+                </div>
                 <div class="thumbimgbox">
-                    <div>
-                        <img src="" alt="">
-                    </div>
                     <img class="thumbimg01" src="img/10.png" alt="">
                     <img class="thumbimg02" src="img/11.png" alt="">
                     <img class="thumbimg03" src="img/12.png" alt="">
@@ -268,38 +215,31 @@
             </div>
         </div>
     </div>        
-</div> 
- 
-  <script src="js/swiper.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+</div>
+<div class="footer">
+    <div class="footerbox">
+        <div class="footerbox01">
+            <a href="#none">개인정보처리방침</a>
+            <a href="#none">이용약관</a>
+            <a href="#none">제휴문의</a>
+        </div>
+        <div class="footerbox02">
+            <p>카카오아이엑스 사업자등록번호 : 354-86-00070</p>
+            <p>통신판매업 신고번호 : 2017-서울강남-02573</p>
+            <p>대표이사 : 권승조</p>
+            <p>주소 : 서울특별시 강남구 테헤란로 521 파르나스타워, 27층</p>
+            <p>고객센터 : 1577-6263 / 평일 10시 ~ 18시</p>
+            <p>store@kakaofriends.com</p>
+        </div>
+        <div class="footerbox03">
+            <div class="footerlogo"></div>
+            <div class="snsicon">
+                <a href="https://ko-kr.facebook.com/kakaofriends/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="https://www.youtube.com/channel/UCFnuC4E0kzpJF6vv1OJ7B3Q/videos" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+                <a href="https://www.instagram.com/kakaofriends_official/?hl=ko" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            </div>    
+        </div>        
+    </div>    
+</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

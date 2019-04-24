@@ -1,19 +1,22 @@
 body, html{
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold;
 }
 .header{
     width: 100%;
     height: 100%;
     min-width: 1180px;
     position: relative;
+    margin: 0 auto;
 }
 .menubox{
     width: 100%;
     height: 70px;
-    position: absolute;
+    position: fixed;
     z-index: 99;
-    background: #fff;
+    background: #fff; 
+}
+.menushadow{
+    box-shadow: 0px -15px 40px 0px;
 }
 .menubox:after{
     content: "";
@@ -25,10 +28,11 @@ body, html{
     line-height: 70px;
     padding-left: 70px;
     float: left;
+    cursor: pointer;
 }
 .logo{
     background: url(../img/logoimg.png)no-repeat;
-    background-position: 180 0;
+    background-position: 0 0;
     width: 181px;
     height: 18px;
     display: inline-block;
@@ -37,14 +41,15 @@ body, html{
     width: 100%;
     text-align: right;
 }
-.menulist>ul>li{
+.menulist>a{
+    color: #000;
     display: inline-block;
     padding: 0 30px;
     line-height: 70px;
     cursor: pointer;
     font-size: 18px;
 }
-.menulist>ul>li:last-child{
+.menulist>a:last-child{
     padding-right: 70px;
 }
 .section{
@@ -243,14 +248,15 @@ body, html{
     height: 100%;
     min-width: 1180px;
     margin: 0 auto;
+    padding: 50px 0;
     position: relative;
 }
 .sectionctext{
     text-align: center;
-    padding: 50px 0;
     font-size: 25px;
     width: 100%;
     height: 100%;
+    padding-bottom: 50px;
     display: inline-block;
 }
 .sectionctext>h1>span{
@@ -453,6 +459,7 @@ span:nth-child(4n-3){
     min-width: 1180px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 .sectiondheader{
     text-align: center;
@@ -487,7 +494,7 @@ span:nth-child(4n-3){
 .sectiondcard>img{
     transform: rotateY(180deg);
     position: relative;
-    left: -0px;
+    left: -50px;
 }
 .ani10{
     animation: ani10 3s linear;
@@ -512,7 +519,7 @@ span:nth-child(4n-3){
 .cardimg01{
     width: 300px;
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 50px;
 }
 .cardimg01>img:first-child{
@@ -523,10 +530,28 @@ span:nth-child(4n-3){
     position: relative;
     z-index: 10;
 }
-.cardfriends{
+.cardfriends01{
     width: 63px;
     position: relative;
-    top: -150px;
+    top: -170px;
+    left: 70px;
+}
+.cardfriends02{
+    width: 63px;
+    position: relative;
+    top: -160px;
+    left: 70px;
+}
+.cardfriends03{
+    width: 63px;
+    position: relative;
+    top: -180px;
+    left: 70px;
+}
+.cardfriends04{
+    width: 63px;
+    position: relative;
+    bottom: 150px;
     left: 70px;
 }
 .ani11{
@@ -554,15 +579,15 @@ span:nth-child(4n-3){
 @keyframes ani11{
     0%{ 
         opacity: 0;
-        transform: translateY(-70px);
+        transform: translateY(-30px);
     }
     75%{
         opacity: 0;
-        transform: translateY(-70px);
+        transform: translateY(-30px);
     }
     76%{
-        opacity: 1;
-        transform: translateY(-70px);
+        opacity: 0;
+        transform: translateY(-30px);
     }
     100{
         z-index: 11;
@@ -573,6 +598,7 @@ span:nth-child(4n-3){
 .thumbimgbox{
     width: 570px;
     height: 100%;
+    left: 100px;
     position: absolute;
     top: 30px;
 }
@@ -581,7 +607,129 @@ span:nth-child(4n-3){
     padding: 20px;
     cursor: pointer;
 }
-
-
-
-
+.thumbclick{
+    position: absolute;
+    top: 50px;
+}
+.thumbclick>img{
+    width: 150px;
+    transform: rotate(-30deg);
+}
+.thumbclick>p{
+    text-align: center;
+    animation: ani12 1s linear infinite;
+}
+@keyframes ani12{
+    0%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-5px)
+    }
+    10%{
+        transform: translateY(0);
+    }
+}
+.name{
+    font-size: 80px;
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+    right: 750px;
+    animation: ani13 0.8s ease-in-out;
+}
+.name:after{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 5px;
+    margin-bottom: 25px;
+}
+.name01{
+    color: #a3cbf0;    
+}
+.name01:after{
+    background: #a3cbf0;    
+}
+.name02{
+    color: #ffb3bf;    
+}
+.name02:after{
+    background: #ffb3bf;    
+}
+.name03{
+    color: #decb2f;    
+}
+.name03:after{
+    background: #decb2f;    
+}
+.name04{
+    color: #1b775b;    
+}
+.name04:after{
+    background: #1b775b;    
+}
+@keyframes ani13{
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background: #575757;
+    color: #e0e0e0;
+}
+.footerbox{
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.footerbox01{
+    width: 650px;
+    font-size: 16px;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+.footerbox01>a{
+    padding-right: 30px;
+    color: #fff;
+}
+.footerbox02{
+    padding-top: 50px;
+    width: 650px;
+    font-size: 13px;
+    color: #a2a2a2;
+    display: inline-block;
+    padding-left: 50px;
+}
+.footerbox02>p{
+    display: inline-block;
+    padding-right: 20px;
+    line-height: 30px;
+}
+.footerbox03{
+    display: inline-block;
+    position: absolute;
+    padding-top: 60px;
+    right: 50px;
+    line-height: 100px;
+    top: 0;
+}
+.footerlogo{
+    background: url(../img/logoimg.png)no-repeat;
+    background-position: 0 -40px;
+    width: 181px;
+    height: 18px;
+}
+.snsicon>a{
+    display: inline-block;
+    padding-right: 35px;
+    color: #cdcdcd
+}
