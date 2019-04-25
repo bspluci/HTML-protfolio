@@ -7,13 +7,15 @@ body, html{
     min-width: 1180px;
     position: relative;
     margin: 0 auto;
+    overflow: hidden;
 }
 .menubox{
     width: 100%;
     height: 70px;
     position: fixed;
     z-index: 99;
-    background: #fff; 
+    background: #fff;
+    overflow: hidden;
 }
 .menushadow{
     box-shadow: 0px -15px 40px 0px;
@@ -25,7 +27,7 @@ body, html{
 }
 .logobox{
     width: 15%;
-    line-height: 70px;
+    line-height: 78px;
     padding-left: 70px;
     float: left;
     cursor: pointer;
@@ -52,6 +54,11 @@ body, html{
 .menulist>a:last-child{
     padding-right: 70px;
 }
+.skillvideo{
+    width: 100%;
+    min-width: 1180px;
+    vertical-align: middle;
+}
 .section{
     width: 100%;
     min-width: 1180px;
@@ -69,7 +76,7 @@ body, html{
     position: relative;
     margin: 0 auto;
     text-align: center;
-    top: 20%;
+    top: 30%;
 }
 .sectionatext>p:first-child{
     font-size: 50px;
@@ -81,7 +88,7 @@ body, html{
     position: absolute;
 }
 .sectionaimg01{
-    bottom: 0;
+    bottom: -20px;
     left: 52.5%;
 }
 .ani01{
@@ -104,7 +111,7 @@ body, html{
     }
 }
 .sectionaimg02{
-    bottom: 0;
+    bottom: -20px;
     left: 55%;
 }
 .ani02{
@@ -502,7 +509,7 @@ span:nth-child(4n-3){
 }
 .gifimg01{
     width: 100px;
-    top: 300px;
+    top: 305px;
 }
 .gifimg02{
     width: 250px;
@@ -510,11 +517,11 @@ span:nth-child(4n-3){
 }
 .gifimg03{
     width: 200px;
-    top: 280px;
+    top: 290px;
 }
 .gifimg04{
     width: 300px;
-    top: 260px;
+    top: 270px;
 }
 .cardimg01{
     width: 300px;

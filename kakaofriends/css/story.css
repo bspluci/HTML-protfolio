@@ -1,0 +1,76 @@
+body, html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    min-width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menubox{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    overflow: hidden;
+}
+.menushadow{
+    box-shadow: 0px -15px 40px 0px;
+}
+.menubox:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.logobox{
+    width: 15%;
+    line-height: 78px;
+    padding-left: 70px;
+    float: left;
+    cursor: pointer;
+}
+.logo{
+    background: url(../img/logoimg.png)no-repeat;
+    background-position: 0 0;
+    width: 181px;
+    height: 18px;
+    display: inline-block;
+}
+.menulist{
+    width: 100%;
+    text-align: right;
+}
+.menulist>a{
+    color: #000;
+    display: inline-block;
+    padding: 0 30px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.menulist>a:last-child{
+    padding-right: 70px;
+}
+.mainbanner{
+    width: 100%;
+}
+.sectaimg{
+    width: 100%;
+}
+.sectaimgbox{
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.sectaimgbox>div{
+    display: inline-block;
+    padding: 0 10px;
+}
+.sectaimgbox>div>img{
+    width: 360px;
+    border-radius: 10px;
+}
