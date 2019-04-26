@@ -736,7 +736,6 @@ span:nth-child(4n-3){
     height: 18px;
 }
 .snsicon>a{
-    display: inline-block;
-    padding-right: 35px;
-    color: #cdcdcd
+    margin-right: 35px;
+    color: #a2a2a2;
 }

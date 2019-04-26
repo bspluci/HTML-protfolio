@@ -191,13 +191,7 @@
             $("html, body").stop().animate({scrollTop:$(".footerline").offset().top}, 1000);    
         });
         
-//        메뉴 밑줄
-//        $(".menuright>div").click(function(){
-//            $(".menuright>div").removeClass("menuon");
-//            $(".menuright>div").eq($(this).index()).addClass("menuon");    
-//        });
-        
-        
+//        메뉴 스크롤 밑줄
         $(document).scroll(function(){
         var windowtop = $(window).scrollTop();
         if(windowtop < $(".profilesection").offset().top){
@@ -221,7 +215,16 @@
             }else{
                 $(".skillbtn").removeClass("menuon")            
         }     
-        });        
+        });
+        
+//        프로필사진 무브먼트
+        $(document).on("mousemove",function(e) {
+            var card = $(".profilephoto");
+            var ax = -($(window).innerWidth()/2- e.pageX)/100;
+            var ay = ($(window).innerHeight()/2- e.pageY)/200;
+            card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);");
+        });
+        
 });
 
 

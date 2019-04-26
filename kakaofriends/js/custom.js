@@ -25,26 +25,24 @@
             $(".cardfriends01, .cardfriends02, .cardfriends03, .cardfriends04").addClass("ani11");
         }
     });
-//    $(".thumbimgbox>img").click(function(){
-//        var i = $(this).index();
-//        var cardimg = $(".cardbox").eq(i)
-//        cardimg.fadeIn();
-//    });
-        $(".ad02, .ad03, .ad04").hide();
-    $(".thumbimg01").click(function(){
-        $(".ad02, .ad03, .ad04").fadeOut();
-        $(".ad01").fadeIn();
+    $(".ad02, .ad03, .ad04").hide();
+    $(".thumbimgbox>img").click(function(){
+        var i = $(this).index();
+        $(".ad01, .ad02, .ad03, .ad04").fadeOut();
+        $(".cardbox>div").eq(i).fadeIn();
     });
-    $(".thumbimg02").click(function(){
-        $(".ad01, .ad03, .ad04").fadeOut();
-        $(".ad02").fadeIn();
+    
+    $(".sectbheader>ul>li").hide();
+    $(".up").hide();
+    $(".down").show();
+    $(".sectbheader>ul").click(function(){
+        $(".sectbheader>ul>li").slideToggle();
+        $(".up").toggle();
+        $(".down").toggle();
     });
-    $(".thumbimg03").click(function(){
-        $(".ad01, .ad02, .ad04").fadeOut();
-        $(".ad03").fadeIn();
+        $(".showtext").html("전체 캐릭터");
+    $(".sectbheader>ul>li").click(function(){
+        var thumbtext = $(this).html();
+        $(".showtext").html(thumbtext);    
     });
-    $(".thumbimg04").click(function(){
-        $(".ad01, .ad02, .ad03").fadeOut();
-        $(".ad04").fadeIn();
-    });
-})
+});    
