@@ -13,18 +13,6 @@
 					}
 			});
 });
-
-//$(document).ready(function(){
-//          var a = $("#imghover").attr("alt");
-//          $(this).hover(function(){
-//              console.log("a"+a);
-//          $("#imghover").attr("src", a+"c.jpg");      
-//        });
-//          $("#imghover").mouseleave(function(){
-//          $("#imghover").attr("src", a+".jpg"); 
-//        });
-//});
-
 $(document).ready(function(){
     $("#bars").click(function(){
         $("#mmenu").stop().animate({left:"0"},300);
@@ -33,19 +21,3 @@ $(document).ready(function(){
         $("#mmenu").stop().animate({left:"-100%"},300);
     });
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
