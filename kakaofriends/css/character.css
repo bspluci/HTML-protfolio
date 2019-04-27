@@ -276,13 +276,16 @@ h1 span:nth-child(4n-3){
     font-weight: bold;
 }
 .banner02{
-    display: inline-block;
-    width: 100%;
-    min-width: 1180px;
+    width: 1180px;
+    margin: 0 auto;
     padding: 100px 0;
     text-align: center;
 }
-.banner02>img{
+.bannerbox{
+    display: inline-block;
+    text-align: center;
+}
+.bannerbox>img{
     width: 900px;
     border-radius: 10px;
 }

@@ -80,7 +80,8 @@ body, html{
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
-    z-index: -1
+    vertical-align: middle;
+    z-index: -1;
 }
 .sectatext{
     width: 100%;
@@ -180,15 +181,3 @@ body, html{
     margin-right: 35px;
     color: #a2a2a2
 }
-
-
-
-
-
-
-
-
-
-
-
-

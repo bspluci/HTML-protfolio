@@ -30,7 +30,6 @@ body, html{
     line-height: 78px;
     padding-left: 70px;
     float: left;
-    cursor: pointer;
 }
 .logo{
     background: url(../img/logoimg.png)no-repeat;

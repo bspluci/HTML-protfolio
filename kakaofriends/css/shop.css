@@ -3,12 +3,11 @@ body, html{
 }
 .header{
     width: 100%;
-    height: 100%;
     min-width: 1180px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .menubox{
     width: 100%;
@@ -64,6 +63,7 @@ body, html{
 }
 .sectiona{
     width: 100%;
+    border-bottom: 1px solid #cdcdcd;
 }
 .sectabox{
     width: 1180px;
@@ -144,18 +144,21 @@ body, html{
     height: 101px;
 }
 .sectionb{
+    position: absolute;
     width: 100%;
-    height: 100%;
     min-width: 1180px;
+    height: 70px;
+    margin-top: 15px;
 }
 .sectbbox{
     width: 1180px;
-    height: 800px;
     position: relative;
     margin: 0 auto;
 }
 .sectbheader{
     width: 100%;
+    position: relative;
+    z-index: 99;
 }
 .headertext{
     font-size: 20px;
@@ -164,46 +167,116 @@ body, html{
 .headertext>span{
     font-weight: bold;
 }
-.sectbheader>ul{
+.slide01{
     width: 200px;
-    font-size: 20px;
+    font-size: 16px;
     float: right;
     border: 1px solid #cdcdcd;
     padding-left: 20px;
+    background: #fff;
 }
-.sectbheader>ul>li{
+.slide01>li{
     line-height: 40px;
 }
-.sectbheader>ul>a{
+.slide01>a{
     display: inline-block;
     width: 200px;
     line-height: 40px;
 }
-.sectbheader>ul>a>i{
+.slide01>i{
     position: absolute;
+    top: 0;
     right: 20px;
-    top: 10px;
+    padding-top: 13px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.slide02{
+    width: 200px;
+    font-size: 16px;
+    float: right;
+    border: 1px solid #cdcdcd;
+    padding-left: 20px;
+    background: #fff;
+}
+.slide02>li{
+    line-height: 40px;
+}
+.slide02>a{
+    display: inline-block;
+    width: 200px;
+    line-height: 40px;
+}
+.slide02>i{
+    position: absolute;
+    top: 0;
+    right: 240px;
+    padding-top: 13px;
+}
+.sectionc{
+    width: 100%;
+    margin-top: 100px;
+}
+.sectcbox{
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.sectcline{
+    width: 100%;
+    padding: 20px 0;
+}
+.sectcone{
+    width: 270px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    overflow: hidden;
+}
+.sectcimgbox{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.sectcimgbox>img{
+    width: 270px;
+    border-radius: 10px;
+    vertical-align: middle;
+    transition: all 0.3s linear;
+}
+.sectctext{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.sectctext>p:first-child{
+    font-weight: bold;
+    font-size: 16px;
+}
+.sectcone:hover img{
+    transform: scale(1.05);
+}
+.sectcpage{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 50px 0;
+    border-top: 1px solid #cdcdcd;
+}
+.sectcpage>p{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    }
+.sectcpage>i{
+    cursor: pointer;
+}
+.pageon{
+    background: #000;
+    color: #fff;
+}
 .footer{
     width: 100%;
     height: 300px;
