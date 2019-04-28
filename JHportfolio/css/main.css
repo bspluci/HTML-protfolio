@@ -584,10 +584,10 @@ body, html{
     width: 980px;
 }
 
-.img01box>.dot.on, .img02box>.dot.on, .img03box>.dot.on, .img04box>.dot.on,.img05box>.dot.on{
+.img01box>.dot.on, .img02box>.dot.on, .img03box>.dot.on, .img04box>.dot.on, .img05box>.dot.on, .img06box>.dot.on{
     background: url(../img/year_icon_on.png)no-repeat 50%;
 }
-.img06box>.dot.on {
+.img07box>.dot.on {
     background: url(../img/dotonlast.png)no-repeat 50%;
 }
 .img01box>.dot, .img03box>.dot, .img05box>.dot{
@@ -599,7 +599,7 @@ body, html{
     top: 100px;
     transform: rotateY(180deg);
 }
-.img02box>.dot, .img04box>.dot{
+.img02box>.dot, .img04box>.dot, .img06box>.dot{
     position: absolute;
     width: 66px;
     height: 15px;
@@ -607,7 +607,7 @@ body, html{
     right: 432px;
     top: 70px
 }
-.img06box>.dot{
+.img07box>.dot{
     position: absolute;
     width: 66px;
     height: 15px;
@@ -622,7 +622,7 @@ body, html{
     width: 300px;
     z-index: 999;
 }
-.img02, .img04{
+.img02, .img04, .img06{
     position: absolute;
     top: 50px;
     left: 550px;
@@ -679,9 +679,7 @@ body, html{
     top: 295px;
     right: 13.5%;
     color: #000;
-    _width: 445px;
     font-size: 18px;
-    _padding-top: 20px;
     animation: textonon 0.5s linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -1139,6 +1137,91 @@ body, html{
     transition-delay: 0s;
 }
 .img05:hover .imghoverbg05{
+    opacity: 1;
+}
+.imghover01{
+    position: fixed;
+    width: 100%;
+    top: 350px;
+    left: 18%;  
+    z-index: 9999;
+}
+.imghoverbox01{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+}
+.imghovericon01{
+    position: absolute;
+    display: inline-block;
+    background: url(../img/plus.png)no-repeat 50%;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition-delay: 0.5s;
+}
+.imghoverbox01:before,
+.imghoverbox01:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-right-color: transparent;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0s;
+}
+.imghoverbox01:before{
+    transform: rotate(45deg);
+}
+.imghoverbox01:after{
+    transform: rotate(-45deg);
+}
+.imghovertext01{
+    position: absolute;
+    color: #fff;
+    display: block;
+    width: 500px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 45px;
+    padding: 0 20px;
+    transform: translateX(-120px);
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+.imghoverbg01{
+    position: fixed;
+    width: 30%;
+    height: 29.7%;
+    top: 330px;
+    left: 17%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.img01:hover .imghoverbox01:after,
+.img01:hover .imghoverbox01:before{
+    transform: rotate(0deg);
+}
+.img01:hover .imghovertext01{
+    opacity: 1;
+    transform: translateX(0);
+}
+.img01:hover .imghovericon01{
+    opacity: 0;
+    transition-delay: 0s;
+}
+.img01:hover .imghoverbg01{
     opacity: 1;
 }
 .box{
