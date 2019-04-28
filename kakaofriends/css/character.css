@@ -77,9 +77,10 @@ body, html{
 .sectaheader{
     text-align: center;
     padding: 50px;
+    font-size: 20px;
 }
 .sectaheader>h1{
-    font-size: 38px;
+
     letter-spacing: 5px
 }
 .sectaheader>h1>span{
@@ -341,4 +342,265 @@ h1 span:nth-child(4n-3){
 .snsicon>a{
     margin-right: 35px;
     color: #a2a2a2;
+}
+
+
+
+
+@media screen and (max-width:960px){
+    .header{
+        min-width: 100%;
+    }
+    .menubox{
+        height: auto;
+        position: relative;
+    }
+    .menushadow{
+        box-shadow: 0 0 0 0;
+    }
+    .logobox{
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        line-height: normal;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .menulist{
+        text-align: center;
+    }
+    .menulist>a{
+        line-height: 60px;
+    }
+    .menulist>a:last-child{
+        padding-right: 0px;
+    }
+    .skillvideo{
+        min-width: auto;
+    }
+    .section{
+        min-width: auto;
+    }
+    .sectabox{
+        width: 100%;
+    }
+    .sectaheader{
+        padding: 30px;
+        font-size: 14px;
+    }
+    .sectaheader>h1{
+        letter-spacing: 0;
+    }
+    .sectaheader:hover span{
+        animation: aa;
+    }
+    .sectaheader>p{
+        padding-top: 10px;
+    }
+    .sectabox{
+        width: 100%;
+    }
+    .sectaimg{
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+    }
+    .character01{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: 0 0;
+        width: 131px;
+        height: 209px;
+        position: absolute;
+        background-size: 460px 645px;
+    }
+    .sectaname01{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -389px 0;
+        width: 66px;
+        height: 18px;
+        background-size: 550px 772px;
+    }
+    .character02{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -140px 0;
+        width: 180px;
+        height: 109px;
+        position: absolute;
+        background-size: 460px 645px;
+    }
+    .sectaname02{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -389px -22px;
+        width: 101px;
+        height: 19px;
+        background-size: 550px 772px;
+    }
+    .character03{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -307px -128px;
+        width: 146px;
+        height: 206px;
+        position: absolute;
+        background-size: 460px 645px;
+    }
+    .sectaname03{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -389px -44px;
+        width: 137px;
+        height: 20px;
+        background-size: 550px 772px;
+    }
+    .character04{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: 0px -432px;
+        width: 227px;
+        height: 195px;
+        position: absolute;
+        background-size: 460px 645px;;
+    }
+    .sectaname04{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -389px -67px;
+        width: 160px;
+        height: 19px;
+        background-size: 550px 772px;
+    }
+    .character05{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: 0 -243px;
+        width: 124px;
+        height: 162px;
+        position: absolute;
+        background-size: 460px 645px;
+    }
+    .sectaname05{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -389px -91px;
+        width: 69px;
+        height: 20px;
+        background-size: 550px 772px;
+    }
+    .character06{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -137px -128px;
+        width: 163px;
+        height: 231px;
+        position: absolute;
+        background-size: 460px 645px;
+    }
+    .sectaname06{
+        background: url(../img/character/img_charInfo.png)no-repeat;
+        background-position: -389px -116px;
+        width: 75px;
+        height: 20px;
+        background-size: 550px 772px;
+    }
+    .sectatext{
+        position: absolute;
+        top: 250px;
+        width: auto;
+        right: 0;
+        left: 0;
+        padding: 0 20px 27px;
+    }
+    .sectatext>a{
+        line-height: 40px;
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+    }
+    .banner02{
+        width: auto;
+        padding: 30px 0;
+    }
+    .bannerbox>img{
+        width: 80%;
+        border-radius: 10px;
+    }
+    .footer{
+        height: auto;
+    }
+    .footerbox{
+        width: auto;
+        padding: 10px 0;
+    }
+    .footerbox01{
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 14px;
+    }
+    .footerbox02{
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+    .footerbox02>p{
+        display: block;
+        line-height: normal
+    }
+    .footerbox03{
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: normal;
+    }
+    .snsicon{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width:710px){
+    .menulist>a{
+        padding: 0 15px;
+        font-size: 16px;
+    }
+    .menulist>a:last-child{
+        padding-right: 0px;
+    }
+    .skillvideo{
+        display: none;
+    }
+    .mobilemainbanner{
+        background: url(../img/character/mobilemainbanner.jpg)no-repeat 50%;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 300px;
+        background-color: #9ee5e1;
+    }
+    .banner02{
+        width: auto;
+    }
+    .bannerbox>img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .footerbox01{
+        text-align: center;
+        margin: 0;
+    }
+    .footerbox02{
+        margin: 0;
+        text-align: center;
+    }
+    .footerbox03{
+        display: block;
+        position: static;
+    }
+    .footerlogo{
+        display: none;
+    }
+    .snsicon{
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 8px;
+    }
 }

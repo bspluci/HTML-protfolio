@@ -221,7 +221,7 @@
         $(document).on("mousemove",function(e) {
             var card = $(".profilephoto");
             var ax = -($(window).innerWidth()/2- e.pageX)/100;
-            var ay = ($(window).innerHeight()/2- e.pageY)/200;
+            var ay = ($(window).innerHeight()/2- e.pageY)/100;
             card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);");
         });
         

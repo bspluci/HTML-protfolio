@@ -58,6 +58,9 @@ body, html{
     min-width: 1180px;
     vertical-align: middle;
 }
+.mobilemainbanner{
+    display: none;
+}
 .section{
     width: 100%;
     min-width: 1180px;
@@ -133,7 +136,7 @@ body, html{
     top: -20px;
 }
 .ani03{
-    animation: ani03 1s ease-in-out;
+    animation: ani03 1.2s ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -444,7 +447,10 @@ span:nth-child(4n-3){
     border-radius: 0 0 10px 10px;
     transform: translateY(100px);
     transition: all 0.3s ease-in-out;
-    margin-top: -80px
+    margin-top: -80px;
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
 }
 .cshoptext01>p:first-child{
     padding-top: 20px;
@@ -461,7 +467,7 @@ span:nth-child(4n-3){
 }
 .sectiondbox{
     width: 70%;
-    height: 750px;
+    height: 460px;
     min-width: 1180px;
     margin: 0 auto;
     position: relative;
@@ -500,7 +506,7 @@ span:nth-child(4n-3){
 .sectiondcard>img{
     transform: rotateY(180deg);
     position: relative;
-    left: -50px;
+    left: 200px;
 }
 .ani10{
     animation: ani10 3s linear;
@@ -690,6 +696,7 @@ span:nth-child(4n-3){
     height: 300px;
     background: #575757;
     color: #e0e0e0;
+    overflow: hidden;
 }
 .footerbox{
     width: 1180px;
@@ -706,6 +713,9 @@ span:nth-child(4n-3){
 .footerbox01>a{
     padding-right: 30px;
     color: #fff;
+}
+.footerbox01>a:last-child{
+    padding-right: 0;
 }
 .footerbox02{
     padding-top: 50px;
@@ -737,4 +747,387 @@ span:nth-child(4n-3){
 .snsicon>a{
     margin-right: 35px;
     color: #a2a2a2;
+}
+
+
+
+
+@media screen and (max-width:960px){
+    .header{
+        min-width: 100%;
+    }
+    .menubox{
+        height: auto;
+        position: relative;
+    }
+    .menushadow{
+        box-shadow: 0 0 0 0;
+    }
+    .logobox{
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        line-height: normal;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .menulist{
+        text-align: center;
+    }
+    .menulist>a{
+        line-height: 60px;
+    }
+    .menulist>a:last-child{
+        padding-right: 0px;
+    }
+    .skillvideo{
+        min-width: auto;
+    }
+    .section{
+        min-width: auto;
+    }
+    .sectiona{
+        height: 400px;
+    }
+    .sectionatext{
+        width: 400px;
+        min-width: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .sectionatext>p:first-child{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .sectionatext>p:last-child{
+        font-size: 16px;
+    }
+    .sectionaimg01{
+        width: 80px;
+        bottom: 0;
+        left: 51%;
+    }
+    .ani01{
+    animation: ani001 1.5s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+    @keyframes ani001{
+        0%{
+            opacity: 0;
+            transform: translateY(300px);
+        }
+        50%{
+            opacity: 0;
+            transform: translateY(0px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(-65px);
+        }
+    }
+    .sectionaimg02{
+        width: 62px;
+        bottom: 0;
+        left: 52%;
+    }
+    .sectionaimg03{
+        width: 120px;
+        top: 0;
+        right: 30%;
+    }
+    .sectionaimg04{
+        width: 90px;
+        left: -10px;
+    }
+    .sectionb{
+        height: 400px;
+        min-width: auto;
+    }
+    .sectionbbox{
+        width: 100%;
+    }
+    .sectionbtext{
+        padding: 20px;
+    }
+    .sectionbtext>p:first-child{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .sectionbtext>p:last-child{
+        font-size: 16px;
+        padding: 0;
+    }
+    .sectionbimg01{
+        left: 60%;
+        bottom: -10px;
+    }
+    .sectionbimg01>img:first-child{
+        width: 160px;
+    }
+    .sectionbimg01>img:last-child{
+        left: 15%
+    }
+    .sectionbimg02{
+        padding: 0
+    }
+    .sectionbimg02>img{
+        width: 250px;
+        padding-top: 40px;
+        position: absolute;
+        right: 45%
+    }
+    .sectioncbox{
+        width: 100%;
+        min-width: auto;
+        padding: 40px 0;
+    }
+    .sectionctext{
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    div.sectionctext:hover span{
+        animation: ani000;
+    }
+    .sectioncimg01{
+        padding-bottom: 5px;
+    }
+    .sectioncimg02{
+        padding: 5px 0;
+    }
+    .sectioncimgtext01>p:first-child,
+    .sectioncimgtext02>p:first-child{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .sectioncimgtext01>p:last-child,
+    .sectioncimgtext02>p:last-child{
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    .sectioncshopimg01>a,
+    .sectioncshopimg02>a{
+        width: 23%;
+        margin-right: 1%;
+    }
+    .cshoptext01{
+        height: 100%;
+        font-size: 12px;
+        margin: 0;
+        transform: translateY(0px);
+        background-color: #fff;
+        color: #000;
+        transition: none;
+    }
+    .cshoptext01>p{
+        line-height: 17px;
+    }
+    .cshoptext01>p:first-child{
+        padding-top: 3px;
+    }
+    .sectioncshopimg01>a:hover .cshoptext01{
+        transform: none;
+    }
+    .sectiondbox{
+        width: 100%;
+        min-width: auto;
+    }
+    .sectiondheader{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .sectiondheader>p:first-child{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .sectiondheader>p:last-child{
+        font-size: 16px;   
+    }
+    .cardbox{
+        width: 100%;
+    }
+    .sectiondcard{
+        height: 100%;
+    }
+    .sectiondcard>img{
+        display: none;
+    }
+    .cardimg01{
+        width: 200px;
+        height: auto;
+        top: 20px;
+        position: absolute;
+        right: 5%;
+    }
+    .cardimg01>img:first-child{
+        width: 200px;
+        height: auto;
+    }
+    .cardfriends01{
+        top: -140px;
+        left: 50px;
+    }
+    .cardfriends02{
+        top: -130px;
+        left: 50px;
+    }
+    .cardfriends03{
+        top: -155px;
+        left: 50px;
+    }
+    .cardfriends04{
+        top: -125px;
+        left: 50px;
+    }
+    .thumbimgbox{
+        width: 53%;
+        text-align: center;
+        left: 5%;
+        top: 20px;
+    }
+    .thumbimgbox>img{
+        width: 80px;
+        padding: 0;
+        padding-right: 10px;
+    }
+    .thumbimgbox>img:last-child{
+        margin-right: 0;
+    }
+    .thumbclick{
+        display: none;
+    }
+    .thumbclick>img{
+        display: none;
+    }
+    .name{
+        font-size: 30px;
+        top: 280px;
+        right: 60%;
+    }
+    .name:after{
+        width: 30px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+    .ani11{
+        animation: ani11 .6s linear;
+        animation-iteration-count: 1;
+        z-index: 11;
+    }
+    @keyframes ani11{
+        0%{ 
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+        100{
+            z-index: 11;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .footer{
+        height: auto;
+    }
+    .footerbox{
+        width: auto;
+        padding: 10px 0
+    }
+    .footerbox01{
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 14px;
+    }
+    .footerbox02{
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+    .footerbox02>p{
+        display: block;
+        line-height: normal
+    }
+    .footerbox03{
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: normal;
+    }
+    .snsicon{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:710px){
+    .menulist>a{
+        padding: 0 15px;
+        font-size: 16px;
+    }
+    .menulist>a:last-child{
+        padding-right: 0px;
+    }
+    .skillvideo{
+        display: none;
+    }
+    .mobilemainbanner{
+        background: url(../img/mobilemainbanner.png)no-repeat 50%;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 300px;
+        background-color: #ffd701;
+    }
+    .sectioncimgtext01,
+    .sectioncimgtext02{
+        position: absolute;
+        text-align: left;
+        top: 50%;
+        left: 0;
+        padding-left: 3%;
+        color: #fff;
+        transform: translateY(-55%);
+    }
+    .sectioncimgtext01>p:first-child,
+    .sectioncimgtext02>p:first-child{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .sectioncimgtext01>p:last-child,
+    .sectioncimgtext02>p:last-child{
+        font-size: 14px;
+        padding-top: 0;
+        margin-top: 5px;
+        line-height: 16px;
+    }
+    .thumbimgbox{
+        width: 40%;
+    }
+    .name{
+        right: 64%;
+    }
+    .footerbox01{
+        text-align: center;
+        margin: 0;
+    }
+    .footerbox02{
+        margin: 0;
+        text-align: center;
+    }
+    .footerbox03{
+        display: block;
+        position: static;
+    }
+    .footerlogo{
+        display: none;
+    }
+    .snsicon{
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 8px;
+    }
 }
