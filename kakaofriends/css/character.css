@@ -506,6 +506,9 @@ h1 span:nth-child(4n-3){
         left: 0;
         padding: 0 20px 27px;
     }
+    .sectatext>h2{
+        font-size: 16px
+    }
     .sectatext>a{
         line-height: 40px;
         position: absolute;
@@ -558,8 +561,8 @@ h1 span:nth-child(4n-3){
 
 @media screen and (max-width:710px){
     .menulist>a{
-        padding: 0 15px;
-        font-size: 16px;
+        padding: 0 10px;
+        font-size: 14px;
     }
     .menulist>a:last-child{
         padding-right: 0px;
@@ -582,6 +585,10 @@ h1 span:nth-child(4n-3){
         width: 100%;
         border-radius: 10px;
     }
+    .sectaheader{
+        padding: 20px;
+        font-size: 14px;
+    }
     .footerbox01{
         text-align: center;
         margin: 0;
@@ -602,5 +609,17 @@ h1 span:nth-child(4n-3){
         padding: 0;
         margin-top: 10px;
         font-size: 8px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .sectatext{
+        padding: 0 10px;
+    }
+    .sectatext>p{
+        font-size: 12px;;
+    }
+    .sectatext>a{
+        font-size: 12px;
     }
 }

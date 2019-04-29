@@ -467,7 +467,7 @@ span:nth-child(4n-3){
 }
 .sectiondbox{
     width: 70%;
-    height: 460px;
+    height: 800px;
     min-width: 1180px;
     margin: 0 auto;
     position: relative;
@@ -506,7 +506,7 @@ span:nth-child(4n-3){
 .sectiondcard>img{
     transform: rotateY(180deg);
     position: relative;
-    left: 200px;
+    left: 0px;
 }
 .ani10{
     animation: ani10 3s linear;
@@ -932,6 +932,7 @@ span:nth-child(4n-3){
     }
     .sectiondbox{
         width: 100%;
+        height: 480px;
         min-width: auto;
     }
     .sectiondheader{
@@ -1003,7 +1004,7 @@ span:nth-child(4n-3){
     }
     .name{
         font-size: 30px;
-        top: 280px;
+        top: 220px;
         right: 60%;
     }
     .name:after{
@@ -1064,8 +1065,8 @@ span:nth-child(4n-3){
 }
 @media screen and (max-width:710px){
     .menulist>a{
-        padding: 0 15px;
-        font-size: 16px;
+        padding: 0 10px;
+        font-size: 14px;
     }
     .menulist>a:last-child{
         padding-right: 0px;
@@ -1103,11 +1104,49 @@ span:nth-child(4n-3){
         margin-top: 5px;
         line-height: 16px;
     }
+    .cardimg01{
+        width: 150px;
+        height: auto;
+        top: 20px;
+        position: absolute;
+        right: 5%;
+    }
+    .cardimg01>img:first-child{
+        width: 150px;
+    }
+    .cardimg01>img:last-child{
+        width: 40px    
+    }
+    .cardfriends01{
+        top: -100px;
+        left: 30px;
+    }
+    .cardfriends02{
+        top: -92px;
+        left: 30px;
+    }
+    .cardfriends03{
+        top: -107px;
+        left: 30px;
+    }
+    .cardfriends04{
+        top: -87px;
+        left: 30px;
+    }
     .thumbimgbox{
-        width: 40%;
+        width: 45%;
+        left: 1%;
+        top: 20px;
+    }
+    .thumbimgbox>img{
+        width: 70px;
+        padding: 0;
+        padding-right: 5px;
     }
     .name{
-        right: 64%;
+        width: 160px;
+        top: 250px;
+        left: 5%;
     }
     .footerbox01{
         text-align: center;

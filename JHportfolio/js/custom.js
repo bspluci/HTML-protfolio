@@ -105,18 +105,18 @@
             };
         if(linetop + line.height() >= $(".dot06").offset().top){
             $(".img06").css({"position":"fixed"});
-            $(".img06>img").addClass("imgonon");
-            $(".img06>p").addClass("texton");
+            $(".img06>img").addClass("imgnono");
+            $(".img06>p").addClass("textonon");
             $(".imghoverbg06, .imghover06").delay(300).css({"display":"block"});
             }else if(linetop + line.height() < $(".dot06").offset().top){
                 $(".img06").css({"position":"absolute"});
-                $(".img06>img").removeClass("imgonon");
-                $(".img06>p").removeClass("texton");
+                $(".img06>img").removeClass("imgnono");
+                $(".img06>p").removeClass("textonon");
                 $(".imghoverbg06, .imghover06").css({"display":"none"});
-            }if(linetop + line.height() >= $(".dot06").offset().top){
+            }if(linetop + line.height() >= $(".dot07").offset().top){
                 $(".img06").css({"position":"absolute"});
-                $(".img06>img").removeClass("imgonon");
-                $(".img06>p").removeClass("texton");
+                $(".img06>img").removeClass("imgnono");
+                $(".img06>p").removeClass("textonon");
                 $(".imghoverbg06, .imghover06").css({"display":"none"});
             };
 //        푸터 라인만들기    
