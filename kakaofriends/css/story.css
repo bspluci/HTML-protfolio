@@ -181,3 +181,109 @@ body, html{
     margin-right: 35px;
     color: #a2a2a2
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width:960px){
+    .header{
+        min-width: 100%;
+    }
+    .menubox{
+        height: auto;
+        position: relative;
+    }
+    .menushadow{
+        box-shadow: 0 0 0 0;
+    }
+    .logobox{
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        line-height: normal;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .menulist{
+        text-align: center;
+    }
+    .menulist>a{
+        line-height: 60px;
+    }
+    .menulist>a:last-child{
+        padding-right: 0px;
+    }
+    .sectaimgbox{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    
+    .footer{
+        height: auto;
+    }
+    .footerbox{
+        width: auto;
+        padding: 10px 0
+    }
+    .footerbox01{
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 14px;
+    }
+    .footerbox02{
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+    .footerbox02>p{
+        display: block;
+        line-height: normal
+    }
+    .footerbox03{
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: normal;
+    }
+    .snsicon{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:710px){
+    .menulist>a{
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    .footerbox01{
+        text-align: center;
+        margin: 0;
+    }
+    .footerbox02{
+        margin: 0;
+        text-align: center;
+    }
+    .footerbox03{
+        display: block;
+        position: static;
+    }
+    .footerlogo{
+        display: none;
+    }
+    .snsicon{
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+}

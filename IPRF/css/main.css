@@ -209,12 +209,11 @@ ul.sec .menu:hover:after{
     position: relative;
     width: 100%; 
     height: 100%; 
-    top: 100px;
 }
 #day2guest{
     position: absolute;
-    width: 85%; 
-    height: 100%;
+    width: 85%;
+    margin-top: 8%;
 }
 #day2guest>ul{
     width: 80%;
@@ -315,7 +314,7 @@ ul.sec .menu:hover:after{
 .mmtxt{
     display: none;
 }
-/*미디어쿼리 780아래-----------------------------------------*/
+/*미디어쿼리 780-----------------------------------------*/
 @media screen and (max-width:779px){
     #logo {
         display: none;
@@ -549,17 +548,5 @@ ul.sec .menu:hover:after{
     }
     .redcolor {
         color: #d22029 !important;
-    }
-        
+    }       
 }
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-

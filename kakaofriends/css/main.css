@@ -1082,6 +1082,9 @@ span:nth-child(4n-3){
         height: 300px;
         background-color: #ffd701;
     }
+    .sectionctext{
+        font-size: 12px;
+    }
     .sectioncimgtext01,
     .sectioncimgtext02{
         position: absolute;

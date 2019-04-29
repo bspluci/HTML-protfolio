@@ -7,9 +7,9 @@
 						if(index==2){
 							wow = new WOW({offset: -1000,}); wow.init();}
                         if(index==3){
-							wow = new WOW({offset: -2000,}); wow.init();}
+							wow = new WOW({offset: -2500,}); wow.init();}
                         if(index==4){
-							wow = new WOW({offset: -3000,}); wow.init();}
+							wow = new WOW({offset: -4000,}); wow.init();}
 					}
 			});
 });
