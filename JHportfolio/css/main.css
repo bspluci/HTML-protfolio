@@ -517,9 +517,10 @@ body, html{
     transform: translateZ(10px); 
 }
 .photo02{
+    width: 250px;
     transform: translateZ(60px);
-    left: 25px;
-    top: 4px;
+    left: 24px;
+    top: -20px;
 }
 .profiletext{
     position: absolute;
