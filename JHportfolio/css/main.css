@@ -487,6 +487,9 @@ body, html{
     min-width: 1180px;
     background: #f7f7f7;
     margin: 0 auto;
+    background: url(../img/3d.jpg)no-repeat 50%;
+    background-size: cover;
+    background-attachment: fixed;
     }
 .profileboxtext{
     padding-top: 50px;
@@ -494,20 +497,18 @@ body, html{
     font-size: 40px;
 }
 .profileimg{
-    background: url(../img/3d.jpg)no-repeat 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    width: 1180px;
     height: 400px;
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
 }
 .profilephoto{
     position: relative;
     transform-style: preserve-3d;
     vertical-align: middle;
     top: 55px;
-    left: 22%;
+    left: 10%;
 }
 .profilephoto>img{
     position: absolute;
@@ -526,7 +527,7 @@ body, html{
     font-size: 30px;
     line-height: 50px;
     top: 50%;
-    left: 62%;
+    right: 0;
     transform: translateY(-50%);
 }
 .portfoliotext{
