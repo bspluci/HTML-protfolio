@@ -456,15 +456,19 @@ body, html{
 .bannerimgtext>p:first-child{
     animation-iteration-count: 1;
     animation: textslide 0.8s ease-in-out;
-    transition-delay: 0.5s;
+    animation-delay: 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 .bannerimgtext>p:last-child{
     animation-iteration-count: 1;
     animation: textslide 0.8s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 @keyframes textslide{
     0%{
-        transform: translateY(-100px);
+        transform: translateY(-50px);
         opacity: 0;
     }
     100%{
@@ -480,6 +484,10 @@ body, html{
     background: #159adb;
     top: -20px;
     animation: textslide 0.8s ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 .profilesection{
     position: relative;
@@ -780,7 +788,7 @@ body, html{
 .imghoverbg01{
     position: fixed;
     width: 30%;
-    height: 30%;
+    height: 30.7%;
     top: 330px;
     left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -865,7 +873,7 @@ body, html{
 .imghoverbg02{
     position: fixed;
     width: 30%;
-    height: 30%;
+    height: 30.7%;
     top: 330px;
     left: 53%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -950,7 +958,7 @@ body, html{
 .imghoverbg03{
     position: fixed;
     width: 30%;
-    height: 30%;
+    height: 30.7%;
     top: 330px;
     left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -1035,7 +1043,7 @@ body, html{
 .imghoverbg04{
     position: fixed;
     width: 30%;
-    height: 30%;
+    height: 30.7%;
     top: 329px;
     left: 53%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -1120,7 +1128,7 @@ body, html{
 .imghoverbg05{
     position: fixed;
     width: 30%;
-    height: 30%;
+    height: 30.7%;
     top: 330px;
     left: 17%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -1205,7 +1213,7 @@ body, html{
 .imghoverbg06{
     position: fixed;
     width: 30%;
-    height: 30%;
+    height: 30.7%;
     top: 330px;
     left: 53%;
     background-color: rgba(0, 0, 0, 0.4);

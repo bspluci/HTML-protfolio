@@ -1,24 +1,12 @@
 body {font-family: 'NanumSquareR', '맑은 고딕', 'Malgun Gothic', sans-serif; background-color: white;}
 
-
-header {position: absolute; width: 100%; height: 70px; z-index: 1; top: 0;}
+header {position: absolute; width: 100%; height: 70px; z-index: 1; top: 0; min-width: 960px;}
 header>div {position: relative; max-width: 100%; height: 100%; margin: 0 auto; border-bottom: 1px solid #c7c7c9;}
-#mainmenu {position: absolute; width: 100%; height: 70px; text-align: center; _background: #fff;}
+#mainmenu {position: absolute; width: 100%; height: 70px; text-align: center;}
 #mainmenu:after {content: ""; display: block; clear: both;}
 #mainmenu>div {float: left;}
 .menulogo {width: 20%; padding: 20px 0;}
 .menulogo>a {position: absolute; left: 1%; float: left; z-index: 999;}
-.menulogo>a>img {}
-
-/*
-.menua {position: relative; width: 50%; height: 100%; margin: 0 auto; background-color: rgba(255, 255, 255, 0);}
-.menua>ul {width: 100%; height: 70px; margin: 0 auto;}
-.menua>ul:after {content: ""; display: block; clear: both;}
-.menua>ul>li {float: left; width: 25%; line-height: 70px;}
-.menua>ul>li>a {width: 100%; height: 100%; display: block; color: whitesmoke; font-size: 20px; font-weight: bold; text-align: center;}
-.menuaaa {display: none; line-height: 40px; text-align: center; background-color: white; width:100%; height: 320px; background-color: rgba(255, 255, 255, 1); top: 0; padding-top: 20px;} 
-.menuaaa>div>a {display: block; color: #323338; text-align: center; font-size: 15px; font-weight: bold;}
-*/
 
 .menubox>ul>li:hover {border-bottom: 4px solid #2099d4;}
 .menubox>ul>li:hover a {color: #2099d4;}
@@ -68,17 +56,17 @@ header>div {position: relative; max-width: 100%; height: 100%; margin: 0 auto; b
 }
 
 
-#slidera {position: relative; width: 100%; z-index: 0; top: 0; overflow: hidden;}
+#slidera {position: relative; width: 100%; min-width: 960px; z-index: 0; top: 0; overflow: hidden;}
 #sliderb {position: relative; max-width: 100%; max-height: 100%; margin: 0 auto;}
 #sliderc>li {position: relative;}
 #sliderc>li>img {width: 100%; height: 100%;}
-#sliderc>li>div.slidertext {position: absolute; width: 100%; height: 400px; display: block; top:250px; text-align: center; color: white;}
+#sliderc>li>div.slidertext {position: absolute; width: 100%; height: 400px; display: block; top: 20%; text-align: center; color: white;}
 .slidertext>h2 {font-size: 55px;}
 .slidertext>p {font-size: 17px; padding: 30px 0 30px 0; font-weight: bold; }
 .slidertext>button {width: 200px; height: 50px; color: #ffffff; background-color: rgba( 102, 102, 102, 0.7 ); cursor: pointer; border:1px solid #5a5b5f; outline: 0; font-size: 17px; font-weight: bold;}
 .slidertext>button:hover {transition: 0.4s; background-color: #323338;}
 .prevBtn,.nextBtn {position: absolute; top: 50%; cursor: pointer; color: ghostwhite;}
-.moreBtn {position: absolute; display: block; width: 100%; bottom: 3%; text-align: center; cursor: pointer; color: white;}
+.moreBtn {position: absolute; display: block; width: 100%; bottom: 1%; text-align: center; cursor: pointer; color: white;}
 .prevBtn {left: 10px;}
 .nextBtn {right: 10px;}
 /*bx슬라이더*/
@@ -144,8 +132,8 @@ header>div {position: relative; max-width: 100%; height: 100%; margin: 0 auto; b
 
 
 .bighoodclose {position: absolute; z-index: 99; color: #fff; right: 30px; top: 30px; cursor: pointer;}
-section {max-width: 100%;}
-section>div {max-width: 100%; max-height: 100%; margin: 0 auto;}
+section {width: 100%; min-width: 960px; }
+section>div {width: 100%; margin: 0 auto;}
 section>div:after {content: ""; clear: both; display: block;}
 section>div>div {position: relative; float: left; width: 100%; height: 100%; margin: 0 auto; z-index: 0}
 #hoverimga {position: absolute; width: 100%; text-align: center;}
@@ -182,7 +170,7 @@ section>div>div {position: relative; float: left; width: 100%; height: 100%; mar
 #sectione>p>span {font-weight: bold;}
 
 #mdbox {width: 100%; height: 816px;}
-#mdboxa {position: relative; width: 100%; height: 100%; margin: 0 auto;}
+#mdboxa {position: relative; min-width: 960px; height: 100%; margin: 0 auto;}
 #mdboxa>img {width: 100%; height: 816px;  position: absolute;}
 #mdboxb {position: absolute; width: 100%; height: 100%; text-align: center;}
 #mdboxb>ul:after {content: ""; clear: both; display: block;}
@@ -192,7 +180,7 @@ section>div>div {position: relative; float: left; width: 100%; height: 100%; mar
 .support>h6 {font-weight: bold; font-size: 22px;}
 .support>p {font-size: 35px;}
 .support>p>span {font-weight: bold}
-#mdrowbox {width: 40%; padding-top: 50px; text-align: left; margin: 0 auto;}
+#mdrowbox {width: 960px; padding-top: 50px; text-align: left; margin: 0 auto;}
 #mdrowbox>li {width: 32%; height: 30%; background-color: #f1f1f1;}
 #mdrowbox>li:nth-child(1) {margin-right: 1.5%;}
 #mdrowbox>li:nth-child(2) {margin-right: 1.5%;}
@@ -213,7 +201,6 @@ section>div>div {position: relative; float: left; width: 100%; height: 100%; mar
 #newsss {position: relative; width: 2880px;}
 #newsss:after {content: ""; clear: both; display: block;}
 #newsa {width: 960px; margin: 0 auto; float: left;}
-/*.nanana {width: 960px; overflow: hidden;}*/
 #newsi {width: 306px; margin: 0 auto; padding-top: 50px; float: left;}
 #newsi:hover div.newsin {background-color: #f1f1f1;}
 .imgbox {width: 306px; height: 235px; background-color: #fff; display: table-cell; vertical-align: middle;}
@@ -238,7 +225,6 @@ section>div>div {position: relative; float: left; width: 100%; height: 100%; mar
 #searchb>img{
     padding: 10px 0;
 }
-
 
 footer {width: 100%; position: relative;}
 footer>div {width: 100%; height: 400px; margin: 0 auto; text-align: center; background-color: #333333;}
@@ -304,7 +290,6 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
 #sbaraa>div{
     width: 100%;
     height: 25%;
-    _padding-top: 50px;
 }
 #sbaraa>div>img{
     position: relative;
@@ -338,8 +323,6 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
 #sbarcc>ul {width: 185px; display: block; margin: 0 auto; padding-top: 80px; color: #8c888d}
 #sbarcc>ul>li {text-align: left; font-size: 15px; font-weight: normal;}
 #sliderclose {position: absolute; top: 30px; right: 0; margin-right: 20%; cursor: pointer; font-size: 20px;}
-
-
 .menuwrap1{
     width: 100%;
     height: 70px;
@@ -400,7 +383,7 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
     padding-top: 20px;
 }
 .menuwrap2>div>div>ul>li>a{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 35px;
     color: #414141;
     font-weight: bold;
@@ -420,11 +403,6 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
     top: -70px;
     border-bottom: none;
 }
-
-
-
-
-
 .haatzknow{
     width: 50%;
     height: 900px;
@@ -441,14 +419,6 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
 .haatzknowboxa>div:nth-child(4), .haatzknowbox>div:nth-child(8){
     border-right: none;
 }
-/*
-.haatzknowbox>div:nth-child(5), .haatzknowbox>div:nth-child(6), .haatzknowbox>div:nth-child(7), .haatzknowbox>div:nth-child(8){
-    border-bottom: none;
-}
-*/
-
-
-
 .haatzknowboxa{
     width: 100%;
     height: 450px;
@@ -534,7 +504,6 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
     top: 3%;
     cursor: pointer;
 }
-
 .topbtn{
     background: url("../img/top_btn.gif")no-repeat;
     width: 56px;
@@ -544,21 +513,7 @@ footer>div>div {position: relative; width: 960px; height: 100%; margin: 0 auto;}
     right: 1%;
     z-index: 999999;
 }
-
 .topbtnstop{
     position: absolute;
     top: -15%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

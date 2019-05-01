@@ -1,5 +1,5 @@
 ﻿    $(document).ready(function(){
-        $(".imghoverbg01, .imghover01, .imghoverbg02, .imghover02, .imghoverbg03, .imghover03, .imghoverbg04, .imghover04, .imghoverbg05, .imghover05, .imghoverbg06, .imghover06").hide();
+        $(".imgimg>div").hide();
         var dotmax = $(".introsection .dot").length -1;
         var dotnum = 0
         $(document).scroll(function(){
@@ -27,7 +27,7 @@
             $(".img01").css({"position":"fixed"});
             $(".img01>img").addClass("imgonon");
             $(".img01>p").addClass("texton");
-            $(".imghoverbg01, .imghover01").delay(300).css({"display":"block"});
+            $(".imghoverbg01, .imghover01").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot01").offset().top){
                 $(".img01").css({"position":"absolute"});
                 $(".img01>img").removeClass("imgonon");
@@ -43,7 +43,7 @@
             $(".img02").css({"position":"fixed"});
             $(".img02>img").addClass("imgnono");
             $(".img02>p").addClass("textonon");
-            $(".imghoverbg02, .imghover02").delay(300).css({"display":"block"});
+            $(".imghoverbg02, .imghover02").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot02").offset().top){
                 $(".img02").css({"position":"absolute"});
                 $(".img02>img").removeClass("imgnono");
@@ -59,7 +59,7 @@
             $(".img03").css({"position":"fixed"});
             $(".img03>img").addClass("imgonon");
             $(".img03>p").addClass("texton");
-            $(".imghoverbg03, .imghover03").delay(300).css({"display":"block"});
+            $(".imghoverbg03, .imghover03").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot03").offset().top){
                 $(".img03").css({"position":"absolute"});
                 $(".img03>img").removeClass("imgonon")
@@ -75,7 +75,7 @@
             $(".img04").css({"position":"fixed"});
             $(".img04>img").addClass("imgnono");
             $(".img04>p").addClass("textonon");
-            $(".imghoverbg04, .imghover04").delay(300).css({"display":"block"});
+            $(".imghoverbg04, .imghover04").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot04").offset().top){
                 $(".img04").css({"position":"absolute"});
                 $(".img04>img").removeClass("imgnono");
@@ -91,7 +91,7 @@
             $(".img05").css({"position":"fixed"});
             $(".img05>img").addClass("imgonon");
             $(".img05>p").addClass("texton");
-            $(".imghoverbg05, .imghover05").delay(300).css({"display":"block"});
+            $(".imghoverbg05, .imghover05").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot05").offset().top){
                 $(".img05").css({"position":"absolute"});
                 $(".img05>img").removeClass("imgonon");
@@ -107,7 +107,7 @@
             $(".img06").css({"position":"fixed"});
             $(".img06>img").addClass("imgnono");
             $(".img06>p").addClass("textonon");
-            $(".imghoverbg06, .imghover06").delay(300).css({"display":"block"});
+            $(".imghoverbg06, .imghover06").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot06").offset().top){
                 $(".img06").css({"position":"absolute"});
                 $(".img06>img").removeClass("imgnono");
@@ -151,7 +151,7 @@
             $(".menuright").removeClass("menubg");
         }    
     });
-//            탑버튼
+//        탑버튼
         $(".topbtn").hide();
         $(window).scroll(function(){
             var topbtn = $(".topbtn");
@@ -215,14 +215,3 @@
             card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);");
         });
 });
-
-
-
-
-
-
-
-
-
-
-
