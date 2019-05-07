@@ -593,7 +593,6 @@ body, html{
     position: relative;
     width: 980px;
 }
-
 .img01box>.dot.on, .img02box>.dot.on, .img03box>.dot.on, .img04box>.dot.on, .img05box>.dot.on, .img06box>.dot.on{
     background: url(../img/year_icon_on.png)no-repeat 50%;
 }
@@ -715,9 +714,11 @@ body, html{
 @keyframes ani{
     0%{
         width: 15%;
+        height: 10%;
     }
     100%{
         width: 30%;
+        height: 30%;
     }
 }
 .imgon{
@@ -787,8 +788,8 @@ body, html{
 }
 .imghoverbg01{
     position: fixed;
-    width: 30%;
-    height: 29.7%;
+    width: 1900px;
+    height: 970px;
     top: 330px;
     left: 17%;
     background-color: rgba(0, 0, 0, 0.6);

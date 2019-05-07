@@ -26,6 +26,7 @@
         if(linetop + line.height() >= $(".dot01").offset().top){
             $(".img01").css({"position":"fixed"});
             $(".img01>img").addClass("imgonon");
+            $(".imghoverbg01").addClass("imgonon");
             $(".img01>p").addClass("texton");
             $(".imghoverbg01, .imghover01").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot01").offset().top){
@@ -42,6 +43,7 @@
         if(linetop + line.height() >= $(".dot02").offset().top){
             $(".img02").css({"position":"fixed"});
             $(".img02>img").addClass("imgnono");
+            $(".imghoverbg02").addClass("imgnono");
             $(".img02>p").addClass("textonon");
             $(".imghoverbg02, .imghover02").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot02").offset().top){
@@ -58,6 +60,7 @@
         if(linetop + line.height() >= $(".dot03").offset().top){
             $(".img03").css({"position":"fixed"});
             $(".img03>img").addClass("imgonon");
+            $(".imghoverbg03").addClass("imgonon");
             $(".img03>p").addClass("texton");
             $(".imghoverbg03, .imghover03").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot03").offset().top){
@@ -74,6 +77,7 @@
         if(linetop + line.height() >= $(".dot04").offset().top){
             $(".img04").css({"position":"fixed"});
             $(".img04>img").addClass("imgnono");
+            $(".imghoverbg04").addClass("imgnono");
             $(".img04>p").addClass("textonon");
             $(".imghoverbg04, .imghover04").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot04").offset().top){
@@ -90,6 +94,7 @@
         if(linetop + line.height() >= $(".dot05").offset().top){
             $(".img05").css({"position":"fixed"});
             $(".img05>img").addClass("imgonon");
+            $(".imghoverbg05").addClass("imgonon");
             $(".img05>p").addClass("texton");
             $(".imghoverbg05, .imghover05").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot05").offset().top){
@@ -106,6 +111,7 @@
         if(linetop + line.height() >= $(".dot06").offset().top){
             $(".img06").css({"position":"fixed"});
             $(".img06>img").addClass("imgnono");
+            $(".imghoverbg06").addClass("imgnono");
             $(".img06>p").addClass("textonon");
             $(".imghoverbg06, .imghover06").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot06").offset().top){
