@@ -1430,3 +1430,34 @@ body, html{
     top: -80px;
     right: 30px;
 }
+
+@media screen and (max-width:1180px){
+    .texton{
+        font-size: 14px;
+        left: 9%;
+    }
+    .textonon{
+        font-size: 14px;
+        right: 9%;
+    }
+    .imghoverbox01, .imghoverbox02, .imghoverbox03,
+    .imghoverbox04, .imghoverbox05, .imghoverbox06{
+        width: 30px;
+        height: 30px;
+    }
+    .imghovericon01, .imghovericon02, .imghovericon03,
+    .imghovericon04, .imghovericon05, .imghovericon06{
+        width: 15px;
+        height: 15px;
+    }
+    .imghovertext01, .imghovertext02, .imghovertext03,
+    .imghovertext04, .imghovertext05, .imghovertext06{
+        width: 300px;
+        font-size: 14px;
+        padding: 0 15px;
+        top: -8px;
+    }
+    .img04 p{
+        margin-left: 0;
+    }
+}
