@@ -7,26 +7,25 @@
         }else{
             $(".menubox").removeClass("menushadow");
         }
-        if(scrolltop >= $(".sectiona").offset().top -700){
+        if(scrolltop >= $(".sectiona").offset().top){
             $(".sectionaimg01").addClass("ani01");
             $(".sectionaimg02").addClass("ani02");
             $(".sectionaimg03").addClass("ani03");
             $(".sectionaimg04").addClass("ani04");
         }
-        if(scrolltop >= $(".sectionb").offset().top -700){
+        if(scrolltop >= $(".sectionb").offset().top){
             $(".sectionbimg01").addClass("ani05");
             $(".sectionbimg02").addClass("ani06");
         }
-        if(scrolltop >= $(".sectionc").offset().top -700){
+        if(scrolltop >= $(".sectionc").offset().top){
             $(".sectioncimg01").addClass("ani07");    
             $(".sectioncimg02").addClass("ani08");    
         }
-        if(scrolltop >= $(".sectiond").offset().top -700){
+        if(scrolltop >= $(".sectiond").offset().top){
             $(".sectiondcard>img").addClass("ani10");
             $(".cardfriends01, .cardfriends02, .cardfriends03, .cardfriends04").addClass("ani11");
         }
     });
-    
 //    메인 카드 애니메이션
     $(".ad02, .ad03, .ad04").hide();
     $(".thumbimgbox>img").click(function(){
@@ -34,7 +33,6 @@
         $(".ad01, .ad02, .ad03, .ad04").fadeOut();
         $(".cardbox>div").eq(i).fadeIn();
     });
-    
 //    프렌즈샵 슬라이더2개
     $(".slide01>li, .slide02>li").hide();
     $(".up, .upp").hide();
@@ -58,13 +56,11 @@
         var thumbtext = $(this).html();
         $(".showtextt").html(thumbtext);    
     });
-
 //    프렌즈샵 페이지넘버 배경
     $(".sectcpage>p").click(function(){
         $(".sectcpage>p").removeClass("pageon");
         $(this).addClass("pageon");    
     });
-    
 //    스토어 지역클릭 이벤트
     $(".city>ul>li").click(function(){
         $(".city>ul>li").removeClass("cityon");
@@ -103,13 +99,4 @@
         $(".sectbline>div").hide();
         $(".sectbline>div.daejun").show();    
     });
-});    
-
-
-
-
-
-
-
-
-
+});
