@@ -7,21 +7,21 @@
         }else{
             $(".menubox").removeClass("menushadow");
         }
-        if(scrolltop >= $(".sectiona").offset().top){
+        if(scrolltop >= $(".sectiona").offset().top - $(window).height()){
             $(".sectionaimg01").addClass("ani01");
             $(".sectionaimg02").addClass("ani02");
             $(".sectionaimg03").addClass("ani03");
             $(".sectionaimg04").addClass("ani04");
         }
-        if(scrolltop >= $(".sectionb").offset().top){
+        if(scrolltop >= $(".sectionb").offset().top - $(window).height()){
             $(".sectionbimg01").addClass("ani05");
             $(".sectionbimg02").addClass("ani06");
         }
-        if(scrolltop >= $(".sectionc").offset().top){
+        if(scrolltop >= $(".sectionc").offset().top - $(window).height()){
             $(".sectioncimg01").addClass("ani07");    
             $(".sectioncimg02").addClass("ani08");    
         }
-        if(scrolltop >= $(".sectiond").offset().top){
+        if(scrolltop >= $(".sectiond").offset().top - $(window).height()){
             $(".sectiondcard>img").addClass("ani10");
             $(".cardfriends01, .cardfriends02, .cardfriends03, .cardfriends04").addClass("ani11");
         }

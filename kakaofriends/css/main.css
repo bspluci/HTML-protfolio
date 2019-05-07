@@ -839,7 +839,7 @@ span:nth-child(4n-3){
     }
     .sectionaimg04{
         width: 90px;
-        left: -10px;
+        left: -30px;
     }
     .sectionb{
         height: 400px;
@@ -867,16 +867,16 @@ span:nth-child(4n-3){
         width: 160px;
     }
     .sectionbimg01>img:last-child{
-        left: 15%
+        left: 15%;
     }
     .sectionbimg02{
-        padding: 0
+        padding: 0;
     }
     .sectionbimg02>img{
         width: 250px;
         padding-top: 40px;
         position: absolute;
-        right: 45%
+        right: 43%;
     }
     .sectioncbox{
         width: 100%;
@@ -1033,7 +1033,7 @@ span:nth-child(4n-3){
     }
     .footerbox{
         width: auto;
-        padding: 10px 0
+        padding: 10px 0;
     }
     .footerbox01{
         width: 100%;
@@ -1051,7 +1051,7 @@ span:nth-child(4n-3){
     }
     .footerbox02>p{
         display: block;
-        line-height: normal
+        line-height: normal;
     }
     .footerbox03{
         padding: 0;
