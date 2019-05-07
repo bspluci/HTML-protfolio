@@ -998,7 +998,8 @@ span:nth-child(4n-3){
         margin-right: 0;
     }
     .thumbclick{
-        display: none;
+        top: 0px;
+        left: 12%;
     }
     .thumbclick>img{
         display: none;
