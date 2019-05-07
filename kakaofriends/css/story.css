@@ -59,6 +59,9 @@ body, html{
     width: 100%;
     height: auto;
 }
+.mmainbanner{
+    display: none;
+}
 .sectiona{
     width: 100%;
     height: 100%;
@@ -225,7 +228,7 @@ body, html{
         padding-right: 0px;
     }
     .mainbanner{
-        width: 100%;
+        width: ;
     }
     .sectaimgbox{
         width: 100%;
@@ -292,6 +295,13 @@ body, html{
     .menulist>a{
         padding: 0 10px;
         font-size: 14px;
+    }
+    .mainbanner{
+        display: none;
+    }
+    .mmainbanner{
+        display: block;
+        width: 100%;
     }
     .footerbox01{
         text-align: center;
