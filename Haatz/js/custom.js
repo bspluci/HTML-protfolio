@@ -50,14 +50,18 @@ $(document).ready(function(){
 //                var topbtntop = topbtn.scrollTop();
                 var windowtop = $(window).scrollTop();
                 topbtn.hide();
-                if(windowtop > 0) {topbtn.show()};
-                if(windowtop > 2650) {topbtn.addClass("topbtnstop")}
-                    else{topbtn.removeClass("topbtnstop")};
-                    
+                if(windowtop > 0){
+                    topbtn.show()
+                };
+                if(windowtop > $("footer").offset().top - $(window).height()){
+                         topbtn.addClass("topbtnstop")
+                }else{
+                    topbtn.removeClass("topbtnstop")
+                };                    
             });
             var topbtn = $(".topbtn");
             topbtn.click(function(){
-                $("html, body").animate({scrollTop:0}, 300);
+                $("html, body").animate({scrollTop:0}, 500);
             });
         });
 //3351
@@ -297,7 +301,4 @@ $(document).ready(function(){
                 });
             }); 
         });    
-            
-            
-            
 }) 

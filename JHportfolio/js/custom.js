@@ -166,7 +166,6 @@
             if(windowtop > 0){
                 topbtn.show()
             };
-//            if(windowtop > 3500){
             if(windowtop > $(".footerline").offset().top - $(window).height()){
                 topbtn.addClass("topbtnstop")
             }else{
