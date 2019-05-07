@@ -730,7 +730,6 @@ body, html{
 }
 .imghover01{
     position: fixed;
-    width: 100%;
     top: 350px;
     left: 18%;  
     z-index: 9999;
@@ -815,7 +814,6 @@ body, html{
 }
 .imghover02{
     position: fixed;
-    width: 100%;
     top: 350px;
     left: 54%;
     z-index: 9999;
@@ -900,7 +898,6 @@ body, html{
 }
 .imghover03{
     position: fixed;
-    width: 100%;
     top: 350px;
     left: 18%;
     z-index: 9999;
@@ -985,7 +982,6 @@ body, html{
 }
 .imghover04{
     position: fixed;
-    width: 100%;
     top: 350px;
     left: 54%;
     z-index: 9999;
@@ -1070,7 +1066,6 @@ body, html{
 }
 .imghover05{
     position: fixed;
-    width: 100%;
     top: 350px;
     left: 18%;
     z-index: 9999;
@@ -1155,7 +1150,6 @@ body, html{
 }
 .imghover06{
     position: fixed;
-    width: 100%;
     top: 350px;
     left: 54%;
     z-index: 9999;
@@ -1434,4 +1428,5 @@ body, html{
 .topbtnstop{
     position: absolute;
     top: -80px;
+    right: 30px;
 }
