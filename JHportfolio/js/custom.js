@@ -200,7 +200,7 @@
             }else{
                 $(".profilebtn").removeClass("menuon")            
         }
-        if(windowtop >= $(".fullbody").offset().top -70){
+        if(windowtop >= $(".fullbody").offset().top -73){
             $(".menuright>div").removeClass("menuon");
             $(".portfoliobtn").addClass("menuon");
             }else{

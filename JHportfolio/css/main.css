@@ -24,7 +24,7 @@ body, html{
 }
 .logo{
     padding-top: 30px;
-    font-size: 2rem;
+    font-size: 1rem;
     color: aliceblue;
     font-weight: bold;
 }
@@ -1394,15 +1394,16 @@ body, html{
     text-align: center;
     vertical-align: top;
 }
-.skillhtml>p:first-child{
+.skillhtml>p:nth-child(1){
     font-size: 25px;
 }
-.skillhtml>h1{
-    padding: 50px 0;
+.skillhtml>p:nth-child(2){
+    padding: 30px 0;
     line-height: 25px;
     height: 40px;
+    font-size: 20px;
 }
-.skillhtml>p:last-child{
+.skillhtml>p:nth-child(3){
     font-size: 15px;
     text-align: justify;
 }
