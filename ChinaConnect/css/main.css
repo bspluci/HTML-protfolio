@@ -521,15 +521,12 @@ body, html{
     font-size: 20px;
     font-weight: bold;
 }
-/*
-.effecttitle>p:after{
+.effecttitle:after{
     content: "";
     display: block;
     clear: both;
 }
-*/
-
-.effecttitle>p>span{
+.effecttitle>span{
     width: 28px;
     height: 28px;
     background: #ff0000;
@@ -537,8 +534,9 @@ body, html{
     border-radius: 50%;
     font-size: 14px;
     text-align: center;
+    display: inline-block;
     vertical-align: middle;
-    display: table-cell;
+    float: left;
 }
 
 
