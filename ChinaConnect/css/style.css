@@ -1,6 +1,24 @@
 /*  Reset CSS  */
-* { margin: 0;  padding: 0;}
-ol,ul, li { list-style: none; }
-a { outline: 0; text-decoration: none; color: #000;}
-img { border: 0;}
-body { font: 12px/1.6 arial;} 
+* {
+    margin: 0;
+    padding: 0;
+}
+bod, html{
+    width: 100%;
+    height: 100%;
+}
+ol, ul, li{
+    list-style: none;
+}
+a{
+    outline: 0; 
+    text-decoration: none; 
+    color: #000;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+body{
+    font: 12px/1.6 arial;
+} 
