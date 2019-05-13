@@ -112,6 +112,9 @@ body, html{
     border-radius: 10px;
     font-size: 20px;
 }
+.slider01btn>button>a{
+    color: #fff;
+}
 .slider01btn>button:hover{
     transition: 0.4s;
     background-color: #9f0000;
