@@ -1192,7 +1192,7 @@ body, html{
     }
     .slider01text{
         width: auto;
-        width: 418px;
+        width: 430px;
         left: 50%;
         transform: translateX(-50%);
         text-align: left;
