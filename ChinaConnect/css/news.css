@@ -500,10 +500,17 @@ a:hover{
     }
     .menubox>div{
         text-align: left;
-        padding: 10px 20px;
+        padding: 0 20px;
         border-bottom: 1px solid #dedede;
         color: #111111;
         cursor: pointer;
+        line-height: 50px;
+    }
+    .menubox>.menu05>a,
+    .menubox>.menu06>a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
     }
     .menubox>div:first-child{
         border-top: 1px solid #dedede;
