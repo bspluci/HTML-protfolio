@@ -170,6 +170,17 @@ body, html{
     position: relative;
     top: -20px;
 }
+.fixbtn{
+    position: fixed;
+    right: 20px;
+    z-index: 99999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fixbtn>div{
+    cursor: pointer;
+    margin: 10px 0;
+}
 .serviceintro{
     padding-bottom: 40px;
 }
@@ -488,7 +499,7 @@ body, html{
     position: absolute;
     top: 0px;
     border: 1px solid red;
-    left: 363px;
+    left: 364px;
     z-index: 999;
     box-shadow: 5px 5px 10px 1px #dadada;
 }
@@ -772,7 +783,7 @@ body, html{
 .box09>p,
 .box10>p{
     float: left;
-    padding: 28px 50px;
+    padding: 28px 30px;
 }
 .box07>p:after,
 .box08>p:after,
@@ -785,14 +796,14 @@ body, html{
     background: #c4c4c4;
     position: absolute;
     top: 17px;
-    left: 155px;
+    left: 100px;
 }
 .box07>div,
 .box08>div,
 .box09>div,
 .box10>div{
-    float: left;
-    padding: 17px 50px;
+    _float: left;
+    padding: 17px 0px;
     text-align: left;
 }
 .box07>div>p>img,
@@ -986,6 +997,11 @@ body, html{
     cursor: pointer; 
     border-radius: 5px;
 }
+.newsheader>button>a{
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+}
 .newssection>div>p{
     font-size: 13px;
     line-height: 25px;
@@ -1034,6 +1050,9 @@ body, html{
     outline: 0;
     border-radius: 10px;
     font-size: 18px;
+}
+.footerbtn>button>a{
+    color: #fff;
 }
 .footerbtn>button:hover{
     transition: 0.4s;
@@ -1092,29 +1111,13 @@ body, html{
     color: #fff;
     border-bottom: 1px solid #fff;
 }
-.graphmobile{
+.graphmobile, .svc01mo, .svc02mo, .mobile03,
+.downarrowmo, .aftermo, .mobile05, #planb,
+.mlogo, .mobilemenubtn, .mobilemenu{
     display: none;
 }
-.svc01mo{
-    display: none;
-}
-.svc02mo{
-    display: none;
-}
-.mobile03{
-    display: none;
-}
-.downarrowmo{
-    display: none;
-}
-.aftermo{
-    display: none;
-}
-.mobile05{
-    display: none;
-}
-#planb{
-    display: none;
+.alihide{
+    display: none !important;
 }
 
 
@@ -1138,13 +1141,24 @@ body, html{
         text-align: left; 
     }
     .menulogo{
-        padding-left: 30px
+        margin-left: 30px;
+        line-height: 60px;
+    }
+    .menulogo>img{
+        width: 90%;
     }
     .menulist{
         display: none;
     }
     .lascomlogo{
         display: none;
+    }
+    .mobilemenubtn{
+        display: block;
+        float: right;
+        line-height: 60px;
+        padding: 0 10px;
+        cursor: pointer;
     }
     .slider{
         width: 100%;
@@ -1351,7 +1365,7 @@ body, html{
     }
     .pointbox>div.redline{
         width: 25% !important;
-        height: 493px;
+        height: 494px;
         left: 49.9%;
     }
     .pointbox{
@@ -1368,45 +1382,76 @@ body, html{
         font-size: 14px;
         vertical-align: middle;
     }
+    .pointbox>div:nth-child(3)>div:nth-child(2)>p,
+    .pointbox>div:nth-child(3)>div:nth-child(3)>p,
+    .pointbox>div:nth-child(3)>div:nth-child(4)>p{
+        width: 100px;
+        margin: 0 auto;
+    }
+    .pointbox>div:nth-child(2)>div:nth-child(3)>p{
+        width: 80px;
+        margin: 0 auto;
+    }
+    .pointbox>div:nth-child(8)>div:nth-child(4)>p{
+        width: 100px;
+        margin: 0 auto;
+    }
+    .pointbox>div:nth-child(9)>div:nth-child(3)>p,
+    .pointbox>div:nth-child(9)>div:nth-child(4)>p{
+        width: 90px;
+        margin: 0 auto;
+    }
     .text01{
         font-size: 0;
     }
     .text01:after{
-        font-size: 16px;
+        font-size: 14px;
         display: block;
-        content: "한-중 인터넷VPN"
+        content: "한-중 인터넷VPN";
+        width: 100px;
+        margin: 0 auto;
     }
     .text02{
         font-size: 0;
     }
     .text02:after{
-        font-size: 16px;
+        font-size: 14px;
         display: block;
-        content: "국제전용회선"
+        content: "국제전용회선";
     }
     .text03{
         font-size: 0;
     }
     .text03:after{
-        font-size: 16px;
+        font-size: 14px;
         display: block;
-        content: "인터넷 망 전용회선"
+        content: "인터넷 망 전용회선";
     }
     .text04{
         font-size: 0;
     }
     .text04:after{
-        font-size: 16px;
+        font-size: 14px;
         display: block;
-        content: "전문 관리 인력"
+        content: "전문 관리 인력";
     }
     .text05{
         font-size: 0;
     }
     .text05:after{
-        font-size: 16px;
+        font-size: 14px;
         display: block;
-        content: "설치비 위약금"
+        content: "설치비 위약금";
+    }
+    .text06{
+        font-size: 0;
+    }
+    .text06:after{
+        font-size: 14px;
+        display: block;
+        content: "잦은 끊어짐";
+        width: 100px;
+        margin: 0 auto;
     }
     .connectpoint{
         border-bottom: none;
@@ -1509,6 +1554,11 @@ body, html{
         margin-top: 0;
         margin-bottom: 10px;
     }
+    .box05>p, .box06>p{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
     .box07, .box08, .box09, .box10{
         margin-top: 0;
         height: auto;
@@ -1517,9 +1567,9 @@ body, html{
         padding: 10px;
     }
     .box07>div, .box08>div, .box09>div, .box10>div{
-        width: 280px;
+        width: 70%;
         padding: 10px;
-        padding-left: 50px;
+        padding-left: 130px;
         line-height: 20px
     }
     .box07>p:after{
@@ -1677,20 +1727,140 @@ body, html{
     }
     .footerask{
         display: inline-block;
+        padding-left: 10px;
     }
     .footerbtn{
         display: inline-block;
         padding-top: 0;
-        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 45px;
+        padding-right: 10px;
     }
     .footerbtn>button{
         border-radius: 0;
+        height: 45px;
         width: 150px;
-        
+    }
+    .footericon01{
+        display: inline-block!important;
+    }
+    .footericon{
+        padding-top: 30px;
+        font-size: 0;
+        text-align: center;
+    }
+    .footericon>p{
+        padding: 0 0px !important;
+        width: 30%;
+        text-align: center;
+    }
+    .footericon>p>img{
+        width: 50px;
+        margin: 0 50px;
+    }
+    .footericon>p>span{
+        display: inline-block;
+        width: 70px;
+    }
+    .footericon>p:last-child>span{
+        width: 80px;
+    }
+    .aaa{
+        width: 100% !important;
+    }
+    .footerline{
+        display: none;
+    }
+    .footerfs{
+        display: none !important;
+    }
+    .footerlogo{
+        position: relative;
+        top: -350px;
+    }
+    .alihide{
+        margin-top: 30px;
+        display: inline-block !important;
+    }
+    .mlogo{
+        display: block;
+        border-top: 1px solid #9f9f9f;
+        padding-top: 40px;
+        position: relative;
+        top: -200px;
+        text-align: center;
+    }
+    .mlogo>img{
+        width: 150px;
+    }
+    .footeradd{
+        text-align: center;
+    }
+    .mbg{
+        position: absolute;
+        width: 100%;
+        height: 3100px;
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        background: #000;
+    }
+    .mobilemenu{
+        display: block;
+        width: 400px;
+        height: 3000px;
+        position: absolute;
+        margin: 0 auto;
+        text-align: right;
+        z-index: 999;
+        top: 0;
+        right: -400px;
+    }
+    .bigbox{
+        overflow: hidden;
+    }
+    .mclosebtn{
+        position: relative;
+        right: 0;
+        cursor: pointer;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .mclosebtn>img{
+        height: 60px;
+    }
+    .menubox{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        font-size: 18px;
+        background: #fff;
+    }
+    .menubox>div{
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #dedede;
+        color: #111111;
+        cursor: pointer;
+    }
+    .menubox>div:first-child{
+        border-top: 1px solid #dedede;
+    }
+    .menubox>div:last-child{
+        border-bottom: none;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .menubox>div>img{
+        width: 250px;
+    }
+    .fixbtn{
+        display: none;
     }
 }
-
-
 @media screen and (max-width:600px){
     .headertext{
         font-size: 15px;
