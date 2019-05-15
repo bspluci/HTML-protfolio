@@ -100,6 +100,7 @@ a:hover{
 .shildnewsbox>table>tbody>tr>td:nth-child(1),
 .shildnewsbox>table>tbody>tr>td:nth-child(3){
     text-align: center;
+    padding-bottom: 10px;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, 
 .table>tfoot>tr>th{
@@ -169,7 +170,7 @@ a:hover{
     background-color: #9f0000;
 }
 .footericon{
-    height: 300px;
+    _height: 300px;
 }
 .footericon>p{
     display: inline-block;
@@ -249,6 +250,9 @@ a:hover{
 
 
 @media screen and (max-width:750px){
+    p{
+        margin: 0 0 0 !important;
+    }
     .footerask, .footerbtn, .footericon{
         display: block
     }
@@ -269,7 +273,7 @@ a:hover{
         text-align: left; 
     }
     .menulogo{
-        margin-left: 30px;
+        margin-left: 10px;
         line-height: 60px;
     }
     .menulogo>img{
@@ -311,7 +315,7 @@ a:hover{
         transform: translateY(-50%);
     }
     .bannerbox>p:first-child{
-        width: 350px;
+        width: 100%;
         margin: 0 auto;
     }
     .bannerbox>p:last-child{
@@ -343,12 +347,12 @@ a:hover{
     .shildnewsbox>table>tbody>tr>td:nth-child(2){
         display: block;
         border: 0;
-        font-size: 18px;
+        font-size: 16px;
     }
     .shildnewsbox>table>tbody>tr>td:nth-child(3){
         display: block;
         text-align: left;
-        font-size: 14px;
+        font-size: 13px;
         color: #6a6a6a;
     }
     .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
@@ -363,18 +367,8 @@ a:hover{
     }
     .pagebox>ul>li>a{
         color: #6a6a6a;
-        padding: 15px 23px;
+        padding: 8px 15px;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     .sectionhistory, .sectionoperation, .sectionguest, .pchistory{
         display: none;
     }
@@ -383,7 +377,10 @@ a:hover{
         text-align: left;
     }
     .footerask>p:first-child{
-        font-size: 16px !important;
+        font-size: 14px !important;
+    }
+    .footerask>p:last-child{
+        font-size: 14px;
     }
     .footerask{
         display: inline-block;
@@ -400,7 +397,8 @@ a:hover{
     .footerbtn>button{
         border-radius: 0;
         height: 45px;
-        width: 150px;
+        width: 100px;
+        font-size: 14px;
     }
     .footericon01{
         display: inline-block!important;
@@ -410,18 +408,30 @@ a:hover{
         font-size: 0;
         text-align: center;
     }
+    .footericon>p:nth-child(3)>span{
+        margin-left: -10px;
+    }
     .footericon>p{
         padding: 0 0px !important;
-        width: 30%;
+        width: 33%;
         text-align: center;
+        font-size: 12px;
     }
     .footericon>p>img{
-        width: 50px;
-        margin: 0 50px;
+        width: 40px;
+        margin: 0;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .footericon>p>span{
         display: inline-block;
-        width: 100px;
+        width: 50px;
+        padding-top: 5px;
+    }
+    .footericon>p:last-child>span{
+        width: 60px;
     }
     .aaa{
         width: 100% !important;
@@ -437,24 +447,24 @@ a:hover{
         top: -350px;
     }
     .alihide{
-        margin-top: 30px;
+        margin-top: 30px !important;
         display: inline-block !important;
     }
     .mlogo{
         display: block;
         border-top: 1px solid #9f9f9f;
-        padding-top: 40px;
-        position: relative;
-        top: -330px;
         text-align: center;
+        margin-top: 30px;
+        padding-top: 30px;
     }
     .mlogo>img{
         width: 150px;
     }
     .footeradd{
         text-align: center;
-        margin-top: 40px;
-        padding-bottom: 150px;
+        padding: 0 0;
+        margin-top: 30px;
+        padding-bottom: 50px;
     }
     .mbg{
         position: absolute;
@@ -468,14 +478,14 @@ a:hover{
     }
     .mobilemenu{
         display: block;
-        width: 400px;
+        width: 70%;
         height: 3000px;
         position: absolute;
         margin: 0 auto;
         text-align: right;
         z-index: 999;
         top: 0;
-        right: -400px;
+        right: -70%;
     }
     .bigbox{
         overflow: hidden;
@@ -484,7 +494,7 @@ a:hover{
         position: relative;
         right: 0;
         cursor: pointer;
-        width: 400px;
+        width: 100%;
         background-color: rgba(0, 0, 0, 0);
     }
     .mclosebtn>img{
@@ -495,7 +505,7 @@ a:hover{
         width: 100%;
         height: 100%;
         right: 0;
-        font-size: 18px;
+        font-size: 16px;
         background: #fff;
     }
     .menubox>div{
@@ -521,6 +531,9 @@ a:hover{
         padding-top: 30px;
     }
     .menubox>div>img{
-        width: 250px;
+        width: 100%;
+    }
+    .fixbtn{
+        display: none;
     }
 }

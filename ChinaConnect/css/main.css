@@ -374,7 +374,7 @@ body, html{
     color: #ff0000;
 }
 .configtext>p{
-    font-size: 15px;
+    font-size: 14px;
 }
 .configtext>p>img{
     vertical-align: middle;
@@ -405,7 +405,7 @@ body, html{
     background: #fafafa;
     color: #606060;
     line-height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     margin: 5px;
 }
 .configtextbox02{
@@ -795,7 +795,7 @@ body, html{
     content: "";
     display: block;
     width: 1px;
-    height: 50px;
+    height: 70% !important;
     background: #c4c4c4;
     position: absolute;
     top: 17px;
@@ -1144,7 +1144,7 @@ body, html{
         text-align: left; 
     }
     .menulogo{
-        margin-left: 30px;
+        margin-left: 10px;
         line-height: 60px;
     }
     .menulogo>img{
@@ -1192,7 +1192,7 @@ body, html{
     }
     .slider01text{
         width: auto;
-        width: 430px;
+        width: 320px;
         left: 50%;
         transform: translateX(-50%);
         text-align: left;
@@ -1222,6 +1222,7 @@ body, html{
     .headertext{
         border-radius: 0;
         font-size: 18px;
+        line-height: inherit;
     }
     .headertext>p>i{
         padding-right: 5px;    
@@ -1242,7 +1243,7 @@ body, html{
     }
     .serviceinnerbox>div{
         float: left;
-        margin-left: 20px;
+        _margin-left: 10px;
     }
     .serviceinnerbox>p{
         float: left;
@@ -1254,16 +1255,29 @@ body, html{
     }
     .icon>img{
         vertical-align: middle;
+        width: 80%;
+    }
+    .serviceinnerbox:after{
+        content: "";
+        display: block;
+        clear: both;
     }
     .serviceinnerbox .iconname{
         line-height: 60px;
-        padding: 0 8px;
+        padding: 0 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 14px;
     }
     .serviceinnerbox .icontext{
-        width: 70%;
+        width: 65%;
         text-align: left;
-        font-size: 14px;
-        padding-top: 10px;;        
+        font-size: 12px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+    .serviceinnerbox .icontext>a{
+        margin-left: 20px;
     }
     .compareheader{
         display: none;
@@ -1286,22 +1300,30 @@ body, html{
         border: none;
     }
     .compareredbox{
-        width: 40%;
+        width: 43%;
         display: inline-block;
         padding-top: 10px;
-        padding: 0 10px;
+        padding: 10px 5px;
     }
     .comparebluebox{
-        width: 40%;
+        width: 43%;
         display: inline-block;
         padding-top: 10px;
-        padding: 0 10px;
+        padding: 10px 5px;
     }
+    .compareredbox .redboxtext,
+    .comparebluebox .bludboxtext{
+        font-size: 12px;
+        padding: 0;
+    }   
     .serviceconfig{
         padding-top: 50px;
     }
     .configtextbox i{
         font-size: 12px;
+    }
+    .configtitle>div{
+        font-size: 14px;
     }
     .configtextbox>p{
         font-size: 19px;
@@ -1348,6 +1370,7 @@ body, html{
     .box03title{
         width: 18%;
         float: left;
+        font-size: 18px;
     }
     .box02title:after,
     .box03title:after{
@@ -1358,9 +1381,10 @@ body, html{
         padding: 0;
         width: 75%;
         margin-left: 20px;
+        font-size: 14px;
     }
     .serverimg>img{
-        width: 100%;
+        width: 95%;
     }
     .pointheader{
         padding-top: 40px;
@@ -1382,43 +1406,53 @@ body, html{
     .pointbox>div>div{
         width: 25% !important;
         box-sizing: border-box;
-        font-size: 14px;
+        font-size: 12px;
         vertical-align: middle;
+        display: inline-block;
+    }
+    .pointbox>div>div{
+        text-align: center;
+    }
+    .pointbox>div>div>p{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;        
     }
     .pointbox>div:nth-child(3)>div:nth-child(2)>p,
     .pointbox>div:nth-child(3)>div:nth-child(3)>p,
     .pointbox>div:nth-child(3)>div:nth-child(4)>p{
-        width: 100px;
+        width: 100%;
         margin: 0 auto;
     }
     .pointbox>div:nth-child(2)>div:nth-child(3)>p{
-        width: 80px;
+        width: 100%;
         margin: 0 auto;
     }
     .pointbox>div:nth-child(8)>div:nth-child(4)>p{
-        width: 100px;
+        width: 100%;
         margin: 0 auto;
     }
     .pointbox>div:nth-child(9)>div:nth-child(3)>p,
     .pointbox>div:nth-child(9)>div:nth-child(4)>p{
-        width: 90px;
+        width: 100%;
         margin: 0 auto;
     }
     .text01{
         font-size: 0;
     }
     .text01:after{
-        font-size: 14px;
+        font-size: 12px;
         display: block;
         content: "한-중 인터넷VPN";
-        width: 100px;
+        width: 100%;
         margin: 0 auto;
     }
     .text02{
         font-size: 0;
     }
     .text02:after{
-        font-size: 14px;
+        font-size: 12px;
         display: block;
         content: "국제전용회선";
     }
@@ -1426,7 +1460,7 @@ body, html{
         font-size: 0;
     }
     .text03:after{
-        font-size: 14px;
+        font-size: 12px;
         display: block;
         content: "인터넷 망 전용회선";
     }
@@ -1434,7 +1468,7 @@ body, html{
         font-size: 0;
     }
     .text04:after{
-        font-size: 14px;
+        font-size: 12px;
         display: block;
         content: "전문 관리 인력";
     }
@@ -1442,7 +1476,7 @@ body, html{
         font-size: 0;
     }
     .text05:after{
-        font-size: 14px;
+        font-size: 12px;
         display: block;
         content: "설치비 위약금";
     }
@@ -1450,7 +1484,7 @@ body, html{
         font-size: 0;
     }
     .text06:after{
-        font-size: 14px;
+        font-size: 12px;
         display: block;
         content: "잦은 끊어짐";
         width: 100px;
@@ -1528,6 +1562,7 @@ body, html{
     .casesection{
         width: 100%; 
         float: none;
+        font-size: 14px;
     }
     .connectcase{
         padding-top: 0;
@@ -1553,18 +1588,19 @@ body, html{
     .box05, .box06{
         height: auto;
         padding: 10px 0;
-        font-size: 16px;
+        font-size: 13px;
         margin-top: 0;
         margin-bottom: 10px;
     }
     .box05>p, .box06>p{
         display: block;
-        width: 95%;
+        padding: 0 5px;
         margin: 0 auto;
     }
     .box07, .box08, .box09, .box10{
         margin-top: 0;
         height: auto;
+        font-size: 13px;
     }
     .box07>p, .box08>p, .box09>p, .box10>p{
         padding: 10px;
@@ -1572,28 +1608,31 @@ body, html{
     .box07>div, .box08>div, .box09>div, .box10>div{
         width: 70%;
         padding: 10px;
-        padding-left: 130px;
+        padding-left: 100px;
         line-height: 20px
+    }
+    .box07>div>p:last-child, .box08>div>p:last-child, .box09>div>p:last-child, .box10>div>p:last-child{
+        font-size: 12px;
     }
     .box07>p:after{
         height: 60px;
         top: 10px;
-        left: 95px;
+        left: 80px;
     }
     .box08>p:after{
         height: 80px;
         top: 10px;
-        left: 95px;
+        left: 80px;
     }
     .box09>p:after{
         height: 100px;
         top: 10px;
-        left: 95px;
+        left: 80px;
     }
     .box10>p:after{
         height: 80px;
         top: 10px;
-        left: 95px;
+        left: 80px;
     }
     .mobile05{
         display: block;
@@ -1639,10 +1678,10 @@ body, html{
         padding-left: 0px;
     }
     .kaddbox>p{
-        padding-left: 15px;
+        padding-left: 5px;
     }
     .caddbox>p{
-        padding-left: 15px;
+        padding-left: 5px;
     }
     .kcaddbox>div{
         text-align: left;
@@ -1651,8 +1690,14 @@ body, html{
     .kcaddbox>div:first-child{
         border-bottom: 1px solid #d7d7d7;
     }
+    .kcaddbox>div>p>span{
+        padding-right: 3px;
+    }
+    .kcaddbox>div>p>img{
+        padding-right: 3px;
+    }
     .langservice>div{
-        font-size: 16px;
+        font-size: 13px;
     }
     .langbox{
         border-bottom: 1px solid #d7d7d7
@@ -1676,7 +1721,7 @@ body, html{
         font-size: 0;
     }
     .nbtitle>div{
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bold;
         line-height: 60px;
         width: 50%;
@@ -1690,7 +1735,7 @@ body, html{
         padding: 5px;
     }
     .newsin>p:first-child{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         color: #3f424a;
     }
@@ -1698,7 +1743,7 @@ body, html{
         padding-right: 10px;
     }
     .newsin>p:last-child{
-        font-size: 14px;
+        font-size: 12px;
         padding-left: 13px;
         color: #6a6a6a;
     }
@@ -1726,7 +1771,10 @@ body, html{
         text-align: left;
     }
     .footerask>p:first-child{
-        font-size: 16px !important;
+        font-size: 14px !important;
+    }
+    .footerask>p:last-child{
+        font-size: 14px;
     }
     .footerask{
         display: inline-block;
@@ -1743,7 +1791,8 @@ body, html{
     .footerbtn>button{
         border-radius: 0;
         height: 45px;
-        width: 150px;
+        width: 100px;
+        font-size: 14px;
     }
     .footericon01{
         display: inline-block!important;
@@ -1753,21 +1802,30 @@ body, html{
         font-size: 0;
         text-align: center;
     }
+    .footericon>p:nth-child(3)>span{
+        margin-left: -10px;
+    }
     .footericon>p{
         padding: 0 0px !important;
-        width: 30%;
+        width: 33%;
         text-align: center;
+        font-size: 12px;
     }
     .footericon>p>img{
-        width: 50px;
-        margin: 0 50px;
+        width: 40px;
+        margin: 0;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .footericon>p>span{
         display: inline-block;
-        width: 70px;
+        width: 50px;
+        padding-top: 5px;
     }
     .footericon>p:last-child>span{
-        width: 80px;
+        width: 60px;
     }
     .aaa{
         width: 100% !important;
@@ -1789,16 +1847,18 @@ body, html{
     .mlogo{
         display: block;
         border-top: 1px solid #9f9f9f;
-        padding-top: 40px;
-        position: relative;
-        top: -200px;
         text-align: center;
+        margin-top: 30px;
+        padding-top: 30px;
     }
     .mlogo>img{
         width: 150px;
     }
     .footeradd{
         text-align: center;
+        padding: 0 0;
+        margin-top: 30px;
+        padding-bottom: 50px;
     }
     .mbg{
         position: absolute;
@@ -1812,14 +1872,14 @@ body, html{
     }
     .mobilemenu{
         display: block;
-        width: 400px;
+        width: 70%;
         height: 3000px;
         position: absolute;
         margin: 0 auto;
         text-align: right;
         z-index: 999;
         top: 0;
-        right: -400px;
+        right: -70%;
     }
     .bigbox{
         overflow: hidden;
@@ -1828,7 +1888,7 @@ body, html{
         position: relative;
         right: 0;
         cursor: pointer;
-        width: 400px;
+        width: 100%;
         background-color: rgba(0, 0, 0, 0);
     }
     .mclosebtn>img{
@@ -1839,7 +1899,7 @@ body, html{
         width: 100%;
         height: 100%;
         right: 0;
-        font-size: 18px;
+        font-size: 16px;
         background: #fff;
     }
     .menubox>div{
@@ -1865,7 +1925,7 @@ body, html{
         padding-top: 30px;
     }
     .menubox>div>img{
-        width: 250px;
+        width: 100%;
     }
     .fixbtn{
         display: none;
@@ -1878,5 +1938,6 @@ body, html{
     .compareredbox .redboxtext,
     .comparebluebox .bludboxtext{
         font-size: 12px;
+        padding: 0;
     }    
 }

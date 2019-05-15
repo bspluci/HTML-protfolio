@@ -32,11 +32,6 @@
         $("html, body").stop().animate({scrollTop:$(".connectcase").offset().top -70}, 800);
         $(".mclosebtn").click();
     });
-//    $(".menulist>li>a").click(function(){
-//        var i = $(this).index();
-//        $(".menulist>li>a").removeClass("menuon");
-//        $(this).addClass("menuon");
-//    });
     $(document).scroll(function(){
         var windowtop = $(window).scrollTop();
         if(windowtop > 0){
@@ -65,7 +60,7 @@
     });
     $(".mclosebtn").click(function(){
         $(".mbg").fadeTo(600, 0);
-        $(".mobilemenu").stop().animate({"right":"-400px"}, function(){
+        $(".mobilemenu").stop().animate({"right":"-70%"}, function(){
             $(".mbg").css({"display":"none"});
         });
         
