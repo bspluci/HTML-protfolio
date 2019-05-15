@@ -1390,11 +1390,13 @@ body, html{
         padding-top: 40px;
         padding-bottom: 20px;
     }
+/*
     .pointbox>div.redline{
         width: 25% !important;
         height: 494px;
         left: 49.9%;
     }
+*/
     .pointbox{
         width: 100% !important;
     }
