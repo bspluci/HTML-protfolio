@@ -136,10 +136,10 @@ dl{
 }
 .askcontents>dd>div>textarea{
     resize: none;
-    width: 808px;
+    width: 780px;
     height: 250px;
 }
-.it{
+.it, .phoneit{
     width: 200px;
     height: 26px;
 }
