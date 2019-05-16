@@ -496,15 +496,12 @@ body, html{
 .pointbox>div>div:nth-child(4){
     width: 195px;
 }
-.redline{
-    width: 196px;
-    height: 510px;
-    position: absolute;
-    top: 0px;
-    border: 1px solid red;
-    left: 364px;
-    z-index: 999;
-    box-shadow: 5px 5px 10px 1px #dadada;
+.pointbox>div>div:nth-child(3){
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.pointbox>div:nth-child(9)>div:nth-child(3){
+    border-bottom: 1px solid red;
 }
 #sectiona{
     width: 100%;
@@ -1243,7 +1240,6 @@ body, html{
     }
     .serviceinnerbox>div{
         float: left;
-        _margin-left: 10px;
     }
     .serviceinnerbox>p{
         float: left;
@@ -1273,8 +1269,11 @@ body, html{
         width: 65%;
         text-align: left;
         font-size: 12px;
-        padding-top: 10px;
-        display: inline-block;
+        padding-top: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25%;
     }
     .serviceinnerbox .icontext>a{
         margin-left: 20px;
@@ -1390,13 +1389,6 @@ body, html{
         padding-top: 40px;
         padding-bottom: 20px;
     }
-/*
-    .pointbox>div.redline{
-        width: 25% !important;
-        height: 494px;
-        left: 49.9%;
-    }
-*/
     .pointbox{
         width: 100% !important;
     }
