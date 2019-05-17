@@ -64,7 +64,7 @@ body, html{
         transform: translateX(0)
     }
     100%{
-        transform: translateX(2000px)
+        transform: translateX(100%)
     }
 }
 .aurora02{
@@ -72,14 +72,14 @@ body, html{
     opacity: 0.1;
     left: -50%;
     top: 10%;
-    animation: aurora02 300s linear infinite;
+    animation: aurora02 200s linear infinite;
 }
 @keyframes aurora02{
     0%{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(3000px);
+        transform: translateX(100%);
     }
 }
 .dropstar01{
@@ -1716,6 +1716,12 @@ body, html{
         right: 20px;
     }
 }
+@media screen and (max-width:440px){
+    .bannerimgtext>p{
+        padding: 0 20px;
+        font-size: 25px;
+    }
+}
 @media screen and (max-width:400px){
     .logo>h1{
         font-size: 20px;
@@ -1744,6 +1750,6 @@ body, html{
     }
     .bannerimgtext>p{
         padding: 0 20px;
-        font-size: 18px;
+        font-size: 20px;
     }
 }
