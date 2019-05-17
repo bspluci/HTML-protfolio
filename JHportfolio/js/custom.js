@@ -207,7 +207,11 @@
             var ay = ($(window).innerHeight()/2- e.pageY)/100;
             card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);");
         });
-//        푸터 라인만들기    
+//        푸터 라인만들기
+            $(document).scroll(function(){
+            var line = $(".centerline>span");
+            var linetop = line.offset().top;
+            var scrolltop = $(window).scrollTop()
             if(linetop + line.height() >= $(".dot07").offset().top){
                 $(".footerlineright>span").stop().animate({"width":"100%"},400);
             }else $(".footerlineright>span").stop().animate({"width":"0"},400);
@@ -230,6 +234,7 @@
             if(linetop + line.height() >= $(".dot07").offset().top){
                 $(".skill").animate({opacity:"1"},500);
             }
+            });    
             
         }else {
         

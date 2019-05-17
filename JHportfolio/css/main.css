@@ -1403,8 +1403,8 @@ body, html{
     height: 40px;
     font-size: 20px;
 }
-.skillhtml>p:nth-child(3){
-    font-size: 15px;
+.skillhtml>p:last-child{
+    font-size: 16px;
     text-align: justify;
 }
 .footer{
@@ -1640,6 +1640,7 @@ body, html{
     .javamo, .mobilemo{
         display: block;
         font-size: 20px !important;
+        text-align: left;
     }
     .javamm, .mobilemm{
         font-size: 15px !important;
