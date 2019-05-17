@@ -1433,24 +1433,24 @@ body, html{
 }
 .skillhtml{
     color: #fff;
-    width: 16.3%;
-    padding: 0 20px;
+    width: 13%;
+    padding: 0 10px;
     display: inline-block;
     text-align: center;
     vertical-align: top;
 }
 .skillhtml>p:nth-child(1){
-    font-size: 25px;
+    font-size: 22px;
 }
 .skillhtml>p:nth-child(2){
-    padding: 30px 0;
+    padding: 20px 0;
     line-height: 25px;
     height: 40px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .skillhtml>p:last-child{
-    font-size: 16px;
-    text-align: justify;
+    font-size: 15px;
+    text-align: left;
 }
 .footer{
     background: #3f3f3f;
@@ -1638,7 +1638,7 @@ body, html{
         right: 20px;
     }
     .footerline{
-        height: 550px;
+        height: 650px;
     }
     .skill{
         min-width: 100%;
