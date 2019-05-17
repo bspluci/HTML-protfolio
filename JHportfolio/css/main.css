@@ -747,6 +747,9 @@ body, html{
         transform: translateX(-100px);
     }
 }
+.mobileplan{
+    display: none;
+}
 .imgnono{
     position: fixed;
     top: 330px;
@@ -1513,6 +1516,13 @@ body, html{
     }
 }
 @media screen and (max-width:760px){
+    .mobileplan{
+        display: block;
+    }
+    .mobileplan>span{
+        display: block;
+        color: #159adb;
+    }
     hover{
         display: none;
     }
