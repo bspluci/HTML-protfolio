@@ -1470,7 +1470,6 @@ body, html{
         margin-left: 0;
     }
 }
-
 @media screen and (max-width:760px){
     hover{
         display: none;
@@ -1658,6 +1657,11 @@ body, html{
     .footer>p>span{
         padding: 0 20px;
     }
+    .topbtn{
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 @media screen and (max-width:400px){
     .logo>h1{
@@ -1689,5 +1693,4 @@ body, html{
         padding: 0 20px;
         font-size: 18px;
     }
-    
 }

@@ -13,24 +13,6 @@
             }
         });
    
-//        탑버튼
-        $(".topbtn").hide();
-        $(window).scroll(function(){
-            var topbtn = $(".topbtn");
-            var windowtop = $(window).scrollTop();
-            topbtn.hide();
-            if(windowtop > 0){
-                topbtn.show()
-            };
-            if(windowtop > $(".footerline").offset().top - $(window).height()){
-                topbtn.addClass("topbtnstop")
-            }else{
-                topbtn.removeClass("topbtnstop")
-            };
-        });
-        $(".topbtn").click(function(){
-            $("html, body").animate({scrollTop:0}, 1000);
-        });
 //        메뉴 클릭 위치이동
         $(".mainbtn").click(function(){
             $("html, body").stop().animate({scrollTop:0}, 1000);    
@@ -70,10 +52,10 @@
             }        
         });
 
-        
+//        미디어쿼리
         if(matchMedia("screen and (min-width: 750px)").matches) {
             
-                    $(".imgimg>div").hide();
+        $(".imgimg>div").hide();
         var dotmax = $(".introsection .dot").length -1;
         var dotnum = 0
         $(document).scroll(function(){
@@ -202,43 +184,78 @@
             });
 //        프로필사진 무브
             $(document).on("mousemove",function(e) {
-            var card = $(".profilephoto");
-            var ax = -($(window).innerWidth()/2- e.pageX)/100;
-            var ay = ($(window).innerHeight()/2- e.pageY)/100;
-            card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);");
-        });
+                var card = $(".profilephoto");
+                var ax = -($(window).innerWidth()/2- e.pageX)/100;
+                var ay = ($(window).innerHeight()/2- e.pageY)/100;
+                card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);");
+            });
 //        푸터 라인만들기
             $(document).scroll(function(){
-            var line = $(".centerline>span");
-            var linetop = line.offset().top;
-            var scrolltop = $(window).scrollTop()
-            if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".footerlineright>span").stop().animate({"width":"100%"},400);
-            }else $(".footerlineright>span").stop().animate({"width":"0"},400);
-            if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".footerlineright01>span").stop().animate({"height":"100%"},400);
-            }else $(".footerlineright01>span").stop().animate({"height":"0"},400);
-            if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".footerlineright02>span").stop().animate({"width":"100%"},400);
-            }else $(".footerlineright02>span").stop().animate({"width":"0"},400);    
-            if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".footerlineleft>span").stop().animate({"width":"100%"},400);
-            }else {$(".footerlineleft>span").stop().animate({"width":"0"},400)};
-            if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".footerlineleft01>span").stop().animate({"height":"100%"},400);
-            }else $(".footerlineleft01>span").stop().animate({"height":"0"},400);
-            if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".footerlineleft02>span").stop().animate({"width":"100%"},400);
-            }else {$(".footerlineleft02>span").stop().animate({"width":"0"},400)}
-//            스킬창 보이기    
-            if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".skill").animate({opacity:"1"},500);
-            }
-            });    
+                var line = $(".centerline>span");
+                var linetop = line.offset().top;
+                var scrolltop = $(window).scrollTop()
+                if(linetop + line.height() >= $(".dot07").offset().top){
+                    $(".footerlineright>span").stop().animate({"width":"100%"},400);
+                }else $(".footerlineright>span").stop().animate({"width":"0"},400);
+                if(linetop + line.height() >= $(".dot07").offset().top){
+                    $(".footerlineright01>span").stop().animate({"height":"100%"},400);
+                }else $(".footerlineright01>span").stop().animate({"height":"0"},400);
+                if(linetop + line.height() >= $(".dot07").offset().top){
+                    $(".footerlineright02>span").stop().animate({"width":"100%"},400);
+                }else $(".footerlineright02>span").stop().animate({"width":"0"},400);    
+                if(linetop + line.height() >= $(".dot07").offset().top){
+                    $(".footerlineleft>span").stop().animate({"width":"100%"},400);
+                }else {$(".footerlineleft>span").stop().animate({"width":"0"},400)};
+                if(linetop + line.height() >= $(".dot07").offset().top){
+                    $(".footerlineleft01>span").stop().animate({"height":"100%"},400);
+                }else $(".footerlineleft01>span").stop().animate({"height":"0"},400);
+                if(linetop + line.height() >= $(".dot07").offset().top){
+                    $(".footerlineleft02>span").stop().animate({"width":"100%"},400);
+                }else {$(".footerlineleft02>span").stop().animate({"width":"0"},400)}
+//                스킬창 보이기    
+                if(linetop + line.height() >= $(".dot07").offset().top){
+                    $(".skill").animate({opacity:"1"},500);
+                }
+            });
+//        탑버튼
+             $(".topbtn").hide();
+             $(window).scroll(function(){
+                 var topbtn = $(".topbtn");
+                 var windowtop = $(window).scrollTop();
+                 topbtn.hide();
+                 if(windowtop > 0){
+                     topbtn.show()
+                 };
+                 if(windowtop > $(".footerline").offset().top - $(window).height()){
+                     topbtn.addClass("topbtnstop")
+                 }else{
+                     topbtn.removeClass("topbtnstop")
+                 };
+             });
+             $(".topbtn").click(function(){
+                 $("html, body").animate({scrollTop:0}, 1000);
+             });
             
         }else {
-        
-        
             
+//        탑버튼
+            $(".topbtn").hide();
+            $(window).scroll(function(){
+                var topbtn = $(".topbtn");
+                var windowtop = $(window).scrollTop();
+                topbtn.hide();
+                if(windowtop > 0){
+                    topbtn.show()
+                };
+                if(windowtop > $(".footer").offset().top){
+                    topbtn.addClass("topbtnstop")
+                }else{
+                    topbtn.removeClass("topbtnstop")
+                };
+            });
+            $(".topbtn").click(function(){
+                $("html, body").animate({scrollTop:0}, 1000);
+            });
+        
         }
 });
