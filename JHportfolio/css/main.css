@@ -1431,7 +1431,15 @@ body, html{
     top: -80px;
     right: 30px;
 }
-
+.footermbg{
+    display: none;
+}
+.javamo{
+    display: none;
+}
+.mobilemo{
+    display: none;
+}
 @media screen and (max-width:1180px){
     .texton{
         font-size: 14px;
@@ -1461,4 +1469,224 @@ body, html{
     .img04 p{
         margin-left: 0;
     }
+}
+
+@media screen and (max-width:760px){
+    hover{
+        display: none;
+    }
+    #header{
+        min-width: 100%;
+    }
+    .menu{
+        min-width: 100%;
+    }
+    .logo>h1{
+        font-size: 25px;
+    }
+    .bannerimg{
+        min-width: 100%;
+        height: 700px
+    }
+    .bannerimgtext:before{
+        width: 80px;
+    }
+    .bannerimgtext{
+        width: 95%;
+    }
+    .bannerimgtext>p{
+        font-size: 25px;
+        line-height: 50px
+    }
+    .star03{
+        top: 400px;
+    }
+    .profile{
+        min-width: 100%;
+    }
+    .profileimg{
+        width: 100%;
+        height: 600px;
+    }
+    .profilephoto{
+        left: 0;
+        height: auto;
+    }
+    .profilephoto>img{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .photo01{
+        width: 250px;
+    }
+    .photo02{
+        width: 190px;
+        top: 19px;
+    }
+    .profile{
+        margin-top: 30px;
+    }
+    .profileboxtext{
+        font-size: 25px;
+    }
+    .profiletext{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        width: 375px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .portfoliotext{
+        font-size: 25px;
+    }
+    .fullbody{
+        min-width: 100%;
+    }
+    .introbox{
+        width: 95%;
+        min-width: 95%;
+    }
+    .introimg>div>a>div{
+        display: none;
+    }
+    .dot{
+        display: none;
+    }
+    .centerline{
+        display: none;
+    }
+    .img01, .img02, .img03, .img04, .img05, .img06{
+        position: static;
+    }
+    .img01>img, .img02>img, .img03>img, .img04>img, .img05>img, .img06>img{
+        width: 80%;
+    }
+    .introimg{
+        position: static;
+        width: 95%;
+        margin: 50px auto;
+    }
+    .introimg>div{
+        width: 100%;
+        text-align: center;
+    }
+    .box{
+        display: none;
+    }
+    .imgimg>p{
+        opacity: 1;
+        font-size: 16px;
+        padding-top: 10px
+    }
+    .lastbox{
+        display: none;
+    }
+    .topbtnstop{
+        right: 20px;
+    }
+    .footerline{
+        height: 550px;
+    }
+    .skill{
+        min-width: 100%;
+        opacity: 1;
+    }
+    .skillvideo{
+        display: none;
+    }
+    .footermbg{
+        display: block;
+        background: url(../img/mfooterbg.jpg)no-repeat 50%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -99;
+    }
+    .skillbox{
+        width: 100%;
+        top: 0;
+        transform: translateY(0);
+    }
+    .skillbox>div:first-child{
+        margin-top: 50px;        
+    }
+    .skillhtml{
+        display: block;
+        width: 90%;
+        margin: 0 auto; 
+        padding: 0;
+    }
+    .skillhtml:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .skillhtml>p:nth-child(1){
+        float: left;
+        font-size: 20px;
+        width: 70px;
+        height: 100px;
+    }
+    .skillhtml>p:nth-child(2){
+        padding: 0;
+        line-height: normal;
+        height: auto;
+        text-align: left;
+    }
+    .javamo, .mobilemo{
+        display: block;
+        font-size: 20px !important;
+    }
+    .javamm, .mobilemm{
+        font-size: 15px !important;
+    }
+    .javapc, .mobilepc{
+        display: none;
+    }
+    .skillhtml>p:last-child{
+        text-align: left;
+    }
+    .footer{
+        min-width: 100%;
+        text-align: center;
+    }
+    .footer>p>span{
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:400px){
+    .logo>h1{
+        font-size: 20px;
+    }
+    .menuright>div{
+        font-size: 14px;
+    }
+    .skillhtml>p:last-child{
+        font-size: 12px !important;
+    }
+    .profileimg{
+        height: 500px;
+    }
+    .photo01{
+        width: 200px;
+    }
+    .photo02{
+        width: 150px;
+        top: 19px;
+    }
+    .footer{
+        font-size: 12px;
+    }
+    .footer>p>span{
+        padding: 0;
+    }
+    .bannerimgtext>p{
+        padding: 0 20px;
+        font-size: 18px;
+    }
+    
 }

@@ -53,18 +53,20 @@
             $(".menu04>a").addClass("menuon")};      
         });
 
-    $(".mobilemenubtn").click(function(){
+    $(".mobilemenubtn").click(function(e){
         $(".mobilemenu").stop().animate({"right":"0"});
+        $(".mobilemenu").css("height", $("html").height());
+        $(".mbg").css("height", $(".bigbox").height());
         $(".mbg").css({"display":"block", "z-index":"1"});
         $(".mbg").fadeTo(600, 0.5);
     });
-    $(".mclosebtn").click(function(){
+        $(".mclosebtn, .mbg").click(function(){
         $(".mbg").fadeTo(600, 0);
         $(".mobilemenu").stop().animate({"right":"-70%"}, function(){
             $(".mbg").css({"display":"none"});
         });
-        
     });
+      
         
     
     if(matchMedia("screen and (min-width: 751px)").matches) {
