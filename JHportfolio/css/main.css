@@ -666,13 +666,32 @@ body, html{
     animation-fill-mode: forwards;
     overflow: hidden;
 }
-.texton{
-    position: fixed;
-    top: 280px ;
-    left: 13.5%;
-    width: 445px;
+.texton1 {
+    position: relative;
+    top: -25px;
+    left: -25%;
     font-size: 18px;
-    padding-top: 20px;
+    color: #000;
+    animation: texton 0.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.texton3 {
+    position: relative;
+    top: -25px;
+    left: -48%;
+    font-size: 18px;
+    color: #000;
+    animation: texton 0.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.texton5 {
+    position: relative;
+    top: -25px;
+    left: -26%;
+    font-size: 18px;
+    color: #000;
     animation: texton 0.5s linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -686,15 +705,38 @@ body, html{
         transform: translateX(100px);
     }
 }
-.textonon{
-    position: fixed;
-    top: 295px;
-    right: 13.5%;
-    color: #000;
+.textonon2{
+    position: relative;
+    top: -25px;
+    right: 31%;
     font-size: 18px;
-    animation: textonon 0.5s linear;
+    color: #000;
+    animation: texton 0.5s linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    display: block;
+}
+.textonon4{
+    position: relative;
+    top: -25px;
+    right: 16%;
+    font-size: 18px;
+    color: #000;
+    animation: texton 0.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: block;
+}
+.textonon6{
+    position: relative;
+    top: -25px;
+    right: 26%;
+    font-size: 18px;
+    color: #000;
+    animation: texton 0.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: block;
 }
 @keyframes textonon{
     0%{
@@ -730,7 +772,7 @@ body, html{
 }
 .imghover01{
     position: fixed;
-    top: 350px;
+    top: 325px;
     left: 18%;  
     z-index: 9999;
 }
@@ -814,7 +856,7 @@ body, html{
 }
 .imghover02{
     position: fixed;
-    top: 350px;
+    top: 325px;
     left: 54%;
     z-index: 9999;
 }
@@ -898,7 +940,7 @@ body, html{
 }
 .imghover03{
     position: fixed;
-    top: 350px;
+    top: 325px;
     left: 18%;
     z-index: 9999;
 }
@@ -982,7 +1024,7 @@ body, html{
 }
 .imghover04{
     position: fixed;
-    top: 350px;
+    top: 325px;
     left: 54%;
     z-index: 9999;
 }
@@ -1066,7 +1108,7 @@ body, html{
 }
 .imghover05{
     position: fixed;
-    top: 350px;
+    top: 325px;
     left: 18%;
     z-index: 9999;
 }
@@ -1150,7 +1192,7 @@ body, html{
 }
 .imghover06{
     position: fixed;
-    top: 350px;
+    top: 325px;
     left: 54%;
     z-index: 9999;
 }
