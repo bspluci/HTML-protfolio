@@ -1486,6 +1486,41 @@ body, html{
     display: none;
 }
 @media screen and (max-width:1180px){
+    #header{
+        min-width: 100%;
+    }
+    .menu{
+        min-width: 100%;
+    }
+    .bannerimg{
+        min-width: 100%;
+    }
+    .bannerimgtext{
+        width: 90%;
+    }
+    .profile{
+        min-width: 100%;
+    }
+    .profileimg{
+        width: 100%;
+    }
+    .fullbody{
+        min-width: 100%;
+    }
+    .skillbox{
+        width: 100%;
+    }
+    .footer{
+        min-width: 100%;
+    }
+    .skill{
+        min-width: 100%;
+    }
+/*
+    .img04 p{
+        margin-left: 50px;
+    }
+*/
     .texton{
         font-size: 14px;
         left: 9%;
@@ -1511,9 +1546,11 @@ body, html{
         padding: 0 15px;
         top: -8px;
     }
+/*
     .img04 p{
         margin-left: 0;
     }
+*/
 }
 @media screen and (max-width:760px){
     .mobileplan{
