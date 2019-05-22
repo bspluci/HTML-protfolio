@@ -1054,6 +1054,7 @@ span:nth-child(4n-3){
     .footerbox02>p{
         display: block;
         line-height: normal;
+        padding-right: 0;
     }
     .footerbox03{
         padding: 0;
