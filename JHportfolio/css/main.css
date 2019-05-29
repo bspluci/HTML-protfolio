@@ -1517,6 +1517,7 @@ body, html{
     .skill{
         min-width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
         text-align: center;
     }
     .skillhtml{
@@ -1526,12 +1527,17 @@ body, html{
         height: 65px;
     }
 =======
+=======
+>>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
     }
 /*
     .img04 p{
         margin-left: 50px;
     }
 */
+<<<<<<< HEAD
+>>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
+=======
 >>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
     .texton{
         font-size: 14px;
@@ -1559,12 +1565,18 @@ body, html{
         top: -8px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
 /*
     .img04 p{
         margin-left: 0;
     }
 */
+<<<<<<< HEAD
+>>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
+=======
 >>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
 }
 @media screen and (max-width:760px){
