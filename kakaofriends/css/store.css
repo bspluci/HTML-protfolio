@@ -436,3 +436,217 @@ body{
     margin-right: 35px;
     color: #a2a2a2
 }
+@media screen and (max-width:1200px){
+    .header{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:960px){
+    .header{
+        min-width: 100%;
+        padding-bottom: 0;
+    }
+    .menubox{
+        height: auto;
+        position: relative;
+    }
+    .menushadow{
+        box-shadow: 0 0 0 0;
+    }
+    .logobox{
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        line-height: normal;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .menulist{
+        text-align: center;
+    }
+    .menulist>a{
+        line-height: 60px;
+    }
+    .menulist>a:last-child{
+        padding-right: 0px;
+    }
+    .sectiona{
+        min-width: 100%;
+    }
+    .sectabox{
+        width: 100%
+    }
+    .sectastore{
+        height: auto;
+    }
+    .sectaimg{
+        width: 100%;
+        background-position: 50% 50%;
+        -webkit-background-size: contain;
+        background-size: contain;
+        height: 400px;
+    }
+    .sectaimgbox{
+        width: 100%;
+    }
+    .sectatext{
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        position: static;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+    .sectatext>h1{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .sectamap{
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        position: static;
+        padding-right: 0;
+        padding-top: 0
+    }
+    .sectamap>iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .sectionb{
+        min-width: 100%;
+    }
+    .city{
+        width: 100%;
+    }
+    .city>ul>li{
+        width: 10%;
+    }
+    .cityon:before{
+        margin-right: 2px;
+    }
+    .sectbbox{
+        width: 100%;
+    }
+    .sectbline{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .sectbone{
+        width: 50%;
+        margin-right: 0;
+    }
+    .sectbimg{
+        width: 100%;
+    }
+    .sectbtext{
+        height: 200px;
+    }
+    .sectbtext p{
+        padding-bottom: 5px;
+    }
+    .sectbtext>a{
+        font-size: 12px;
+    }
+    .footer{
+        height: auto;
+    }
+    .footerbox{
+        width: auto;
+        padding: 10px 0;
+    }
+    .footerbox01{
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 14px;
+    }
+    .footerbox02{
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+    .footerbox02>p{
+        display: block;
+        line-height: normal;
+        padding-right: 0;
+    }
+    .footerbox03{
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: normal;
+    }
+    .snsicon{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:710px){
+    .menulist>a{
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    .sectaimg{
+        height: 300px;
+    }
+    .sectbtext>h1{
+        font-size: 16px;
+    }
+    .sectbtext p{
+        font-size: 12px;
+    }
+    .footerbox01{
+        text-align: center;
+        margin: 0;
+    }
+    .footerbox02{
+        margin: 0;
+        text-align: center;
+    }
+    .footerbox03{
+        display: block;
+        position: static;
+    }
+    .footerlogo{
+        display: none;
+    }
+    .snsicon{
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:600px){
+    .cityon:before{
+        display: none;
+    }
+    .sectbtext{
+        height: 170px;
+        padding: 10px;
+    }
+    .sectbtext p{
+        width: 80%;
+        display: inline-block;
+    }
+    .sectbone{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .sectaimg{
+        height: 200px;
+    }
+    .sectbone{
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px){
+    .sectaimg{
+        height: 150px;
+    }
+}

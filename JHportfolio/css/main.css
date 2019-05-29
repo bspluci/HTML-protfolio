@@ -665,6 +665,7 @@ body, html{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     overflow: hidden;
+    display: block;
 }
 .texton1 {
     position: relative;
@@ -1433,7 +1434,7 @@ body, html{
 }
 .skillhtml{
     color: #fff;
-    width: 13%;
+    width: 14.7%;
     padding: 0 10px;
     display: inline-block;
     text-align: center;
@@ -1486,6 +1487,52 @@ body, html{
     display: none;
 }
 @media screen and (max-width:1180px){
+    #header{
+        min-width: 100%;
+    }
+    .menu{
+        min-width: 100%;
+    }
+    .bannerimg{
+        min-width: 100%;
+    }
+    .bannerimgtext{
+        width: 90%;
+    }
+    .profile{
+        min-width: 100%;
+    }
+    .profileimg{
+        width: 100%;
+    }
+    .fullbody{
+        min-width: 100%;
+    }
+    .skillbox{
+        width: 100%;
+    }
+    .footer{
+        min-width: 100%;
+    }
+    .skill{
+        min-width: 100%;
+<<<<<<< HEAD
+        text-align: center;
+    }
+    .skillhtml{
+        width: 13%;
+    }
+    .skillhtml>p:nth-child(2){
+        height: 65px;
+    }
+=======
+    }
+/*
+    .img04 p{
+        margin-left: 50px;
+    }
+*/
+>>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
     .texton{
         font-size: 14px;
         left: 9%;
@@ -1511,9 +1558,14 @@ body, html{
         padding: 0 15px;
         top: -8px;
     }
+<<<<<<< HEAD
+=======
+/*
     .img04 p{
         margin-left: 0;
     }
+*/
+>>>>>>> d6c4ad871ca7fe72e5e75a8f1da4bb7593013476
 }
 @media screen and (max-width:760px){
     .mobileplan{
@@ -1613,6 +1665,9 @@ body, html{
     }
     .img01>img, .img02>img, .img03>img, .img04>img, .img05>img, .img06>img{
         width: 80%;
+    }
+    .img04 p{
+        margin-left: 0;
     }
     .introimg{
         position: static;

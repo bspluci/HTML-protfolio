@@ -330,14 +330,6 @@ body, html{
     margin-right: 35px;
     color: #a2a2a2
 }
-
-
-
-
-
-
-
-
 @media screen and (max-width:960px){
     .header{
         min-width: 100%;
@@ -370,12 +362,54 @@ body, html{
     .banner{
         min-width: 100%;
     }
+    .sectabox{
+        width: 100%;
+    }
+    .character{
+        width: 24.7%;
+        padding: 0;
+    }
+    .slide01, .slide02{
+        float: left;
+        position: relative;
+    }
+    .slide01{
+        margin-left: 20px;
+    }
+    .slide02>i{
+        right: 20px;
+    }
+    .headertext{
+        display: block;
+        float: none;
+        position: absolute;
+        top: 50px;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .sectionb{
+        min-width: 100%;
+    }
+    .sectbbox{
+        width: 100%;
+    }
+    .sectcbox{
+        width: 100%;
+    }
+    .sectcone{
+        width: 50%;
+        margin: 0;
+    }
+    .sectcline{
+        padding: 0;
+        font-size: 0;
+    }
     .footer{
         height: auto;
     }
     .footerbox{
         width: auto;
-        padding: 10px 0
+        padding: 10px 0;
     }
     .footerbox01{
         width: 100%;
@@ -393,7 +427,8 @@ body, html{
     }
     .footerbox02>p{
         display: block;
-        line-height: normal
+        line-height: normal;
+        padding-right: 0;
     }
     .footerbox03{
         padding: 0;
@@ -430,5 +465,68 @@ body, html{
         padding: 0;
         margin-top: 10px;
         font-size: 8px;
+    }
+}
+@media screen and (max-width:700px){
+    .character{
+        width: 24%;
+    }
+    .character>h2{
+        font-size: 16px;
+    }
+    .character>p{
+        font-size: 13px;
+    }          
+}
+@media screen and (max-width:600px){
+    .slide01{
+        margin-left: 0;
+    }
+    .sectbheader{
+        width: 95%;
+        margin: 0 auto;
+    }
+/*
+    .slide01>i{
+        right: 60%;
+    }
+    .slide02>i{
+        right: 10%
+    }
+*/
+    .headertext{
+        font-size: 14px;
+        z-index: -1;
+        z-index: -1;
+    }
+    .slide01, .slide02{
+        width: 40%;
+    }
+    .sectcone{
+        width: 46%;
+        margin: 0 5px;
+    }
+    .sectcimgbox>img{
+        width: 100%;
+    }
+    .sectctext>p:first-child{
+        font-size: 14px;
+        width: 95%;
+        white-space: nowrap;
+    }
+    .sectcline{
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width:600px){
+    .sectcpage>p{
+        margin: 0 5px; 
+    }   
+}
+@media screen and (max-width:460px){
+    .sectabox{
+        display: none;
     }
 }
