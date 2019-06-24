@@ -292,6 +292,7 @@ h1 span:nth-child(4n-3){
 }
 .footer{
     width: 100%;
+    min-width: 1180px;
     height: 300px;
     background: #575757;
     color: #e0e0e0;
@@ -311,6 +312,9 @@ h1 span:nth-child(4n-3){
 .footerbox01>a{
     padding-right: 30px;
     color: #fff;
+}
+.footerbox01>a:last-child{
+    padding-right: 0;
 }
 .footerbox02{
     padding-top: 50px;
@@ -343,6 +347,9 @@ h1 span:nth-child(4n-3){
     margin-right: 35px;
     color: #a2a2a2;
 }
+.snsicon>a:last-child{
+    margin-right: 0;
+}
 
 
 
@@ -374,7 +381,7 @@ h1 span:nth-child(4n-3){
         line-height: 60px;
     }
     .menulist>a:last-child{
-        padding-right: 0px;
+        padding-right: 30px;
     }
     .skillvideo{
         min-width: auto;
@@ -526,13 +533,13 @@ h1 span:nth-child(4n-3){
     }
     .footer{
         height: auto;
+        min-width: auto;
     }
     .footerbox{
         width: auto;
         padding: 10px 0;
     }
     .footerbox01{
-        width: 100%;
         padding: 10px 0;
         text-align: left;
         margin-left: 50px;
@@ -540,14 +547,14 @@ h1 span:nth-child(4n-3){
     }
     .footerbox02{
         padding: 0;
-        width: 100%;
         text-align: left;
         margin-left: 50px;
         padding-bottom: 10px;
     }
     .footerbox02>p{
         display: block;
-        line-height: normal
+        line-height: normal;
+        padding-right: 0;
     }
     .footerbox03{
         padding: 0;
@@ -566,7 +573,7 @@ h1 span:nth-child(4n-3){
         font-size: 14px;
     }
     .menulist>a:last-child{
-        padding-right: 0px;
+        padding-right: 10px;
     }
     .skillvideo{
         display: none;
@@ -591,10 +598,12 @@ h1 span:nth-child(4n-3){
         font-size: 14px;
     }
     .footerbox01{
+        width: 100%;
         text-align: center;
         margin: 0;
     }
     .footerbox02{
+        width: 100%;
         margin: 0;
         text-align: center;
     }
@@ -608,8 +617,8 @@ h1 span:nth-child(4n-3){
     .snsicon{
         text-align: center;
         padding: 0;
-        margin-top: 10px;
-        font-size: 8px;
+        margin-top: 20px;
+        font-size: 10px;
     }
 }
 
@@ -621,6 +630,31 @@ h1 span:nth-child(4n-3){
         font-size: 12px;;
     }
     .sectatext>a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:450px){
+    .menulist>a{
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .menulist>a:last-child{
+        padding-right: 5px;
+    }
+    .sectaheader>h1{
+        font-size: 23px;
+    }
+    .sectaheader>p{
+        font-size: 13px;
+    }
+    .banner02{
+        padding: 10px 5px;
+    }
+    .footerbox{
+        text-align: center;
+    }
+    .footerbox02{
+        width: 95%;
         font-size: 12px;
     }
 }

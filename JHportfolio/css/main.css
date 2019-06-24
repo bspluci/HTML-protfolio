@@ -650,9 +650,6 @@ body, html{
     box-shadow: 10px 10px 20px 0px #4e4e4e;
     vertical-align: middle;
 }
-.img04 p{
-    margin-left: -50px;
-}
 .imgimg>p{
     opacity: 0;
     color: #000;
@@ -667,30 +664,10 @@ body, html{
     overflow: hidden;
     display: block;
 }
-.texton1 {
+.texton {
     position: relative;
     top: -25px;
-    left: -25%;
-    font-size: 18px;
-    color: #000;
-    animation: texton 0.5s linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.texton3 {
-    position: relative;
-    top: -25px;
-    left: -48%;
-    font-size: 18px;
-    color: #000;
-    animation: texton 0.5s linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.texton5 {
-    position: relative;
-    top: -25px;
-    left: -26%;
+    left: -110px;
     font-size: 18px;
     color: #000;
     animation: texton 0.5s linear;
@@ -706,32 +683,10 @@ body, html{
         transform: translateX(100px);
     }
 }
-.textonon2{
+.textonon{
     position: relative;
     top: -25px;
-    right: 31%;
-    font-size: 18px;
-    color: #000;
-    animation: texton 0.5s linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    display: block;
-}
-.textonon4{
-    position: relative;
-    top: -25px;
-    right: 16%;
-    font-size: 18px;
-    color: #000;
-    animation: texton 0.5s linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    display: block;
-}
-.textonon6{
-    position: relative;
-    top: -25px;
-    right: 26%;
+    right: 1200px;
     font-size: 18px;
     color: #000;
     animation: texton 0.5s linear;
@@ -1648,9 +1603,6 @@ body, html{
     }
     .img01>img, .img02>img, .img03>img, .img04>img, .img05>img, .img06>img{
         width: 80%;
-    }
-    .img04 p{
-        margin-left: 0;
     }
     .introimg{
         position: static;

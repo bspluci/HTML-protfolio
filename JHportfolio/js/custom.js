@@ -1,4 +1,4 @@
-﻿$(document).ready(function(){
+$(document).ready(function(){
 //  메뉴 클릭 이동
     var menu = $(".menuright>div");
     var contents = $("#body>div");
@@ -39,11 +39,16 @@
 //      스크롤 따라 내려오는 중앙라인            
         $(".imgimg>div").hide();
         var dotmax = $(".introsection .dot").length -1;
-        var dotnum = 0
+        var dotnum = 0;
+        var dotzero = 0;
+        var dotone = 1;
+        var dotzeroo = 0;
+        var dotonee = 1;
         $(document).scroll(function(){
             var line = $(".centerline>span");
             var linetop = line.offset().top;
             var scrolltop = $(window).scrollTop();
+            var i = $(this).index();
             line.css("height", scrolltop - $(".introbox").offset().top + $(window).height()/2);
 //          스크롤 도트 이미지변경
             if(linetop + line.height() >= $(".introsection .dot").eq(dotnum).offset().top){
@@ -56,100 +61,102 @@
                 if(dotnum < 0) dotnum = 0;
             }    
 //          스크롤 도트 이미지 이벤트
+//            if(linetop + line.height() >= $(".introsection .dot").eq(dotzero).offset().top){
+//                $(".introsection .introimg").eq(dotzero).find(".aaa").addClass("imgonon");
+//                $(".introsection .introimg").eq(dotzero).find(".aaa, .bbb").css({"display":"block"});
+//                $(".introsection .introimg").eq(dotzero).find(".ccc").addClass("texton");
+//                dotzero=dotzero+2;
+//                if(dotzero > dotmax) dotzero = dotmax;
+//            }else if(linetop + line.height() < $(".introsection .dot").eq(dotzero).offset().top){
+//                $(".introsection .introimg").eq(dotzero).find(".aaa").removeClass("imgonon");
+//                $(".introsection .introimg").eq(dotzero).find(".aaa, .bbb").css({"display":"none"});
+//                $(".introsection .introimg").eq(dotzero).find(".ccc").removeClass("texton");
+//                dotzero=dotzero-2;
+//                if(dotzero < 0) dotzero = 0;
+//            }if(linetop + line.height() >= $(".introsection .dot").eq(dotzero+1).offset().top){
+//                $(".introsection .introimg").eq(dotzero).find(".aaa").removeClass("imgonon");
+//                $(".introsection .introimg").eq(dotzero).find(".aaa, .bbb").css({"display":"none"});
+//                $(".introsection .introimg").eq(dotzero).find(".ccc").removeClass("texton");
+//                dotzero=dotzero+2;
+//                if(dotzero > dotmax) dotzero = dotmax;
+//                if(dotzero < 0) dotzero = 0
+//            }
             if(linetop + line.height() >= $(".dot01").offset().top){
-                $(".img01").css({"position":"fixed"});
                 $(".img01>img, .imghoverbg01").addClass("imgonon");
-                $(".imghover01>p").addClass("texton1");
+                $(".imghover01>p").addClass("texton");
                 $(".imghoverbg01, .imghover01").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot01").offset().top){
-                $(".img01").css({"position":"absolute"});
                 $(".img01>img").removeClass("imgonon");
-                $(".imghover01>p").removeClass("texton1");
+                $(".imghover01>p").removeClass("texton");
                 $(".imghoverbg01, .imghover01").css({"display":"none"});
             }if(linetop + line.height() >= $(".dot02").offset().top){
-                $(".img01").css({"position":"absolute"});
                 $(".img01>img").removeClass("imgonon");
-                $(".imghover01>p").removeClass("texton1");
+                $(".imghover01>p").removeClass("texton");
                 $(".imghoverbg01, .imghover01").css({"display":"none"});
             };
             if(linetop + line.height() >= $(".dot02").offset().top){
-                $(".img02").css({"position":"fixed"});
                 $(".img02>img, .imghoverbg02").addClass("imgnono");
-                $(".imghover02>p").addClass("textonon2");
+                $(".imghover02>p").addClass("texton");
                 $(".imghoverbg02, .imghover02").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot02").offset().top){
-                $(".img02").css({"position":"absolute"});
                 $(".img02>img").removeClass("imgnono");
-                $(".imghover02>p").removeClass("textonon2");
+                $(".imghover02>p").removeClass("texton");
                 $(".imghoverbg02, .imghover02").css({"display":"none"});
             }if(linetop + line.height() >= $(".dot03").offset().top){
-                $(".img02").css({"position":"absolute"});
                 $(".img02>img").removeClass("imgnono");
-                $(".imghover02>p").removeClass("textonon2");
+                $(".imghover02>p").removeClass("texton");
                 $(".imghoverbg02, .imghover02").css({"display":"none"});
             };
             if(linetop + line.height() >= $(".dot03").offset().top){
-                $(".img03").css({"position":"fixed"});
                 $(".img03>img, .imghoverbg03").addClass("imgonon");
-                $(".imghover03>p").addClass("texton3");
+                $(".imghover03>p").addClass("texton");
                 $(".imghoverbg03, .imghover03").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot03").offset().top){
-                $(".img03").css({"position":"absolute"});
                 $(".img03>img").removeClass("imgonon")
-                $(".imghover03>p").removeClass("texton3");
+                $(".imghover03>p").removeClass("texton");
                 $(".imghoverbg03, .imghover03").css({"display":"none"});
             }if(linetop + line.height() >= $(".dot04").offset().top){
-                $(".img03").css({"position":"absolute"});
                 $(".img03>img").removeClass("imgonon");
-                $(".imghover03>p").removeClass("texton3");
+                $(".imghover03>p").removeClass("texton");
                 $(".imghoverbg03, .imghover03").css({"display":"none"});
             };    
             if(linetop + line.height() >= $(".dot04").offset().top){
-                $(".img04").css({"position":"fixed"});
                 $(".img04>img, .imghoverbg04").addClass("imgnono");
-                $(".imghover04>p").addClass("textonon4");
+                $(".imghover04>p").addClass("texton");
                 $(".imghoverbg04, .imghover04").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot04").offset().top){
-                $(".img04").css({"position":"absolute"});
                 $(".img04>img").removeClass("imgnono");
-                $(".imghover04>p").removeClass("textonon4");
+                $(".imghover04>p").removeClass("texton");
                 $(".imghoverbg04, .imghover04").css({"display":"none"});
             }if(linetop + line.height() >= $(".dot05").offset().top){
-                $(".img04").css({"position":"absolute"});
                 $(".img04>img").removeClass("imgnono");
-                $(".imghover04>p").removeClass("textonon4");
+                $(".imghover04>p").removeClass("texton");
                 $(".imghoverbg04, .imghover04").css({"display":"none"});
             };
             if(linetop + line.height() >= $(".dot05").offset().top){
-                $(".img05").css({"position":"fixed"});
                 $(".img05>img, .imghoverbg05").addClass("imgonon");
-                $(".imghover05>p").addClass("texton5");
+                $(".imghover05>p").addClass("texton");
                 $(".imghoverbg05, .imghover05").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot05").offset().top){
-                $(".img05").css({"position":"absolute"});
                 $(".img05>img").removeClass("imgonon");
-                $(".imghover05>p").removeClass("texton5");
+                $(".imghover05>p").removeClass("texton");
                 $(".imghoverbg05, .imghover05").css({"display":"none"});
             }if(linetop + line.height() >= $(".dot06").offset().top){
-                $(".img05").css({"position":"absolute"});
                 $(".img05>img").removeClass("imgonon");
-                $(".imghover05>p").removeClass("texton5");
+                $(".imghover05>p").removeClass("texton");
                 $(".imghoverbg05, .imghover05").css({"display":"none"});
             };
             if(linetop + line.height() >= $(".dot06").offset().top){
-                $(".img06").css({"position":"fixed"});
                 $(".img06>img, .imghoverbg06").addClass("imgnono");
-                $(".imghover06>p").addClass("textonon6");
+                $(".imghover06>p").addClass("texton");
                 $(".imghoverbg06, .imghover06").css({"display":"block"});
             }else if(linetop + line.height() < $(".dot06").offset().top){
-                $(".img06").css({"position":"absolute"});
                 $(".img06>img").removeClass("imgnono");
-                $(".imghover06>p").removeClass("textonon6");
+                $(".imghover06>p").removeClass("texton");
                 $(".imghoverbg06, .imghover06").css({"display":"none"});
             }if(linetop + line.height() >= $(".dot07").offset().top){
-                $(".img06").css({"position":"absolute"});
                 $(".img06>img").removeClass("imgnono");
-                $(".imghover06>p").removeClass("textonon6");
+                $(".imghover06>p").removeClass("texton");
                 $(".imghoverbg06, .imghover06").css({"display":"none"});
             };
 //          풋터 테두리 이벤트

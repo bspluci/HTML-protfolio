@@ -349,7 +349,7 @@ span:nth-child(4n-3){
 }
 .sectioncimg01,
 .sectioncimg02{
-    width: 80%;
+    width: 1070px;
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -412,7 +412,7 @@ span:nth-child(4n-3){
     padding-top: 10px;
 }
 .sectioncshop{
-    width: 80%;
+    width: 1070px;
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -425,7 +425,7 @@ span:nth-child(4n-3){
 .sectioncshopimg01>a,
 .sectioncshopimg02>a{
     display: inline-block;
-    width: 23%;
+    width: 250px;
     overflow: hidden;
     margin-right: 20px
 }
@@ -693,6 +693,7 @@ span:nth-child(4n-3){
 }
 .footer{
     width: 100%;
+    min-width: 1180px;
     height: 300px;
     background: #575757;
     color: #e0e0e0;
@@ -748,6 +749,9 @@ span:nth-child(4n-3){
     margin-right: 35px;
     color: #a2a2a2;
 }
+.snsicon>a:last-child{
+    margin-right: 0;
+}
 
 
 
@@ -779,7 +783,7 @@ span:nth-child(4n-3){
         line-height: 60px;
     }
     .menulist>a:last-child{
-        padding-right: 0px;
+        padding-right: 10px;
     }
     .skillvideo{
         min-width: auto;
@@ -893,9 +897,14 @@ span:nth-child(4n-3){
     }
     .sectioncimg01{
         padding-bottom: 5px;
+        width: 95%;
     }
     .sectioncimg02{
         padding: 5px 0;
+        width: 95%;
+    }
+    .sectioncshop{
+        width: 95%;
     }
     .sectioncimgtext01>p:first-child,
     .sectioncimgtext02>p:first-child{
@@ -910,7 +919,7 @@ span:nth-child(4n-3){
     }
     .sectioncshopimg01>a,
     .sectioncshopimg02>a{
-        width: 23%;
+        width: 23.7%;
         margin-right: 1%;
     }
     .cshoptext01{
@@ -933,7 +942,7 @@ span:nth-child(4n-3){
     }
     .sectiondbox{
         width: 100%;
-        height: 420px;
+        height: 470px;
         min-width: auto;
     }
     .sectiondheader{
@@ -1005,7 +1014,7 @@ span:nth-child(4n-3){
         display: none;
     }
     .name{
-        font-size: 30px;
+        font-size: 35px;
         top: 220px;
         right: 60%;
     }
@@ -1032,13 +1041,13 @@ span:nth-child(4n-3){
     }
     .footer{
         height: auto;
+        min-width: auto;
     }
     .footerbox{
         width: auto;
         padding: 10px 0;
     }
     .footerbox01{
-        width: 100%;
         padding: 10px 0;
         text-align: left;
         margin-left: 50px;
@@ -1046,7 +1055,6 @@ span:nth-child(4n-3){
     }
     .footerbox02{
         padding: 0;
-        width: 100%;
         text-align: left;
         margin-left: 50px;
         padding-bottom: 10px;
@@ -1072,7 +1080,7 @@ span:nth-child(4n-3){
         font-size: 14px;
     }
     .menulist>a:last-child{
-        padding-right: 0px;
+        padding-right: 10px;
     }
     .skillvideo{
         display: none;
@@ -1110,6 +1118,9 @@ span:nth-child(4n-3){
         margin-top: 5px;
         line-height: 16px;
     }
+    .sectiondbox{
+        height: 440px;
+    }
     .cardimg01{
         width: 150px;
         height: auto;
@@ -1140,25 +1151,26 @@ span:nth-child(4n-3){
         left: 30px;
     }
     .thumbimgbox{
-        width: 45%;
-        left: 1%;
+        width: 60%;
         top: 20px;
     }
     .thumbimgbox>img{
-        width: 70px;
+        width: 75px;
         padding: 0;
         padding-right: 5px;
     }
     .name{
-        width: 160px;
-        top: 250px;
-        left: 5%;
+        font-size: 35px;
+        top: 200px;
+        right: 60%;
     }
     .footerbox01{
+        width: 100%;
         text-align: center;
         margin: 0;
     }
     .footerbox02{
+        width: 100%;
         margin: 0;
         text-align: center;
     }
@@ -1172,7 +1184,122 @@ span:nth-child(4n-3){
     .snsicon{
         text-align: center;
         padding: 0;
-        margin-top: 10px;
-        font-size: 8px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:570px){
+    .thumbimgbox{
+        width: 44%;
+    }
+    .cardbox{
+        margin-top: 50px;
+    }
+    .name{
+        font-size: 25px;
+        top: -30px;
+        right: 0;
+        left: 0;
+    }    
+}
+@media screen and (max-width:450px){
+    .menulist>a{
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .sectionatext{
+        width: 100%;
+    }
+    .sectionaimg04{
+        display: none;
+    }
+    .sectionatext>p:last-child{
+        width: 95%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .sectionatext>p:first-child{
+        font-size: 20px;
+    }
+    .sectionb{
+        height: 100%;
+    }
+    .sectionbtext>p:first-child{
+        font-size: 20px;
+    }
+    .sectionbtext>p:last-child{
+        font-size: 14px;
+    }
+    .sectionbimg01{
+        position: static;
+        text-align: center;
+    }
+    .sectionbimg01>img:last-child{
+        width: 45px;
+        left: 38%
+    }
+    .sectionbimg02{
+        text-align: center;
+    }
+    .sectionbimg02>img{
+        position: static;
+        padding-top: 0;
+        width: 280px
+    }
+    .sectionctext{
+        font-size: 10px;
+    }
+    .sectioncimgtext01>p:first-child, .sectioncimgtext02>p:first-child{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .sectioncimgtext01>p:last-child, .sectioncimgtext02>p:last-child{
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 3px;
+    }
+    .sectioncshopimg01>a, .sectioncshopimg02>a{
+        width: 23.5%;
+    }
+    .sectiondbox{
+        height: 100%;
+    }
+    .cardbox{
+        margin-top: 20px;
+        height: 460px;
+    }
+    .name{
+        top: 140px;
+    }
+    .thumbimgbox{
+        width: 100%;
+        left: 0;
+    }
+    .thumbimgbox>img{
+        width: 70px;
+        padding-right: 0;
+        padding: 0 2px;
+    }
+    .sectiondcard{
+        position: static;
+        transform: none;
+    }
+    .cardimg01{
+        position: static;
+        margin: 0 auto;
+        margin-top: 140px;
+    }
+    .thumbclick{
+        left: 5%;
+    }
+    .sectiondcard{
+        z-index: 0;
+    }
+    .footerbox{
+        text-align: center;
+    }
+    .footerbox02{
+        width: 95%;
+        font-size: 12px;
     }
 }
