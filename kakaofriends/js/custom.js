@@ -7,17 +7,17 @@
         }else{
             $(".menubox").removeClass("menushadow");
         }
-        if(scrolltop >= $(".sectiona").offset().top - $(window).height()){
+        if(scrolltop >= $(".sectiona").offset().top - $(window).height() + 300){
             $(".sectionaimg01").addClass("ani01");
             $(".sectionaimg02").addClass("ani02");
             $(".sectionaimg03").addClass("ani03");
             $(".sectionaimg04").addClass("ani04");
         }
-        if(scrolltop >= $(".sectionb").offset().top - $(window).height()){
+        if(scrolltop >= $(".sectionb").offset().top - $(window).height() + 300){
             $(".sectionbimg01").addClass("ani05");
             $(".sectionbimg02").addClass("ani06");
         }
-        if(scrolltop >= $(".sectionc").offset().top - $(window).height()){
+        if(scrolltop >= $(".sectionc").offset().top - $(window).height() + 300){
             $(".sectioncimg01").addClass("ani07");    
             $(".sectioncimg02").addClass("ani08");    
         }
